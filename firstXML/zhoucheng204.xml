@@ -1,0 +1,7919 @@
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.nist.gov/OntoSTEP/automotive_design"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    ontologyIRI="http://www.nist.gov/OntoSTEP/automotive_design">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+<Semantic type="property_definition_representation">
+  <head>
+    <geometry_link>
+      <definition>#14</definition>
+      <used_representation>#12</used_representation>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#10">
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="property_definition_representation">
+  <head>
+    <geometry_link>
+      <definition>#15</definition>
+      <used_representation>#13</used_representation>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#11">
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="representation">
+  <head>
+    <geometry_link>
+      <items>(#16)</items>
+      <context_of_items>#603</context_of_items>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#12">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="representation">
+  <head>
+    <geometry_link>
+      <items>(#17)</items>
+      <context_of_items>#603</context_of_items>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#13">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="property_definition">
+  <head>
+    <geometry_link>
+      <definition>#608</definition>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#14">
+    <name>pmi validation property</name>
+    <description></description>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="property_definition">
+  <head>
+    <geometry_link>
+      <definition>#608</definition>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#15">
+    <name>pmi validation property</name>
+    <description></description>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="conical_surface">
+  <head>
+    <geometry_link>
+      <position>#397</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#50">
+    <name></name>
+    <radius>23.5</radius>
+    <semi_angle>0.785398163397452</semi_angle>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="conical_surface">
+  <head>
+    <geometry_link>
+      <position>#398</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#51">
+    <name></name>
+    <radius>22.5</radius>
+    <semi_angle>0.785398163397452</semi_angle>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="conical_surface">
+  <head>
+    <geometry_link>
+      <position>#409</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#52">
+    <name></name>
+    <radius>10.</radius>
+    <semi_angle>0.785398163397446</semi_angle>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="conical_surface">
+  <head>
+    <geometry_link>
+      <position>#410</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#53">
+    <name></name>
+    <radius>10.</radius>
+    <semi_angle>0.785398163397446</semi_angle>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cylindrical_surface">
+  <head>
+    <geometry_link>
+      <position>#393</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#54">
+    <name></name>
+    <radius>23.5</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cylindrical_surface">
+  <head>
+    <geometry_link>
+      <position>#396</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#55">
+    <name></name>
+    <radius>18.44</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cylindrical_surface">
+  <head>
+    <geometry_link>
+      <position>#402</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#56">
+    <name></name>
+    <radius>10.</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cylindrical_surface">
+  <head>
+    <geometry_link>
+      <position>#408</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#57">
+    <name></name>
+    <radius>15.06</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#82</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#58">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#83</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#59">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#84</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#60">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#85</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#61">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#86</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#62">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#87</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#63">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#83</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#64">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.F.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#85</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#65">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.F.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#84</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#66">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.F.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#86</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#67">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.F.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#87</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#68">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.F.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#82</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#69">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.F.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#88</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#70">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#89</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#71">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.F.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#90</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#72">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#91</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#73">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#92</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#74">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#93</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#75">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.F.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#93</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#76">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#89</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#77">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#88</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#78">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.F.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#90</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#79">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.F.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#92</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#80">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.F.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="oriented_edge">
+  <head>
+    <geometry_link>
+      <edge_element>#91</edge_element>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#81">
+    <name></name>
+    <edge_start>*</edge_start>
+    <edge_end>*</edge_end>
+    </Instance>
+  </body>
+  <tail>
+    <edge_start rdf:resource="*"></edge_start>
+    <edge_end rdf:resource="*"></edge_end>
+    <orientation rdf:datatype="xsd;boolean">.F.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="edge_curve">
+  <head>
+    <geometry_link>
+      <edge_start>#148</edge_start>
+      <edge_end>#148</edge_end>
+      <edge_geometry>#94</edge_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#82">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="edge_curve">
+  <head>
+    <geometry_link>
+      <edge_start>#149</edge_start>
+      <edge_end>#149</edge_end>
+      <edge_geometry>#95</edge_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#83">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.F.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="edge_curve">
+  <head>
+    <geometry_link>
+      <edge_start>#150</edge_start>
+      <edge_end>#150</edge_end>
+      <edge_geometry>#96</edge_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#84">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.F.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="edge_curve">
+  <head>
+    <geometry_link>
+      <edge_start>#151</edge_start>
+      <edge_end>#151</edge_end>
+      <edge_geometry>#97</edge_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#85">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="edge_curve">
+  <head>
+    <geometry_link>
+      <edge_start>#152</edge_start>
+      <edge_end>#152</edge_end>
+      <edge_geometry>#98</edge_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#86">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="edge_curve">
+  <head>
+    <geometry_link>
+      <edge_start>#153</edge_start>
+      <edge_end>#153</edge_end>
+      <edge_geometry>#99</edge_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#87">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.F.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="edge_curve">
+  <head>
+    <geometry_link>
+      <edge_start>#154</edge_start>
+      <edge_end>#154</edge_end>
+      <edge_geometry>#100</edge_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#88">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="edge_curve">
+  <head>
+    <geometry_link>
+      <edge_start>#155</edge_start>
+      <edge_end>#155</edge_end>
+      <edge_geometry>#101</edge_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#89">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="edge_curve">
+  <head>
+    <geometry_link>
+      <edge_start>#156</edge_start>
+      <edge_end>#156</edge_end>
+      <edge_geometry>#102</edge_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#90">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.F.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="edge_curve">
+  <head>
+    <geometry_link>
+      <edge_start>#157</edge_start>
+      <edge_end>#157</edge_end>
+      <edge_geometry>#103</edge_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#91">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="edge_curve">
+  <head>
+    <geometry_link>
+      <edge_start>#158</edge_start>
+      <edge_end>#158</edge_end>
+      <edge_geometry>#104</edge_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#92">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.F.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="edge_curve">
+  <head>
+    <geometry_link>
+      <edge_start>#159</edge_start>
+      <edge_end>#159</edge_end>
+      <edge_geometry>#105</edge_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#93">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.F.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="circle">
+  <head>
+    <geometry_link>
+      <position>#388</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#94">
+    <name></name>
+    <radius>22.5</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="circle">
+  <head>
+    <geometry_link>
+      <position>#389</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#95">
+    <name></name>
+    <radius>18.44</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="circle">
+  <head>
+    <geometry_link>
+      <position>#391</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#96">
+    <name></name>
+    <radius>22.5</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="circle">
+  <head>
+    <geometry_link>
+      <position>#392</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#97">
+    <name></name>
+    <radius>18.44</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="circle">
+  <head>
+    <geometry_link>
+      <position>#394</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#98">
+    <name></name>
+    <radius>23.5</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="circle">
+  <head>
+    <geometry_link>
+      <position>#395</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#99">
+    <name></name>
+    <radius>23.5</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="circle">
+  <head>
+    <geometry_link>
+      <position>#400</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#100">
+    <name></name>
+    <radius>11.</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="circle">
+  <head>
+    <geometry_link>
+      <position>#401</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#101">
+    <name></name>
+    <radius>15.06</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="circle">
+  <head>
+    <geometry_link>
+      <position>#403</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#102">
+    <name></name>
+    <radius>10.</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="circle">
+  <head>
+    <geometry_link>
+      <position>#404</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#103">
+    <name></name>
+    <radius>10.</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="circle">
+  <head>
+    <geometry_link>
+      <position>#406</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#104">
+    <name></name>
+    <radius>11.</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="circle">
+  <head>
+    <geometry_link>
+      <position>#407</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#105">
+    <name></name>
+    <radius>15.06</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#58)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#106">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#59)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#107">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#60)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#108">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#61)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#109">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#62)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#110">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#63)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#111">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#64)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#112">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#65)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#113">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#66)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#114">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#67)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#115">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#68)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#116">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#69)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#117">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#70)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#118">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#71)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#119">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#72)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#120">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#73)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#121">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#74)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#122">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#75)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#123">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#76)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#124">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#77)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#125">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#78)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#126">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#79)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#127">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#80)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#128">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="edge_loop">
+  <head>
+    <geometry_link>
+      <edge_list>(#81)</edge_list>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#129">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="plane">
+  <head>
+    <geometry_link>
+      <position>#387</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#130">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="plane">
+  <head>
+    <geometry_link>
+      <position>#390</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#131">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="plane">
+  <head>
+    <geometry_link>
+      <position>#399</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#132">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="plane">
+  <head>
+    <geometry_link>
+      <position>#405</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#133">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="shape_representation_relationship">
+  <head>
+    <geometry_link>
+      <rep_1>#373</rep_1>
+      <rep_2>#135</rep_2>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#134">
+    <name></name>
+    <description></description>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="advanced_brep_shape_representation">
+  <head>
+    <geometry_link>
+      <items>(#358,#359,#360,#361,#362,#363,#364,#365,#366,#367,#368,#369,#370,#371)</items>
+      <context_of_items>#603</context_of_items>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#135">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#519</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#136">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#521</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#137">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#523</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#138">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#525</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#139">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#527</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#140">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#529</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#141">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#531</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#142">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#533</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#143">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#535</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#144">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#537</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#145">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#539</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#146">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#541</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#147">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#544</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#148">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#546</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#149">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#549</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#150">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#551</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#151">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#554</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#152">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#556</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#153">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#562</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#154">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#564</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#155">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#567</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#156">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#569</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#157">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#572</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#158">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_point">
+  <head>
+    <geometry_link>
+      <vertex_geometry>#574</vertex_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#159">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_loop">
+  <head>
+    <geometry_link>
+      <loop_vertex>#136</loop_vertex>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#160">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_loop">
+  <head>
+    <geometry_link>
+      <loop_vertex>#137</loop_vertex>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#161">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_loop">
+  <head>
+    <geometry_link>
+      <loop_vertex>#138</loop_vertex>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#162">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_loop">
+  <head>
+    <geometry_link>
+      <loop_vertex>#139</loop_vertex>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#163">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_loop">
+  <head>
+    <geometry_link>
+      <loop_vertex>#140</loop_vertex>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#164">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_loop">
+  <head>
+    <geometry_link>
+      <loop_vertex>#141</loop_vertex>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#165">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_loop">
+  <head>
+    <geometry_link>
+      <loop_vertex>#142</loop_vertex>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#166">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_loop">
+  <head>
+    <geometry_link>
+      <loop_vertex>#143</loop_vertex>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#167">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_loop">
+  <head>
+    <geometry_link>
+      <loop_vertex>#144</loop_vertex>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#168">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_loop">
+  <head>
+    <geometry_link>
+      <loop_vertex>#145</loop_vertex>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#169">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_loop">
+  <head>
+    <geometry_link>
+      <loop_vertex>#146</loop_vertex>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#170">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="vertex_loop">
+  <head>
+    <geometry_link>
+      <loop_vertex>#147</loop_vertex>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#171">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#160</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#172">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#161</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#173">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#162</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#174">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#163</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#175">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#164</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#176">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#165</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#177">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#166</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#178">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#167</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#179">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#168</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#180">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#169</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#181">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#170</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#182">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#171</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#183">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#106</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#184">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#107</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#185">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#108</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#186">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#109</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#187">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#110</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#188">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#111</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#189">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#112</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#190">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#113</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#191">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#114</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#192">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#115</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#193">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#116</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#194">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#117</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#195">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#118</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#196">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#119</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#197">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#120</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#198">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#121</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#199">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#122</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#200">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#123</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#201">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#124</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#202">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#125</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#203">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#126</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#204">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#127</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#205">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#128</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#206">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="face_bound">
+  <head>
+    <geometry_link>
+      <bound>#129</bound>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#207">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <orientation rdf:datatype="xsd;boolean">.T.</orientation>
+  </tail>
+</Semantic>
+<Semantic type="spherical_surface">
+  <head>
+    <geometry_link>
+      <position>#375</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#208">
+    <name></name>
+    <radius>3.375</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="spherical_surface">
+  <head>
+    <geometry_link>
+      <position>#376</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#209">
+    <name></name>
+    <radius>3.375</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="spherical_surface">
+  <head>
+    <geometry_link>
+      <position>#377</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#210">
+    <name></name>
+    <radius>3.375</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="spherical_surface">
+  <head>
+    <geometry_link>
+      <position>#378</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#211">
+    <name></name>
+    <radius>3.375</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="spherical_surface">
+  <head>
+    <geometry_link>
+      <position>#379</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#212">
+    <name></name>
+    <radius>3.375</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="spherical_surface">
+  <head>
+    <geometry_link>
+      <position>#380</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#213">
+    <name></name>
+    <radius>3.375</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="spherical_surface">
+  <head>
+    <geometry_link>
+      <position>#381</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#214">
+    <name></name>
+    <radius>3.375</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="spherical_surface">
+  <head>
+    <geometry_link>
+      <position>#382</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#215">
+    <name></name>
+    <radius>3.375</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="spherical_surface">
+  <head>
+    <geometry_link>
+      <position>#383</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#216">
+    <name></name>
+    <radius>3.375</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="spherical_surface">
+  <head>
+    <geometry_link>
+      <position>#384</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#217">
+    <name></name>
+    <radius>3.375</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="spherical_surface">
+  <head>
+    <geometry_link>
+      <position>#385</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#218">
+    <name></name>
+    <radius>3.375</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="spherical_surface">
+  <head>
+    <geometry_link>
+      <position>#386</position>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#219">
+    <name></name>
+    <radius>3.375</radius>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#172)</bounds>
+      <face_geometry>#208</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#220">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#173)</bounds>
+      <face_geometry>#209</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#221">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#174)</bounds>
+      <face_geometry>#210</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#222">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#175)</bounds>
+      <face_geometry>#211</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#223">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#176)</bounds>
+      <face_geometry>#212</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#224">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#177)</bounds>
+      <face_geometry>#213</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#225">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#178)</bounds>
+      <face_geometry>#214</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#226">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#179)</bounds>
+      <face_geometry>#215</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#227">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#180)</bounds>
+      <face_geometry>#216</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#228">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#181)</bounds>
+      <face_geometry>#217</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#229">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#182)</bounds>
+      <face_geometry>#218</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#230">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#183)</bounds>
+      <face_geometry>#219</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#231">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#184,#185)</bounds>
+      <face_geometry>#130</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#232">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#186,#187)</bounds>
+      <face_geometry>#131</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#233">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.F.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#188,#189)</bounds>
+      <face_geometry>#54</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#234">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#190,#191)</bounds>
+      <face_geometry>#55</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#235">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.F.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#192,#193)</bounds>
+      <face_geometry>#50</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#236">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#194,#195)</bounds>
+      <face_geometry>#51</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#237">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#196,#197)</bounds>
+      <face_geometry>#132</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#238">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.F.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#198,#199)</bounds>
+      <face_geometry>#56</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#239">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.F.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#200,#201)</bounds>
+      <face_geometry>#133</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#240">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#202,#203)</bounds>
+      <face_geometry>#57</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#241">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.T.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#204,#205)</bounds>
+      <face_geometry>#52</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#242">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.F.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="advanced_face">
+  <head>
+    <geometry_link>
+      <bounds>(#206,#207)</bounds>
+      <face_geometry>#53</face_geometry>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#243">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+    <same_sense rdf:datatype="xsd;boolean">.F.</same_sense>
+  </tail>
+</Semantic>
+<Semantic type="closed_shell">
+  <head>
+    <geometry_link>
+      <cfs_faces>(#220)</cfs_faces>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#244">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="closed_shell">
+  <head>
+    <geometry_link>
+      <cfs_faces>(#221)</cfs_faces>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#245">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="closed_shell">
+  <head>
+    <geometry_link>
+      <cfs_faces>(#222)</cfs_faces>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#246">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="closed_shell">
+  <head>
+    <geometry_link>
+      <cfs_faces>(#223)</cfs_faces>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#247">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="closed_shell">
+  <head>
+    <geometry_link>
+      <cfs_faces>(#224)</cfs_faces>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#248">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="closed_shell">
+  <head>
+    <geometry_link>
+      <cfs_faces>(#225)</cfs_faces>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#249">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="closed_shell">
+  <head>
+    <geometry_link>
+      <cfs_faces>(#226)</cfs_faces>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#250">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="closed_shell">
+  <head>
+    <geometry_link>
+      <cfs_faces>(#227)</cfs_faces>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#251">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="closed_shell">
+  <head>
+    <geometry_link>
+      <cfs_faces>(#228)</cfs_faces>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#252">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="closed_shell">
+  <head>
+    <geometry_link>
+      <cfs_faces>(#229)</cfs_faces>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#253">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="closed_shell">
+  <head>
+    <geometry_link>
+      <cfs_faces>(#230)</cfs_faces>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#254">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="closed_shell">
+  <head>
+    <geometry_link>
+      <cfs_faces>(#231)</cfs_faces>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#255">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="closed_shell">
+  <head>
+    <geometry_link>
+      <cfs_faces>(#232,#233,#234,#235,#236,#237)</cfs_faces>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#256">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="closed_shell">
+  <head>
+    <geometry_link>
+      <cfs_faces>(#238,#239,#240,#241,#242,#243)</cfs_faces>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#257">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="manifold_solid_brep">
+  <head>
+    <geometry_link>
+      <outer>#244</outer>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#358">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="manifold_solid_brep">
+  <head>
+    <geometry_link>
+      <outer>#245</outer>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#359">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="manifold_solid_brep">
+  <head>
+    <geometry_link>
+      <outer>#246</outer>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#360">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="manifold_solid_brep">
+  <head>
+    <geometry_link>
+      <outer>#247</outer>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#361">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="manifold_solid_brep">
+  <head>
+    <geometry_link>
+      <outer>#248</outer>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#362">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="manifold_solid_brep">
+  <head>
+    <geometry_link>
+      <outer>#249</outer>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#363">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="manifold_solid_brep">
+  <head>
+    <geometry_link>
+      <outer>#250</outer>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#364">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="manifold_solid_brep">
+  <head>
+    <geometry_link>
+      <outer>#251</outer>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#365">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="manifold_solid_brep">
+  <head>
+    <geometry_link>
+      <outer>#252</outer>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#366">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="manifold_solid_brep">
+  <head>
+    <geometry_link>
+      <outer>#253</outer>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#367">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="manifold_solid_brep">
+  <head>
+    <geometry_link>
+      <outer>#254</outer>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#368">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="manifold_solid_brep">
+  <head>
+    <geometry_link>
+      <outer>#255</outer>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#369">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="manifold_solid_brep">
+  <head>
+    <geometry_link>
+      <outer>#256</outer>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#370">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="manifold_solid_brep">
+  <head>
+    <geometry_link>
+      <outer>#257</outer>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#371">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="shape_definition_representation">
+  <head>
+    <geometry_link>
+      <definition>#608</definition>
+      <used_representation>#373</used_representation>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#372">
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="shape_representation">
+  <head>
+    <geometry_link>
+      <items>(#374)</items>
+      <context_of_items>#603</context_of_items>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#373">
+    <name>zhoucheng204</name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#517</location>
+      <axis>#427</axis>
+      <ref_direction>#428</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#374">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#518</location>
+      <axis>#429</axis>
+      <ref_direction>#430</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#375">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#520</location>
+      <axis>#431</axis>
+      <ref_direction>#432</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#376">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#522</location>
+      <axis>#433</axis>
+      <ref_direction>#434</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#377">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#524</location>
+      <axis>#435</axis>
+      <ref_direction>#436</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#378">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#526</location>
+      <axis>#437</axis>
+      <ref_direction>#438</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#379">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#528</location>
+      <axis>#439</axis>
+      <ref_direction>#440</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#380">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#530</location>
+      <axis>#441</axis>
+      <ref_direction>#442</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#381">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#532</location>
+      <axis>#443</axis>
+      <ref_direction>#444</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#382">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#534</location>
+      <axis>#445</axis>
+      <ref_direction>#446</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#383">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#536</location>
+      <axis>#447</axis>
+      <ref_direction>#448</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#384">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#538</location>
+      <axis>#449</axis>
+      <ref_direction>#450</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#385">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#540</location>
+      <axis>#451</axis>
+      <ref_direction>#452</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#386">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#542</location>
+      <axis>#453</axis>
+      <ref_direction>#454</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#387">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#543</location>
+      <axis>#455</axis>
+      <ref_direction>#456</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#388">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#545</location>
+      <axis>#457</axis>
+      <ref_direction>#458</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#389">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#547</location>
+      <axis>#459</axis>
+      <ref_direction>#460</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#390">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#548</location>
+      <axis>#461</axis>
+      <ref_direction>#462</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#391">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#550</location>
+      <axis>#463</axis>
+      <ref_direction>#464</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#392">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#552</location>
+      <axis>#465</axis>
+      <ref_direction>#466</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#393">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#553</location>
+      <axis>#467</axis>
+      <ref_direction>#468</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#394">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#555</location>
+      <axis>#469</axis>
+      <ref_direction>#470</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#395">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#557</location>
+      <axis>#471</axis>
+      <ref_direction>#472</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#396">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#558</location>
+      <axis>#473</axis>
+      <ref_direction>#474</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#397">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#559</location>
+      <axis>#475</axis>
+      <ref_direction>#476</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#398">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#560</location>
+      <axis>#477</axis>
+      <ref_direction>#478</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#399">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#561</location>
+      <axis>#479</axis>
+      <ref_direction>#480</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#400">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#563</location>
+      <axis>#481</axis>
+      <ref_direction>#482</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#401">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#565</location>
+      <axis>#483</axis>
+      <ref_direction>#484</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#402">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#566</location>
+      <axis>#485</axis>
+      <ref_direction>#486</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#403">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#568</location>
+      <axis>#487</axis>
+      <ref_direction>#488</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#404">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#570</location>
+      <axis>#489</axis>
+      <ref_direction>#490</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#405">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#571</location>
+      <axis>#491</axis>
+      <ref_direction>#492</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#406">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#573</location>
+      <axis>#493</axis>
+      <ref_direction>#494</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#407">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#575</location>
+      <axis>#495</axis>
+      <ref_direction>#496</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#408">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#576</location>
+      <axis>#497</axis>
+      <ref_direction>#498</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#409">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#577</location>
+      <axis>#499</axis>
+      <ref_direction>#500</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#410">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#578</location>
+      <axis>#501</axis>
+      <ref_direction>#502</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#411">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#580</location>
+      <axis>#501</axis>
+      <ref_direction>#502</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#412">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#581</location>
+      <axis>#503</axis>
+      <ref_direction>#504</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#413">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#583</location>
+      <axis>#503</axis>
+      <ref_direction>#504</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#414">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#584</location>
+      <axis>#505</axis>
+      <ref_direction>#506</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#415">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#586</location>
+      <axis>#505</axis>
+      <ref_direction>#506</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#416">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#587</location>
+      <axis>#507</axis>
+      <ref_direction>#508</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#417">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#589</location>
+      <axis>#507</axis>
+      <ref_direction>#508</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#418">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#590</location>
+      <axis>#509</axis>
+      <ref_direction>#510</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#419">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#592</location>
+      <axis>#509</axis>
+      <ref_direction>#510</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#420">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#593</location>
+      <axis>#511</axis>
+      <ref_direction>#512</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#421">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#595</location>
+      <axis>#511</axis>
+      <ref_direction>#512</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#422">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#596</location>
+      <axis>#513</axis>
+      <ref_direction>#514</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#423">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#598</location>
+      <axis>#513</axis>
+      <ref_direction>#514</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#424">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#599</location>
+      <axis>#515</axis>
+      <ref_direction>#516</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#425">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="axis2_placement_3d">
+  <head>
+    <geometry_link>
+      <location>#601</location>
+      <axis>#515</axis>
+      <ref_direction>#516</ref_direction>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#426">
+    <name></name>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#427">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#428">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#429">
+    <name></name>
+    <direction_ratios>(0.,-1.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#430">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#431">
+    <name></name>
+    <direction_ratios>(0.5,-0.866025403784439,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#432">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#433">
+    <name></name>
+    <direction_ratios>(0.866025403784438,-0.500000000000001,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#434">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#435">
+    <name></name>
+    <direction_ratios>(1.,-1.17145334231628E-15,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#436">
+    <name></name>
+    <direction_ratios>(0.,0.,-1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#437">
+    <name></name>
+    <direction_ratios>(0.866025403784439,0.499999999999999,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#438">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#439">
+    <name></name>
+    <direction_ratios>(0.500000000000002,0.866025403784437,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#440">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#441">
+    <name></name>
+    <direction_ratios>(2.34290668463255E-15,1.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#442">
+    <name></name>
+    <direction_ratios>(0.,0.,-1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#443">
+    <name></name>
+    <direction_ratios>(-0.499999999999997,0.86602540378444,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#444">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#445">
+    <name></name>
+    <direction_ratios>(-0.866025403784437,0.500000000000003,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#446">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#447">
+    <name></name>
+    <direction_ratios>(-1.,3.73640463187386E-15,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#448">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#449">
+    <name></name>
+    <direction_ratios>(-0.866025403784441,-0.499999999999996,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#450">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#451">
+    <name></name>
+    <direction_ratios>(-0.500000000000004,-0.866025403784436,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#452">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#453">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#454">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#455">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#456">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#457">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#458">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#459">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#460">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#461">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#462">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#463">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#464">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#465">
+    <name></name>
+    <direction_ratios>(0.,0.,-1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#466">
+    <name></name>
+    <direction_ratios>(-1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#467">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#468">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#469">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#470">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#471">
+    <name></name>
+    <direction_ratios>(0.,0.,-1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#472">
+    <name></name>
+    <direction_ratios>(-1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#473">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#474">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#475">
+    <name></name>
+    <direction_ratios>(0.,0.,-1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#476">
+    <name></name>
+    <direction_ratios>(-1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#477">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#478">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#479">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#480">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#481">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#482">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#483">
+    <name></name>
+    <direction_ratios>(0.,0.,-1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#484">
+    <name></name>
+    <direction_ratios>(-1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#485">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#486">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#487">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#488">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#489">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#490">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#491">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#492">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#493">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#494">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#495">
+    <name></name>
+    <direction_ratios>(0.,0.,-1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#496">
+    <name></name>
+    <direction_ratios>(-1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#497">
+    <name></name>
+    <direction_ratios>(0.,0.,-1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#498">
+    <name></name>
+    <direction_ratios>(-1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#499">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#500">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#501">
+    <name></name>
+    <direction_ratios>(0.,0.,1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#502">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#503">
+    <name></name>
+    <direction_ratios>(0.,-1.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#504">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#505">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#506">
+    <name></name>
+    <direction_ratios>(0.,1.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#507">
+    <name></name>
+    <direction_ratios>(0.,1.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#508">
+    <name></name>
+    <direction_ratios>(-1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#509">
+    <name></name>
+    <direction_ratios>(0.,0.,-1.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#510">
+    <name></name>
+    <direction_ratios>(1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#511">
+    <name></name>
+    <direction_ratios>(-1.,0.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#512">
+    <name></name>
+    <direction_ratios>(0.,-1.,0.)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#513">
+    <name></name>
+    <direction_ratios>(0.577350269189626,-0.577350269189626,0.577350269189626)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#514">
+    <name></name>
+    <direction_ratios>(0.707106761390566,0.707106800982527,3.9591961820129E-8)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#515">
+    <name></name>
+    <direction_ratios>(0.718873086818576,-0.585048618558824,0.375419230954334)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="direction">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#516">
+    <name></name>
+    <direction_ratios>(0.631219079592411,0.775604585828699,-4.45326348019748E-8)</direction_ratios>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#517">
+    <name></name>
+    <coordinates>(0.,0.,0.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#518">
+    <name></name>
+    <coordinates>(-104.268998986549,-21.2005060543038,6.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#519">
+    <name></name>
+    <coordinates>(-104.268998986549,-17.8255060543038,6.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#520">
+    <name></name>
+    <coordinates>(-95.8939989865486,-18.9564315676931,6.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#521">
+    <name></name>
+    <coordinates>(-97.5814989865486,-16.0335958299207,6.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#522">
+    <name></name>
+    <coordinates>(-89.7630734731593,-12.8255060543038,6.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#523">
+    <name></name>
+    <coordinates>(-92.6859092109317,-11.1380060543038,6.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#524">
+    <name></name>
+    <coordinates>(-87.5189989865486,-4.45050605430395,6.00000000000001)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#525">
+    <name></name>
+    <coordinates>(-90.8939989865486,-4.45050605430394,6.00000000000001)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#526">
+    <name></name>
+    <coordinates>(-89.7630734731592,3.92449394569619,6.00000000000001)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#527">
+    <name></name>
+    <coordinates>(-92.6859092109317,2.2369939456962,6.00000000000001)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#528">
+    <name></name>
+    <coordinates>(-95.8939989865485,10.0554194590855,6.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#529">
+    <name></name>
+    <coordinates>(-97.5814989865486,7.13258372131304,6.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#530">
+    <name></name>
+    <coordinates>(-104.268998986549,12.2994939456959,6.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#531">
+    <name></name>
+    <coordinates>(-104.268998986549,8.92449394569594,6.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#532">
+    <name></name>
+    <coordinates>(-112.643998986549,10.0554194590855,6.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#533">
+    <name></name>
+    <coordinates>(-110.956498986549,7.13258372131306,6.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#534">
+    <name></name>
+    <coordinates>(-118.774924499938,3.92449394569621,6.00000000000001)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#535">
+    <name></name>
+    <coordinates>(-115.852088762165,2.2369939456962,6.00000000000001)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#536">
+    <name></name>
+    <coordinates>(-121.018998986549,-4.4505060543042,6.00000000000001)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#537">
+    <name></name>
+    <coordinates>(-117.643998986549,-4.45050605430421,6.00000000000001)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#538">
+    <name></name>
+    <coordinates>(-118.774924499938,-12.8255060543038,6.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#539">
+    <name></name>
+    <coordinates>(-115.852088762165,-11.1380060543038,6.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#540">
+    <name></name>
+    <coordinates>(-112.643998986549,-18.9564315676931,6.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#541">
+    <name></name>
+    <coordinates>(-110.956498986549,-16.0335958299206,6.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#542">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,12.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#543">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,12.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#544">
+    <name></name>
+    <coordinates>(-81.7689989865486,-4.45050605430381,12.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#545">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,12.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#546">
+    <name></name>
+    <coordinates>(-85.8289989865486,-4.45050605430381,12.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#547">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,0.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#548">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,0.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#549">
+    <name></name>
+    <coordinates>(-81.7689989865486,-4.45050605430381,0.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#550">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,0.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#551">
+    <name></name>
+    <coordinates>(-85.8289989865486,-4.45050605430381,0.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#552">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,12.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#553">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,1.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#554">
+    <name></name>
+    <coordinates>(-80.7689989865486,-4.45050605430381,1.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#555">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,11.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#556">
+    <name></name>
+    <coordinates>(-80.7689989865486,-4.45050605430381,11.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#557">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,56.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#558">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,1.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#559">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,12.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#560">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,0.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#561">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,0.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#562">
+    <name></name>
+    <coordinates>(-93.2689989865486,-4.45050605430381,0.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#563">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,0.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#564">
+    <name></name>
+    <coordinates>(-89.2089989865486,-4.45050605430381,0.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#565">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,56.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#566">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,1.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#567">
+    <name></name>
+    <coordinates>(-94.2689989865486,-4.45050605430381,1.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#568">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,11.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#569">
+    <name></name>
+    <coordinates>(-94.2689989865486,-4.45050605430381,11.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#570">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,12.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#571">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,12.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#572">
+    <name></name>
+    <coordinates>(-93.2689989865486,-4.45050605430381,12.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#573">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,12.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#574">
+    <name></name>
+    <coordinates>(-89.2089989865486,-4.45050605430381,12.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#575">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,56.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#576">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,1.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#577">
+    <name></name>
+    <coordinates>(-104.268998986549,-4.45050605430381,11.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#578">
+    <name></name>
+    <coordinates>(-0.104268997192383,-0.00445050621032715,0.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#579">
+    <name></name>
+    <coordinates>(-0.104268997192383,-0.00445050621032715,0.0966096878051758)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#580">
+    <name></name>
+    <coordinates>(-0.128356497658924,-0.0285380066768684,0.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#581">
+    <name></name>
+    <coordinates>(-0.104268997192383,0.,0.006)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#582">
+    <name></name>
+    <coordinates>(-0.104268997192383,-0.0441694564819336,0.006)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#583">
+    <name></name>
+    <coordinates>(-0.115281679541186,-0.0110126823488032,0.006)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#584">
+    <name></name>
+    <coordinates>(0.,-0.00445050621032715,0.006)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#585">
+    <name></name>
+    <coordinates>(0.0441694564819336,-0.00445050621032715,0.006)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#586">
+    <name></name>
+    <coordinates>(-0.0110126823488032,-0.0154631885591303,0.006)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#587">
+    <name></name>
+    <coordinates>(-0.104268997192383,0.,0.006)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#588">
+    <name></name>
+    <coordinates>(-0.104268997192383,0.0441694564819336,0.006)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#589">
+    <name></name>
+    <coordinates>(-0.115281679541186,-0.0110126823488032,0.006)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#590">
+    <name></name>
+    <coordinates>(-0.104268997192383,-0.00445050621032715,0.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#591">
+    <name></name>
+    <coordinates>(-0.104268997192383,-0.00445050621032715,-0.0966096878051758)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#592">
+    <name></name>
+    <coordinates>(-0.128356497658924,-0.0285380066768684,0.)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#593">
+    <name></name>
+    <coordinates>(0.,-0.00445050621032715,0.006)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#594">
+    <name></name>
+    <coordinates>(-0.0441694564819336,-0.00445050621032715,0.006)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#595">
+    <name></name>
+    <coordinates>(-0.0110126823488032,-0.0154631885591303,0.006)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#596">
+    <name></name>
+    <coordinates>(-0.0729961700439453,-0.0357233352661133,0.0372728309631348)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#597">
+    <name></name>
+    <coordinates>(-0.0158261203765869,-0.0928933849334717,0.0944428806304932)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#598">
+    <name></name>
+    <coordinates>(-0.0976849855473739,-0.0604121507695419,0.0372728309631348)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#599">
+    <name></name>
+    <coordinates>(-0.0538760681152344,-0.0454623565673828,0.0323168487548828)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#600">
+    <name></name>
+    <coordinates>(-0.000761150716382532,-0.0886894708089078,0.0600552100980893)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="cartesian_point">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#601">
+    <name></name>
+    <coordinates>(-0.0722980072474671,-0.0638842956996156,0.0323168487548828)</coordinates>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="uncertainty_measure_with_unit">
+  <head>
+    <geometry_link>
+      <name>#607</name>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#604">
+    <value_component>LENGTH_MEASURE</value_component>
+    <unit_component>(0.005)</unit_component>
+    <description>DISTANCE_ACCURACY_VALUE</description>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="product_definition_shape">
+  <head>
+    <geometry_link>
+      <definition>#609</definition>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#608">
+    <name></name>
+    <description></description>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="product_definition">
+  <head>
+    <geometry_link>
+      <formation>#611</formation>
+      <frame_of_reference>#610</frame_of_reference>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#609">
+    <id></id>
+    <description></description>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="product_definition_context">
+  <head>
+    <geometry_link>
+      <frame_of_reference>#617</frame_of_reference>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#610">
+    <name></name>
+    <life_cycle_stage>design</life_cycle_stage>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="product_definition_formation_with_specified_source">
+  <head>
+    <geometry_link>
+      <of_product>#613</of_product>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#611">
+    <id></id>
+    <description></description>
+    <make_or_buy>.NOT_KNOWN.</make_or_buy>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="product_related_product_category">
+  <head>
+    <geometry_link>
+      <products>(#613)</products>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#612">
+    <name></name>
+    <description></description>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="product">
+  <head>
+    <geometry_link>
+      <frame_of_reference>(#615)</frame_of_reference>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#613">
+    <id>zhoucheng204</id>
+    <name>zhoucheng204</name>
+    <description>zhoucheng204</description>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="product_category">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#614">
+    <name></name>
+    <description></description>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="product_context">
+  <head>
+    <geometry_link>
+      <frame_of_reference>#617</frame_of_reference>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#615">
+    <name></name>
+    <discipline_type>mechanical</discipline_type>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="application_protocol_definition">
+  <head>
+    <geometry_link>
+      <application>#617</application>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#616">
+    <status>international standard</status>
+    <application_interpreted_model_schema_name>ap242_managed_model_based_3d_engineering</application_interpreted_model_schema_name>
+    <application_protocol_year>2011</application_protocol_year>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="application_context">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#617">
+    <application>managed model based 3d engineering</application>
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+</Ontology>

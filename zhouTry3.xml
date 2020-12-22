@@ -1,0 +1,44 @@
+<Ontology>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#30,#558,#279</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#107"/>
+    </body>
+    <tail>
+      <action>#30,#558,#279</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL">
+    <head>
+      <geometry_link>
+        <definition>#244,#242,#245,#246,#247,#248,#249,#250,#251,#252,#253,#254,#255,#256,#257,#258,#2894</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#558"/>
+    </body>
+    <tail>
+      <action>#244,#242,#245,#246,#247,#248,#249,#250,#251,#252,#253,#254,#255,#256,#257,#258,#2894</action>
+    </tail>
+  </Semantic>
+  <Semantic type="ANNOTATION_CURVE_OCCURRENCE">
+    <head>
+      <geometry_link>
+        <definition>#1127,#512</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#274"/>
+    </body>
+    <tail>
+      <action>#1127,#512</action>
+    </tail>
+  </Semantic>
+</Ontology>

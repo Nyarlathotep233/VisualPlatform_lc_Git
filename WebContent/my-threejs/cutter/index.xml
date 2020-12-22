@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<step-assembly root="id247">
+<product id="id247" step="part_T1_cutting_tool_assembly_100.stp" name="T1_cutting_tool_assembly_100" shape="id302" children="id0 id0 id0"/>
+<product id="id245" step="part_A1B05-5022100-634572076817353447-1.stp" name="A1B05-5022100-634572076817353447-1" shape="id297"/>
+<product id="id246" step="part_Iscar_mill_assembly.stp" name="Iscar_mill_assembly" shape="id301" children="id0 id0 id0 id0 id0 id0 id0 id0 id0 id0 id0"/>
+<product id="id243" step="part_3105316_-_T490_FLN_D050-05-22-R-13.stp" name="3105316 - T490 FLN D050-05-22-R-13" shape="id288"/>
+<product id="id242" step="part_5605374_-_T490_LNHT_1306PNTR.stp" name="5605374 - T490 LNHT 1306PNTR" shape="id286"/>
+<product id="id241" step="part_7000000_-_SR_34-535-SN.stp" name="7000000 - SR 34-535-SN"/>
+<product id="id244" step="part_retention_knob.stp" name="retention_knob" shape="id295"/>
+<shape id="id302" unit="mm 0.001000">
+    <child ref="id297" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+    <child ref="id295" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 101.6 1"/>
+    <child ref="id301" xform="0 1 0 0 -1 0 0 0 0 0 1 0 -1.73472e-015 -5.42101e-017 -99.95 1"/>
+</shape>
+<shape id="id297" unit="mm 0.001000" shell="id731" annotation="id6248"/>
+<annotation id="id6248" href="annotation_id6248.xml"/>
+<shape id="id295" unit="mm 0.001000" shell="id732"/>
+<shape id="id301" unit="mm 0.001000">
+    <child ref="id288" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+    <child ref="id286" xform="-0.0220279 0.104503 0.994281 0 0.999757 0.00230254 0.0219072 0 0 0.994522 -0.104528 0 -17.3322 2.30902 -32.4982 1"/>
+    <child ref="id286" xform="-0.105599 0.0159648 0.994281 0 0.347966 0.937251 0.0219072 0 -0.931541 0.348289 -0.104528 0 -8.23267 -15.426 -32.4982 1"/>
+    <child ref="id286" xform="-0.0494749 -0.0946486 0.994281 0 -0.772902 0.634147 0.0219072 0 -0.632594 -0.767398 -0.104528 0 11.9053 -12.8063 -32.4982 1"/>
+    <child ref="id286" xform="0.0760479 -0.0749856 0.994281 0 -0.832413 -0.553723 0.0219072 0 0.548913 -0.829318 -0.104528 0 15.7275 7.64083 -32.4982 1"/>
+    <child ref="id286" xform="0.0925814 0.053243 0.994281 0 0.311132 -0.950114 0.0219072 0 0.945847 0.307324 -0.104528 0 -3.15994 17.1974 -32.4982 1"/>
+</shape>
+<shape id="id288" unit="mm 0.001000" shell="id733" annotation="id6247"/>
+<annotation id="id6247" href="annotation_id6247.xml"/>
+<shape id="id286" unit="mm 0.001000" shell="id734" annotation="id6246"/>
+<annotation id="id6246" href="annotation_id6246.xml"/>
+<shell id="id732" size="1544" bbox="-15.075 -17.7769 -40 15.075 17.7769 25.4" href="shell_id732.xml"/>
+<shell id="id731" size="2172" bbox="-48.7227 -46.9856 -136.45 48.6436 46.9856 101.6" href="shell_id731.xml"/>
+<shell id="id733" size="4970" bbox="-23.9776 -23.9754 -38.5 23.5 23.9765 3.80218e-010" href="shell_id733.xml"/>
+<shell id="id734" size="1368" bbox="-6.90723 -6.65 -6.5264 6.90723 1.04663e-016 6.5264" href="shell_id734.xml"/>
+</step-assembly>

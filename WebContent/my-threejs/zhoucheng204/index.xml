@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<step-assembly root="id609">
+<product id="id609" name="zhoucheng204" shape="id373"/>
+<shape id="id373" unit="mm 0.001000">
+    <child ref="id135" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+</shape>
+<shape id="id135" unit="mm 0.001000" shell="id358 id359 id360 id361 id362 id363 id364 id365 id366 id367 id368 id369 id370 id371"/>
+<shell id="id359" size="1150" bbox="-99.2548 -22.3258 2.6453 -92.5332 -15.5871 9.375" href="shell_id359.xml"/>
+<shell id="id358" size="1406" bbox="-107.624 -24.5755 2.6453 -100.914 -17.8255 9.375" href="shell_id358.xml"/>
+<shell id="id360" size="1150" bbox="-93.1324 -16.1863 2.6453 -86.3937 -9.46473 9.375" href="shell_id360.xml"/>
+<shell id="id361" size="1406" bbox="-90.894 -7.80521 2.625 -84.144 -1.0958 9.3547" href="shell_id361.xml"/>
+<shell id="id362" size="1150" bbox="-93.1324 0.563713 2.6453 -86.3937 7.28527 9.375" href="shell_id362.xml"/>
+<shell id="id363" size="1150" bbox="-99.2548 6.68606 2.6453 -92.5332 13.4248 9.375" href="shell_id363.xml"/>
+<shell id="id364" size="1406" bbox="-107.624 8.92449 2.625 -100.914 15.6745 9.3547" href="shell_id364.xml"/>
+<shell id="id365" size="1150" bbox="-116.005 6.68606 2.6453 -109.283 13.4248 9.375" href="shell_id365.xml"/>
+<shell id="id366" size="1150" bbox="-122.144 0.563713 2.6453 -115.406 7.28527 9.375" href="shell_id366.xml"/>
+<shell id="id368" size="1150" bbox="-122.144 -16.1863 2.6453 -115.406 -9.46473 9.375" href="shell_id368.xml"/>
+<shell id="id367" size="1406" bbox="-124.394 -7.80521 2.6453 -117.644 -1.0958 9.375" href="shell_id367.xml"/>
+<shell id="id369" size="1150" bbox="-116.005 -22.3258 2.6453 -109.283 -15.5871 9.375" href="shell_id369.xml"/>
+<shell id="id370" size="384" bbox="-127.769 -27.9505 0 -80.769 19.0495 12" href="shell_id370.xml"/>
+<shell id="id371" size="384" bbox="-119.329 -19.5105 0 -89.209 10.6095 12" href="shell_id371.xml"/>
+</step-assembly>

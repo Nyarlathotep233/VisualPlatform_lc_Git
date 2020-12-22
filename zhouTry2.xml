@@ -1,0 +1,1412 @@
+<Ontology>
+  <Semantic type="PROPERTY_DEFINITION_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#14,#12</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#10"/>
+    </body>
+    <tail>
+      <action>#14,#12</action>
+    </tail>
+  </Semantic>
+  <Semantic type="PROPERTY_DEFINITION_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#15,#13</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#11"/>
+    </body>
+    <tail>
+      <action>#15,#13</action>
+    </tail>
+  </Semantic>
+  <Semantic type="REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#16,#2894</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#12"/>
+    </body>
+    <tail>
+      <action>#16,#2894</action>
+    </tail>
+  </Semantic>
+  <Semantic type="REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#17,#2894</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#13"/>
+    </body>
+    <tail>
+      <action>#17,#2894</action>
+    </tail>
+  </Semantic>
+  <Semantic type="PROPERTY_DEFINITION">
+    <head>
+      <geometry_link>
+        <definition>#2899</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#14"/>
+    </body>
+    <tail>
+      <action>#2899</action>
+    </tail>
+  </Semantic>
+  <Semantic type="PROPERTY_DEFINITION">
+    <head>
+      <geometry_link>
+        <definition>#2899</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#15"/>
+    </body>
+    <tail>
+      <action>#2899</action>
+    </tail>
+  </Semantic>
+  <Semantic type="VALUE_REPRESENTATION_ITEM">
+    <head>
+      <geometry_link>
+        <definition></definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#16"/>
+    </body>
+    <tail>
+      <action></action>
+    </tail>
+  </Semantic>
+  <Semantic type="VALUE_REPRESENTATION_ITEM">
+    <head>
+      <geometry_link>
+        <definition></definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#17"/>
+    </body>
+    <tail>
+      <action></action>
+    </tail>
+  </Semantic>
+  <Semantic type="SHAPE_ASPECT_RELATIONSHIP">
+    <head>
+      <geometry_link>
+        <definition>#20,#24</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#18"/>
+    </body>
+    <tail>
+      <action>#20,#24</action>
+    </tail>
+  </Semantic>
+  <Semantic type="SHAPE_ASPECT_RELATIONSHIP">
+    <head>
+      <geometry_link>
+        <definition>#21,#25</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#19"/>
+    </body>
+    <tail>
+      <action>#21,#25</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DATUM_FEATURE">
+    <head>
+      <geometry_link>
+        <definition>#2899</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#20"/>
+    </body>
+    <tail>
+      <action>#2899</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DATUM_FEATURE">
+    <head>
+      <geometry_link>
+        <definition>#2899</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#21"/>
+    </body>
+    <tail>
+      <action>#2899</action>
+    </tail>
+  </Semantic>
+  <Semantic type="CIRCULAR_RUNOUT_TOLERANCE">
+    <head>
+      <geometry_link>
+        <definition>#29,#215,#27</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#22"/>
+    </body>
+    <tail>
+      <action>#29,#215,#27</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DATUM">
+    <head>
+      <geometry_link>
+        <definition>#2899</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#23"/>
+    </body>
+    <tail>
+      <action>#2899</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DATUM">
+    <head>
+      <geometry_link>
+        <definition>#2899</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#24"/>
+    </body>
+    <tail>
+      <action>#2899</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DATUM">
+    <head>
+      <geometry_link>
+        <definition>#2899</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#25"/>
+    </body>
+    <tail>
+      <action>#2899</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DATUM_REFERENCE_COMPARTMENT">
+    <head>
+      <geometry_link>
+        <definition>#2899,#23</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#26"/>
+    </body>
+    <tail>
+      <action>#2899,#23</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DATUM_SYSTEM">
+    <head>
+      <geometry_link>
+        <definition>#2899,#26</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#27"/>
+    </body>
+    <tail>
+      <action>#2899,#26</action>
+    </tail>
+  </Semantic>
+  <Semantic type="LENGTH_MEASURE_WITH_UNIT">
+    <head>
+      <geometry_link>
+        <definition>#2898</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#28"/>
+    </body>
+    <tail>
+      <action>#2898</action>
+    </tail>
+  </Semantic>
+  <Semantic type="LENGTH_MEASURE_WITH_UNIT">
+    <head>
+      <geometry_link>
+        <definition>#2898</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#29"/>
+    </body>
+    <tail>
+      <action>#2898</action>
+    </tail>
+  </Semantic>
+  <Semantic type="CYLINDRICITY_TOLERANCE">
+    <head>
+      <geometry_link>
+        <definition>#28,#213</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#30"/>
+    </body>
+    <tail>
+      <action>#28,#213</action>
+    </tail>
+  </Semantic>
+  <Semantic type="PLUS_MINUS_TOLERANCE">
+    <head>
+      <geometry_link>
+        <definition>#35,#47</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#31"/>
+    </body>
+    <tail>
+      <action>#35,#47</action>
+    </tail>
+  </Semantic>
+  <Semantic type="PLUS_MINUS_TOLERANCE">
+    <head>
+      <geometry_link>
+        <definition>#36,#48</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#32"/>
+    </body>
+    <tail>
+      <action>#36,#48</action>
+    </tail>
+  </Semantic>
+  <Semantic type="PLUS_MINUS_TOLERANCE">
+    <head>
+      <geometry_link>
+        <definition>#37,#50</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#33"/>
+    </body>
+    <tail>
+      <action>#37,#50</action>
+    </tail>
+  </Semantic>
+  <Semantic type="PLUS_MINUS_TOLERANCE">
+    <head>
+      <geometry_link>
+        <definition>#38,#51</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#34"/>
+    </body>
+    <tail>
+      <action>#38,#51</action>
+    </tail>
+  </Semantic>
+  <Semantic type="TOLERANCE_VALUE">
+    <head>
+      <geometry_link>
+        <definition>#39,#40</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#35"/>
+    </body>
+    <tail>
+      <action>#39,#40</action>
+    </tail>
+  </Semantic>
+  <Semantic type="TOLERANCE_VALUE">
+    <head>
+      <geometry_link>
+        <definition>#41,#42</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#36"/>
+    </body>
+    <tail>
+      <action>#41,#42</action>
+    </tail>
+  </Semantic>
+  <Semantic type="TOLERANCE_VALUE">
+    <head>
+      <geometry_link>
+        <definition>#43,#44</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#37"/>
+    </body>
+    <tail>
+      <action>#43,#44</action>
+    </tail>
+  </Semantic>
+  <Semantic type="TOLERANCE_VALUE">
+    <head>
+      <geometry_link>
+        <definition>#45,#46</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#38"/>
+    </body>
+    <tail>
+      <action>#45,#46</action>
+    </tail>
+  </Semantic>
+  <Semantic type="MEASURE_WITH_UNIT">
+    <head>
+      <geometry_link>
+        <definition>#2898</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#39"/>
+    </body>
+    <tail>
+      <action>#2898</action>
+    </tail>
+  </Semantic>
+  <Semantic type="MEASURE_WITH_UNIT">
+    <head>
+      <geometry_link>
+        <definition>#2898</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#40"/>
+    </body>
+    <tail>
+      <action>#2898</action>
+    </tail>
+  </Semantic>
+  <Semantic type="MEASURE_WITH_UNIT">
+    <head>
+      <geometry_link>
+        <definition>#2898</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#41"/>
+    </body>
+    <tail>
+      <action>#2898</action>
+    </tail>
+  </Semantic>
+  <Semantic type="MEASURE_WITH_UNIT">
+    <head>
+      <geometry_link>
+        <definition>#2898</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#42"/>
+    </body>
+    <tail>
+      <action>#2898</action>
+    </tail>
+  </Semantic>
+  <Semantic type="MEASURE_WITH_UNIT">
+    <head>
+      <geometry_link>
+        <definition>#2898</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#43"/>
+    </body>
+    <tail>
+      <action>#2898</action>
+    </tail>
+  </Semantic>
+  <Semantic type="MEASURE_WITH_UNIT">
+    <head>
+      <geometry_link>
+        <definition>#2898</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#44"/>
+    </body>
+    <tail>
+      <action>#2898</action>
+    </tail>
+  </Semantic>
+  <Semantic type="MEASURE_WITH_UNIT">
+    <head>
+      <geometry_link>
+        <definition>#2898</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#45"/>
+    </body>
+    <tail>
+      <action>#2898</action>
+    </tail>
+  </Semantic>
+  <Semantic type="MEASURE_WITH_UNIT">
+    <head>
+      <geometry_link>
+        <definition>#2898</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#46"/>
+    </body>
+    <tail>
+      <action>#2898</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_SIZE">
+    <head>
+      <geometry_link>
+        <definition>#211</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#47"/>
+    </body>
+    <tail>
+      <action>#211</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_SIZE">
+    <head>
+      <geometry_link>
+        <definition>#219</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#48"/>
+    </body>
+    <tail>
+      <action>#219</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_SIZE">
+    <head>
+      <geometry_link>
+        <definition>#222</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#49"/>
+    </body>
+    <tail>
+      <action>#222</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_SIZE">
+    <head>
+      <geometry_link>
+        <definition>#225</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#50"/>
+    </body>
+    <tail>
+      <action>#225</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_SIZE">
+    <head>
+      <geometry_link>
+        <definition>#228</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#51"/>
+    </body>
+    <tail>
+      <action>#228</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_CHARACTERISTIC_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#62,#67</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#52"/>
+    </body>
+    <tail>
+      <action>#62,#67</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_CHARACTERISTIC_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#63,#68</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#53"/>
+    </body>
+    <tail>
+      <action>#63,#68</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_CHARACTERISTIC_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#64,#69</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#54"/>
+    </body>
+    <tail>
+      <action>#64,#69</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_CHARACTERISTIC_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#47,#70</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#55"/>
+    </body>
+    <tail>
+      <action>#47,#70</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_CHARACTERISTIC_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#48,#71</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#56"/>
+    </body>
+    <tail>
+      <action>#48,#71</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_CHARACTERISTIC_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#49,#72</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#57"/>
+    </body>
+    <tail>
+      <action>#49,#72</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_CHARACTERISTIC_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#50,#73</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#58"/>
+    </body>
+    <tail>
+      <action>#50,#73</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_CHARACTERISTIC_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#51,#74</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#59"/>
+    </body>
+    <tail>
+      <action>#51,#74</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_CHARACTERISTIC_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#65,#75</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#60"/>
+    </body>
+    <tail>
+      <action>#65,#75</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_CHARACTERISTIC_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#66,#76</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#61"/>
+    </body>
+    <tail>
+      <action>#66,#76</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_LOCATION">
+    <head>
+      <geometry_link>
+        <definition>#194,#195</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#62"/>
+    </body>
+    <tail>
+      <action>#194,#195</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_LOCATION">
+    <head>
+      <geometry_link>
+        <definition>#201,#202</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#63"/>
+    </body>
+    <tail>
+      <action>#201,#202</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_LOCATION">
+    <head>
+      <geometry_link>
+        <definition>#207,#208</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#64"/>
+    </body>
+    <tail>
+      <action>#207,#208</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_LOCATION">
+    <head>
+      <geometry_link>
+        <definition>#233,#234</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#65"/>
+    </body>
+    <tail>
+      <action>#233,#234</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DIMENSIONAL_LOCATION">
+    <head>
+      <geometry_link>
+        <definition>#240,#241</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#66"/>
+    </body>
+    <tail>
+      <action>#240,#241</action>
+    </tail>
+  </Semantic>
+  <Semantic type="SHAPE_DIMENSION_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#77,#2894</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#67"/>
+    </body>
+    <tail>
+      <action>#77,#2894</action>
+    </tail>
+  </Semantic>
+  <Semantic type="SHAPE_DIMENSION_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#78,#2894</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#68"/>
+    </body>
+    <tail>
+      <action>#78,#2894</action>
+    </tail>
+  </Semantic>
+  <Semantic type="SHAPE_DIMENSION_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#79,#2894</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#69"/>
+    </body>
+    <tail>
+      <action>#79,#2894</action>
+    </tail>
+  </Semantic>
+  <Semantic type="SHAPE_DIMENSION_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#80,#2894</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#70"/>
+    </body>
+    <tail>
+      <action>#80,#2894</action>
+    </tail>
+  </Semantic>
+  <Semantic type="SHAPE_DIMENSION_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#81,#2894</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#71"/>
+    </body>
+    <tail>
+      <action>#81,#2894</action>
+    </tail>
+  </Semantic>
+  <Semantic type="SHAPE_DIMENSION_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#82,#2894</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#72"/>
+    </body>
+    <tail>
+      <action>#82,#2894</action>
+    </tail>
+  </Semantic>
+  <Semantic type="SHAPE_DIMENSION_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#83,#2894</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#73"/>
+    </body>
+    <tail>
+      <action>#83,#2894</action>
+    </tail>
+  </Semantic>
+  <Semantic type="SHAPE_DIMENSION_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#84,#2894</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#74"/>
+    </body>
+    <tail>
+      <action>#84,#2894</action>
+    </tail>
+  </Semantic>
+  <Semantic type="SHAPE_DIMENSION_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#85,#2894</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#75"/>
+    </body>
+    <tail>
+      <action>#85,#2894</action>
+    </tail>
+  </Semantic>
+  <Semantic type="SHAPE_DIMENSION_REPRESENTATION">
+    <head>
+      <geometry_link>
+        <definition>#86,#2894</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#76"/>
+    </body>
+    <tail>
+      <action>#86,#2894</action>
+    </tail>
+  </Semantic>
+  <Semantic type="SPECIAL_TYPE">
+    <head>
+      <geometry_link>
+        <definition></definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#77"/>
+      <pmi_linear>12.</pmi_linear>
+    </body>
+    <tail>
+      <action></action>
+    </tail>
+  </Semantic>
+  <Semantic type="SPECIAL_TYPE">
+    <head>
+      <geometry_link>
+        <definition></definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#78"/>
+      <pmi_linear>82.</pmi_linear>
+    </body>
+    <tail>
+      <action></action>
+    </tail>
+  </Semantic>
+  <Semantic type="SPECIAL_TYPE">
+    <head>
+      <geometry_link>
+        <definition></definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#79"/>
+      <pmi_linear>76.</pmi_linear>
+    </body>
+    <tail>
+      <action></action>
+    </tail>
+  </Semantic>
+  <Semantic type="SPECIAL_TYPE">
+    <head>
+      <geometry_link>
+        <definition></definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#80"/>
+      <pmi_linear>55.</pmi_linear>
+    </body>
+    <tail>
+      <action></action>
+    </tail>
+  </Semantic>
+  <Semantic type="SPECIAL_TYPE">
+    <head>
+      <geometry_link>
+        <definition></definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#81"/>
+      <pmi_linear>65.</pmi_linear>
+    </body>
+    <tail>
+      <action></action>
+    </tail>
+  </Semantic>
+  <Semantic type="SPECIAL_TYPE">
+    <head>
+      <geometry_link>
+        <definition></definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#82"/>
+      <pmi_linear>62.</pmi_linear>
+    </body>
+    <tail>
+      <action></action>
+    </tail>
+  </Semantic>
+  <Semantic type="SPECIAL_TYPE">
+    <head>
+      <geometry_link>
+        <definition></definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#83"/>
+      <pmi_linear>65.</pmi_linear>
+    </body>
+    <tail>
+      <action></action>
+    </tail>
+  </Semantic>
+  <Semantic type="SPECIAL_TYPE">
+    <head>
+      <geometry_link>
+        <definition></definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#84"/>
+      <pmi_linear>70.</pmi_linear>
+    </body>
+    <tail>
+      <action></action>
+    </tail>
+  </Semantic>
+  <Semantic type="SPECIAL_TYPE">
+    <head>
+      <geometry_link>
+        <definition></definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#85"/>
+      <pmi_linear>36.</pmi_linear>
+    </body>
+    <tail>
+      <action></action>
+    </tail>
+  </Semantic>
+  <Semantic type="SPECIAL_TYPE">
+    <head>
+      <geometry_link>
+        <definition></definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#86"/>
+      <pmi_linear>402.</pmi_linear>
+    </body>
+    <tail>
+      <action></action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#190,#558,#274</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#87"/>
+    </body>
+    <tail>
+      <action>#190,#558,#274</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#191,#558,#274</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#88"/>
+    </body>
+    <tail>
+      <action>#191,#558,#274</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#192,#558,#274</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#89"/>
+    </body>
+    <tail>
+      <action>#192,#558,#274</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#193,#558,#274</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#90"/>
+    </body>
+    <tail>
+      <action>#193,#558,#274</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#62,#558,#274</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#91"/>
+    </body>
+    <tail>
+      <action>#62,#558,#274</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#196,#558,#275</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#92"/>
+    </body>
+    <tail>
+      <action>#196,#558,#275</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#197,#558,#276</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#93"/>
+    </body>
+    <tail>
+      <action>#197,#558,#276</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#198,#558,#276</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#94"/>
+    </body>
+    <tail>
+      <action>#198,#558,#276</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#199,#558,#276</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#95"/>
+    </body>
+    <tail>
+      <action>#199,#558,#276</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#200,#558,#276</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#96"/>
+    </body>
+    <tail>
+      <action>#200,#558,#276</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#63,#558,#276</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#97"/>
+    </body>
+    <tail>
+      <action>#63,#558,#276</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#203,#558,#277</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#98"/>
+    </body>
+    <tail>
+      <action>#203,#558,#277</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#204,#558,#277</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#99"/>
+    </body>
+    <tail>
+      <action>#204,#558,#277</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#205,#558,#277</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#100"/>
+    </body>
+    <tail>
+      <action>#205,#558,#277</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#206,#558,#277</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#101"/>
+    </body>
+    <tail>
+      <action>#206,#558,#277</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#64,#558,#277</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#102"/>
+    </body>
+    <tail>
+      <action>#64,#558,#277</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#209,#558,#278</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#103"/>
+    </body>
+    <tail>
+      <action>#209,#558,#278</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#210,#558,#278</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#104"/>
+    </body>
+    <tail>
+      <action>#210,#558,#278</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#47,#558,#278</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#105"/>
+    </body>
+    <tail>
+      <action>#47,#558,#278</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#212,#558,#279</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#106"/>
+    </body>
+    <tail>
+      <action>#212,#558,#279</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL_ITEM_ASSOCIATION">
+    <head>
+      <geometry_link>
+        <definition>#30,#558,#279</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#107"/>
+    </body>
+    <tail>
+      <action>#30,#558,#279</action>
+    </tail>
+  </Semantic>
+  <Semantic type="DRAUGHTING_MODEL">
+    <head>
+      <geometry_link>
+        <definition>#244,#242,#245,#246,#247,#248,#249,#250,#251,#252,#253,#254,#255,#256,#257,#258,#2894</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#558"/>
+    </body>
+    <tail>
+      <action>#244,#242,#245,#246,#247,#248,#249,#250,#251,#252,#253,#254,#255,#256,#257,#258,#2894</action>
+    </tail>
+  </Semantic>
+  <Semantic type="ANNOTATION_CURVE_OCCURRENCE">
+    <head>
+      <geometry_link>
+        <definition>#1127,#512</definition>
+      </geometry_link>
+      <semantic_link/>
+    </head>
+    <body>
+      <Instance ID="#274"/>
+    </body>
+    <tail>
+      <action>#1127,#512</action>
+    </tail>
+  </Semantic>
+</Ontology>

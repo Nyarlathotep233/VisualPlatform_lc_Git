@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<step-assembly root="id1575">
+<product id="id1575" step="part__jianmodelSimple.stp" name="_jianmodelSimple" shape="id963"/>
+<shape id="id963" unit="mm 0.001000">
+    <child ref="id751" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+    <child ref="id50" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+</shape>
+<shape id="id751" unit="mm 0.001000"/>
+<shape id="id50" unit="mm 0.001000" shell="id748" annotation="id100"/>
+<annotation id="id100" href="annotation_id100.xml"/>
+<shell id="id748" size="1318" bbox="-66 -61 0 134 39 85" href="shell_id748.xml"/>
+</step-assembly>

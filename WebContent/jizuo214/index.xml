@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<step-assembly root="id165">
+<product id="id165" step="part_jizuo.stp" name="jizuo" shape="id173"/>
+<shape id="id173" unit="mm 0.001000">
+    <child ref="id162" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+    <child ref="id10" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+</shape>
+<shape id="id162" unit="mm 0.001000" shell="id177" annotation="id1363"/>
+<annotation id="id1363" href="annotation_id1363.xml"/>
+<shape id="id10" unit="mm 0.001000"/>
+<shell id="id177" size="1056" bbox="-1600 -250 -200 0 250 200" href="shell_id177.xml"/>
+</step-assembly>

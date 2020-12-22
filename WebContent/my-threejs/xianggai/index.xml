@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<step-assembly root="id5660">
+<product id="id5660" step="part_xianggai.stp" name="xianggai" shape="id2431"/>
+<shape id="id2431" unit="mm 0.001000">
+    <child ref="id2262" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+    <child ref="id50" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+</shape>
+<shape id="id2262" unit="mm 0.001000"/>
+<shape id="id50" unit="mm 0.001000" shell="id2259"/>
+<shell id="id2259" size="3858" bbox="-100.896 -453.985 -26 -30 -223.985 78" href="shell_id2259.xml"/>
+</step-assembly>

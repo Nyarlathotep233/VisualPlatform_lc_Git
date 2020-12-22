@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<step-assembly root="id172">
+<product id="id172" step="part__asm1.stp" name="_asm1" shape="id228" children="id0 id0 id0 id0 id0 id0 id0 id0 id0 id0 id0"/>
+<product id="id170" step="part__model1.stp" name="_model1" shape="id226"/>
+<product id="id169" step="part__model2.stp" name="_model2" shape="id225"/>
+<product id="id168" step="part__model3.stp" name="_model3" shape="id224"/>
+<product id="id167" step="part__model4.stp" name="_model4" shape="id223"/>
+<product id="id166" step="part__model5.stp" name="_model5" shape="id222"/>
+<product id="id165" step="part__model6.stp" name="_model6" shape="id221"/>
+<product id="id164" step="part__model7.stp" name="_model7" shape="id220"/>
+<product id="id171" step="part_jizuo.stp" name="jizuo" shape="id227"/>
+<shape id="id228" unit="mm 0.001000">
+    <child ref="id227" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+    <child ref="id226" xform="1 3.47555e-017 3.92481e-017 0 -3.47555e-017 1 -6.59195e-017 0 -3.92481e-017 6.59195e-017 1 0 -1075.55 -4.19913e-014 200 1"/>
+    <child ref="id225" xform="1.3739e-015 -1 1.97215e-031 0 0.965926 1.32709e-015 0.258819 0 -0.258819 -3.55592e-016 0.965926 0 -835.546 -225 110 1"/>
+    <child ref="id224" xform="1 -2.77556e-017 0 0 2.77556e-017 1 0 0 0 0 1 0 -875.546 180.086 275 1"/>
+    <child ref="id223" xform="1 0 0 0 0 1 0 0 0 0 1 0 -1950 -2.27374e-013 -225 1"/>
+    <child ref="id222" xform="1 0 0 0 0 1 0 0 0 0 1 0 -1390 -2.27374e-013 375 1"/>
+    <child ref="id221" xform="1 -5.55112e-017 0 0 5.55112e-017 1 0 0 0 0 1 0 -975.546 -0.82017 350 1"/>
+    <child ref="id220" xform="1 -2.77556e-017 0 0 -2.77556e-017 -1 0 0 0 0 -1 0 -945.546 -22.9142 390 1"/>
+    <child ref="id220" xform="1 -2.77556e-017 0 0 -2.77556e-017 -1 0 0 0 0 -1 0 -968.546 23.0858 395 1"/>
+    <child ref="id220" xform="-1 2.77556e-017 0 0 2.77556e-017 1 0 0 0 0 -1 0 -922.546 -22.9142 390 1"/>
+    <child ref="id220" xform="1 -2.77556e-017 0 0 -2.77556e-017 -1 0 0 0 0 -1 0 -968.546 0.0858427 395 1"/>
+</shape>
+<shape id="id227" unit="mm 0.001000">
+    <child ref="id134" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+</shape>
+<shape id="id134" unit="mm 0.001000" shell="id553" annotation="id393"/>
+<annotation id="id393" href="annotation_id393.xml"/>
+<shape id="id226" unit="mm 0.001000">
+    <child ref="id133" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+</shape>
+<shape id="id133" unit="mm 0.001000" shell="id554"/>
+<shape id="id225" unit="mm 0.001000">
+    <child ref="id132" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+</shape>
+<shape id="id132" unit="mm 0.001000" shell="id555"/>
+<shape id="id224" unit="mm 0.001000">
+    <child ref="id131" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+</shape>
+<shape id="id131" unit="mm 0.001000" shell="id556" annotation="id392"/>
+<annotation id="id392" href="annotation_id392.xml"/>
+<shape id="id223" unit="mm 0.001000">
+    <child ref="id130" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+</shape>
+<shape id="id130" unit="mm 0.001000" shell="id557"/>
+<shape id="id222" unit="mm 0.001000">
+    <child ref="id129" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+</shape>
+<shape id="id129" unit="mm 0.001000" shell="id558" annotation="id391"/>
+<annotation id="id391" href="annotation_id391.xml"/>
+<shape id="id221" unit="mm 0.001000">
+    <child ref="id128" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+</shape>
+<shape id="id128" unit="mm 0.001000" shell="id559"/>
+<shape id="id220" unit="mm 0.001000">
+    <child ref="id127" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+</shape>
+<shape id="id127" unit="mm 0.001000" shell="id560"/>
+<shell id="id555" size="252" bbox="-30 -50 -50 70 50 50" href="shell_id555.xml"/>
+<shell id="id558" size="384" bbox="-120 -80 -80 0 80 80" href="shell_id558.xml"/>
+<shell id="id553" size="348" bbox="-1600 -250 -200 0 250 200" href="shell_id553.xml"/>
+<shell id="id559" size="84" bbox="0 0 0 15 45 15" href="shell_id559.xml"/>
+<shell id="id560" size="452" bbox="-6 -6 0 6 6 30" href="shell_id560.xml"/>
+<shell id="id557" size="596" bbox="0 -300 0 450 300 700" href="shell_id557.xml"/>
+<shell id="id554" size="756" bbox="0 -225 -150 400 175 75" href="shell_id554.xml"/>
+<shell id="id556" size="824" bbox="-100 -300 -25 100 0 110" href="shell_id556.xml"/>
+</step-assembly>

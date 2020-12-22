@@ -1,0 +1,2476 @@
+<owl:Class rdf:ID="action"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#action"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#action"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="chosen_method">
+  <rdfs:domain rdf:resource="#action"/>
+  <rdfs:range rdf:resource="#action_method"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="action_assignment"/>
+<owl:ObjectProperty rdf:ID="assigned_action">
+  <rdfs:domain rdf:resource="#action_assignment"/>
+  <rdfs:range rdf:resource="#action"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="action_directive"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#action_directive"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#action_directive"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="analysis">
+  <rdfs:domain rdf:resource="#action_directive"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="comment">
+  <rdfs:domain rdf:resource="#action_directive"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="requests">
+  <rdfs:domain rdf:resource="#action_directive"/>
+  <rdfs:range rdf:resource="#versioned_action_request"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="requests_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#action_directive"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="requests_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#action_directive"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="requests_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#action_directive"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="action_method"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#action_method"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#action_method"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="consequence">
+  <rdfs:domain rdf:resource="#action_method"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="purpose">
+  <rdfs:domain rdf:resource="#action_method"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="action_request_assignment"/>
+<owl:ObjectProperty rdf:ID="assigned_action_request">
+  <rdfs:domain rdf:resource="#action_request_assignment"/>
+  <rdfs:range rdf:resource="#versioned_action_request"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="action_request_solution"/>
+<owl:ObjectProperty rdf:ID="method">
+  <rdfs:domain rdf:resource="#action_request_solution"/>
+  <rdfs:range rdf:resource="#action_method"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="request">
+  <rdfs:domain rdf:resource="#action_request_solution"/>
+  <rdfs:range rdf:resource="#versioned_action_request"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="action_request_status"/>
+<owl:ObjectProperty rdf:ID="status">
+  <rdfs:domain rdf:resource="#action_request_status"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="assigned_request">
+  <rdfs:domain rdf:resource="#action_request_status"/>
+  <rdfs:range rdf:resource="#versioned_action_request"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="action_status"/>
+<owl:ObjectProperty rdf:ID="status">
+  <rdfs:domain rdf:resource="#action_status"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="assigned_action">
+  <rdfs:domain rdf:resource="#action_status"/>
+  <rdfs:range rdf:resource="#executed_action"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="address"/>
+<owl:Class rdf:ID="advanced_brep_shape_representation"/>
+<owl:Class rdf:ID="advanced_face"/>
+<owl:Class rdf:ID="alternate_product_relationship"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#alternate_product_relationship"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="definition">
+  <rdfs:domain rdf:resource="#alternate_product_relationship"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="alternate">
+  <rdfs:domain rdf:resource="#alternate_product_relationship"/>
+  <rdfs:range rdf:resource="#product"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="base">
+  <rdfs:domain rdf:resource="#alternate_product_relationship"/>
+  <rdfs:range rdf:resource="#product"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="basis">
+  <rdfs:domain rdf:resource="#alternate_product_relationship"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="application_context"/>
+<owl:ObjectProperty rdf:ID="application">
+  <rdfs:domain rdf:resource="#application_context"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="application_context_element"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#application_context_element"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="frame_of_reference">
+  <rdfs:domain rdf:resource="#application_context_element"/>
+  <rdfs:range rdf:resource="#application_context"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="application_protocol_definition"/>
+<owl:ObjectProperty rdf:ID="status">
+  <rdfs:domain rdf:resource="#application_protocol_definition"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="application_interpreted_model_schema_name">
+  <rdfs:domain rdf:resource="#application_protocol_definition"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="application_protocol_year">
+  <rdfs:domain rdf:resource="#application_protocol_definition"/>
+  <rdfs:range rdf:resource="#year_number"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="application">
+  <rdfs:domain rdf:resource="#application_protocol_definition"/>
+  <rdfs:range rdf:resource="#application_context"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="approval"/>
+<owl:ObjectProperty rdf:ID="status">
+  <rdfs:domain rdf:resource="#approval"/>
+  <rdfs:range rdf:resource="#approval_status"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="level">
+  <rdfs:domain rdf:resource="#approval"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="approval_assignment"/>
+<owl:ObjectProperty rdf:ID="assigned_approval">
+  <rdfs:domain rdf:resource="#approval_assignment"/>
+  <rdfs:range rdf:resource="#approval"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="approval_date_time"/>
+<owl:ObjectProperty rdf:ID="date_time">
+  <rdfs:domain rdf:resource="#approval_date_time"/>
+  <rdfs:range rdf:resource="#date_time_select"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="dated_approval">
+  <rdfs:domain rdf:resource="#approval_date_time"/>
+  <rdfs:range rdf:resource="#approval"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="approval_person_organization"/>
+<owl:ObjectProperty rdf:ID="person_organization">
+  <rdfs:domain rdf:resource="#approval_person_organization"/>
+  <rdfs:range rdf:resource="#person_organization_select"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="authorized_approval">
+  <rdfs:domain rdf:resource="#approval_person_organization"/>
+  <rdfs:range rdf:resource="#approval"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="role">
+  <rdfs:domain rdf:resource="#approval_person_organization"/>
+  <rdfs:range rdf:resource="#approval_role"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="approval_relationship"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#approval_relationship"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#approval_relationship"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="relating_approval">
+  <rdfs:domain rdf:resource="#approval_relationship"/>
+  <rdfs:range rdf:resource="#approval"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="related_approval">
+  <rdfs:domain rdf:resource="#approval_relationship"/>
+  <rdfs:range rdf:resource="#approval"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="approval_role"/>
+<owl:ObjectProperty rdf:ID="role">
+  <rdfs:domain rdf:resource="#approval_role"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="approval_status"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#approval_status"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="area_measure_with_unit"/>
+<owl:Class rdf:ID="area_unit"/>
+<owl:Class rdf:ID="assembly_component_usage"/>
+<owl:Class rdf:ID="assembly_component_usage_substitute"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#assembly_component_usage_substitute"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="definition">
+  <rdfs:domain rdf:resource="#assembly_component_usage_substitute"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="base">
+  <rdfs:domain rdf:resource="#assembly_component_usage_substitute"/>
+  <rdfs:range rdf:resource="#assembly_component_usage"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="substitute">
+  <rdfs:domain rdf:resource="#assembly_component_usage_substitute"/>
+  <rdfs:range rdf:resource="#assembly_component_usage"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="axis1_placement"/>
+<owl:Class rdf:ID="axis2_placement_2d"/>
+<owl:Class rdf:ID="axis2_placement_3d"/>
+<owl:Class rdf:ID="b_spline_curve"/>
+<owl:DatatypeProperty rdf:ID="degree">
+  <rdfs:domain rdf:resource="#b_spline_curve"/>
+  <rdfs:range rdf:resource="&xsd;integer"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="control_points_list">
+  <rdfs:domain rdf:resource="#b_spline_curve"/>
+  <rdfs:range rdf:resource="#cartesian_point"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="control_points_list_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_curve"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="control_points_list_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_curve"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="control_points_list_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_curve"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:ObjectProperty rdf:ID="curve_form">
+  <rdfs:domain rdf:resource="#b_spline_curve"/>
+  <rdfs:range rdf:resource="#b_spline_curve_form"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="closed_curve">
+  <rdfs:domain rdf:resource="#b_spline_curve"/>
+  <rdfs:range rdf:resource="&xsd;logical"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="self_intersect">
+  <rdfs:domain rdf:resource="#b_spline_curve"/>
+  <rdfs:range rdf:resource="&xsd;logical"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="b_spline_curve_with_knots"/>
+<owl:DatatypeProperty rdf:ID="knot_multiplicities">
+  <rdfs:domain rdf:resource="#b_spline_curve_with_knots"/>
+  <rdfs:range rdf:resource="&xsd;integer"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="knot_multiplicities_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_curve_with_knots"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="knot_multiplicities_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_curve_with_knots"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="knot_multiplicities_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_curve_with_knots"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="knots">
+  <rdfs:domain rdf:resource="#b_spline_curve_with_knots"/>
+  <rdfs:range rdf:resource="#parameter_value"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="knots_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_curve_with_knots"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="knots_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_curve_with_knots"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="knots_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_curve_with_knots"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:ObjectProperty rdf:ID="knot_spec">
+  <rdfs:domain rdf:resource="#b_spline_curve_with_knots"/>
+  <rdfs:range rdf:resource="#knot_type"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="b_spline_surface"/>
+<owl:DatatypeProperty rdf:ID="u_degree">
+  <rdfs:domain rdf:resource="#b_spline_surface"/>
+  <rdfs:range rdf:resource="&xsd;integer"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="v_degree">
+  <rdfs:domain rdf:resource="#b_spline_surface"/>
+  <rdfs:range rdf:resource="&xsd;integer"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="control_points_list">
+  <rdfs:domain rdf:resource="#b_spline_surface"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="control_points_list_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_surface"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="control_points_list_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_surface"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="control_points_list_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_surface"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:ObjectProperty rdf:ID="surface_form">
+  <rdfs:domain rdf:resource="#b_spline_surface"/>
+  <rdfs:range rdf:resource="#b_spline_surface_form"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="u_closed">
+  <rdfs:domain rdf:resource="#b_spline_surface"/>
+  <rdfs:range rdf:resource="&xsd;logical"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="v_closed">
+  <rdfs:domain rdf:resource="#b_spline_surface"/>
+  <rdfs:range rdf:resource="&xsd;logical"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="self_intersect">
+  <rdfs:domain rdf:resource="#b_spline_surface"/>
+  <rdfs:range rdf:resource="&xsd;logical"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="b_spline_surface_with_knots"/>
+<owl:DatatypeProperty rdf:ID="u_multiplicities">
+  <rdfs:domain rdf:resource="#b_spline_surface_with_knots"/>
+  <rdfs:range rdf:resource="&xsd;integer"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="u_multiplicities_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_surface_with_knots"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="u_multiplicities_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_surface_with_knots"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="u_multiplicities_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_surface_with_knots"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="v_multiplicities">
+  <rdfs:domain rdf:resource="#b_spline_surface_with_knots"/>
+  <rdfs:range rdf:resource="&xsd;integer"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="v_multiplicities_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_surface_with_knots"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="v_multiplicities_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_surface_with_knots"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="v_multiplicities_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_surface_with_knots"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="u_knots">
+  <rdfs:domain rdf:resource="#b_spline_surface_with_knots"/>
+  <rdfs:range rdf:resource="#parameter_value"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="u_knots_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_surface_with_knots"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="u_knots_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_surface_with_knots"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="u_knots_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_surface_with_knots"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="v_knots">
+  <rdfs:domain rdf:resource="#b_spline_surface_with_knots"/>
+  <rdfs:range rdf:resource="#parameter_value"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="v_knots_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_surface_with_knots"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="v_knots_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_surface_with_knots"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="v_knots_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#b_spline_surface_with_knots"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:ObjectProperty rdf:ID="knot_spec">
+  <rdfs:domain rdf:resource="#b_spline_surface_with_knots"/>
+  <rdfs:range rdf:resource="#knot_type"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="bezier_curve"/>
+<owl:Class rdf:ID="bezier_surface"/>
+<owl:Class rdf:ID="boundary_curve"/>
+<owl:Class rdf:ID="bounded_curve"/>
+<owl:Class rdf:ID="bounded_pcurve"/>
+<owl:Class rdf:ID="bounded_surface"/>
+<owl:Class rdf:ID="bounded_surface_curve"/>
+<owl:Class rdf:ID="brep_with_voids"/>
+<owl:DatatypeProperty rdf:ID="voids">
+  <rdfs:domain rdf:resource="#brep_with_voids"/>
+  <rdfs:range rdf:resource="#oriented_closed_shell"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="voids_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#brep_with_voids"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="voids_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#brep_with_voids"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="voids_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#brep_with_voids"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="calendar_date"/>
+<owl:ObjectProperty rdf:ID="day_component">
+  <rdfs:domain rdf:resource="#calendar_date"/>
+  <rdfs:range rdf:resource="#day_in_month_number"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="month_component">
+  <rdfs:domain rdf:resource="#calendar_date"/>
+  <rdfs:range rdf:resource="#month_in_year_number"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="cartesian_point"/>
+<owl:DatatypeProperty rdf:ID="coordinates">
+  <rdfs:domain rdf:resource="#cartesian_point"/>
+  <rdfs:range rdf:resource="#length_measure"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="coordinates_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cartesian_point"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="coordinates_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cartesian_point"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="coordinates_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cartesian_point"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="cartesian_transformation_operator"/>
+<owl:ObjectProperty rdf:ID="local_origin">
+  <rdfs:domain rdf:resource="#cartesian_transformation_operator"/>
+  <rdfs:range rdf:resource="#cartesian_point"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="cartesian_transformation_operator_3d"/>
+<owl:Class rdf:ID="cc_design_approval"/>
+<owl:DatatypeProperty rdf:ID="items">
+  <rdfs:domain rdf:resource="#cc_design_approval"/>
+  <rdfs:range rdf:resource="#approved_item"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_approval"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_approval"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_approval"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="cc_design_certification"/>
+<owl:DatatypeProperty rdf:ID="items">
+  <rdfs:domain rdf:resource="#cc_design_certification"/>
+  <rdfs:range rdf:resource="#certified_item"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_certification"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_certification"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_certification"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="cc_design_contract"/>
+<owl:DatatypeProperty rdf:ID="items">
+  <rdfs:domain rdf:resource="#cc_design_contract"/>
+  <rdfs:range rdf:resource="#contracted_item"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_contract"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_contract"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_contract"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="cc_design_date_and_time_assignment"/>
+<owl:DatatypeProperty rdf:ID="items">
+  <rdfs:domain rdf:resource="#cc_design_date_and_time_assignment"/>
+  <rdfs:range rdf:resource="#date_time_item"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_date_and_time_assignment"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_date_and_time_assignment"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_date_and_time_assignment"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="cc_design_person_and_organization_assignment"/>
+<owl:DatatypeProperty rdf:ID="items">
+  <rdfs:domain rdf:resource="#cc_design_person_and_organization_assignment"/>
+  <rdfs:range rdf:resource="#person_organization_item"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_person_and_organization_assignment"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_person_and_organization_assignment"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_person_and_organization_assignment"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="cc_design_security_classification"/>
+<owl:DatatypeProperty rdf:ID="items">
+  <rdfs:domain rdf:resource="#cc_design_security_classification"/>
+  <rdfs:range rdf:resource="#classified_item"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_security_classification"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_security_classification"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_security_classification"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="cc_design_specification_reference"/>
+<owl:DatatypeProperty rdf:ID="items">
+  <rdfs:domain rdf:resource="#cc_design_specification_reference"/>
+  <rdfs:range rdf:resource="#specified_item"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_specification_reference"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_specification_reference"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#cc_design_specification_reference"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="certification"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#certification"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="purpose">
+  <rdfs:domain rdf:resource="#certification"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="kind">
+  <rdfs:domain rdf:resource="#certification"/>
+  <rdfs:range rdf:resource="#certification_type"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="certification_assignment"/>
+<owl:ObjectProperty rdf:ID="assigned_certification">
+  <rdfs:domain rdf:resource="#certification_assignment"/>
+  <rdfs:range rdf:resource="#certification"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="certification_type"/>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#certification_type"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="change"/>
+<owl:DatatypeProperty rdf:ID="items">
+  <rdfs:domain rdf:resource="#change"/>
+  <rdfs:range rdf:resource="#work_item"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#change"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#change"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#change"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="change_request"/>
+<owl:DatatypeProperty rdf:ID="items">
+  <rdfs:domain rdf:resource="#change_request"/>
+  <rdfs:range rdf:resource="#change_request_item"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#change_request"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#change_request"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#change_request"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="circle"/>
+<owl:ObjectProperty rdf:ID="radius">
+  <rdfs:domain rdf:resource="#circle"/>
+  <rdfs:range rdf:resource="#positive_length_measure"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="closed_shell"/>
+<owl:Class rdf:ID="composite_curve"/>
+<owl:DatatypeProperty rdf:ID="segments">
+  <rdfs:domain rdf:resource="#composite_curve"/>
+  <rdfs:range rdf:resource="#composite_curve_segment"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="segments_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#composite_curve"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="segments_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#composite_curve"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="segments_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#composite_curve"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="self_intersect">
+  <rdfs:domain rdf:resource="#composite_curve"/>
+  <rdfs:range rdf:resource="&xsd;logical"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="composite_curve_on_surface"/>
+<owl:Class rdf:ID="composite_curve_segment"/>
+<owl:ObjectProperty rdf:ID="transition">
+  <rdfs:domain rdf:resource="#composite_curve_segment"/>
+  <rdfs:range rdf:resource="#transition_code"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="same_sense">
+  <rdfs:domain rdf:resource="#composite_curve_segment"/>
+  <rdfs:range rdf:resource="&xsd;boolean"/>
+</owl:DatatypeProperty>
+<owl:ObjectProperty rdf:ID="parent_curve">
+  <rdfs:domain rdf:resource="#composite_curve_segment"/>
+  <rdfs:range rdf:resource="#curve"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="configuration_design"/>
+<owl:ObjectProperty rdf:ID="configuration">
+  <rdfs:domain rdf:resource="#configuration_design"/>
+  <rdfs:range rdf:resource="#configuration_item"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="design">
+  <rdfs:domain rdf:resource="#configuration_design"/>
+  <rdfs:range rdf:resource="#product_definition_formation"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="configuration_effectivity"/>
+<owl:ObjectProperty rdf:ID="configuration">
+  <rdfs:domain rdf:resource="#configuration_effectivity"/>
+  <rdfs:range rdf:resource="#configuration_design"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="configuration_item"/>
+<owl:ObjectProperty rdf:ID="id">
+  <rdfs:domain rdf:resource="#configuration_item"/>
+  <rdfs:range rdf:resource="#identifier"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#configuration_item"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="item_concept">
+  <rdfs:domain rdf:resource="#configuration_item"/>
+  <rdfs:range rdf:resource="#product_concept"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="conic"/>
+<owl:ObjectProperty rdf:ID="position">
+  <rdfs:domain rdf:resource="#conic"/>
+  <rdfs:range rdf:resource="#axis2_placement"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="conical_surface"/>
+<owl:ObjectProperty rdf:ID="radius">
+  <rdfs:domain rdf:resource="#conical_surface"/>
+  <rdfs:range rdf:resource="#length_measure"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="semi_angle">
+  <rdfs:domain rdf:resource="#conical_surface"/>
+  <rdfs:range rdf:resource="#plane_angle_measure"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="connected_edge_set"/>
+<owl:DatatypeProperty rdf:ID="ces_edges">
+  <rdfs:domain rdf:resource="#connected_edge_set"/>
+  <rdfs:range rdf:resource="#edge"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="ces_edges_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#connected_edge_set"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="ces_edges_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#connected_edge_set"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="ces_edges_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#connected_edge_set"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="connected_face_set"/>
+<owl:DatatypeProperty rdf:ID="cfs_faces">
+  <rdfs:domain rdf:resource="#connected_face_set"/>
+  <rdfs:range rdf:resource="#face"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="cfs_faces_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#connected_face_set"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="cfs_faces_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#connected_face_set"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="cfs_faces_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#connected_face_set"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="context_dependent_shape_representation"/>
+<owl:ObjectProperty rdf:ID="representation_relation">
+  <rdfs:domain rdf:resource="#context_dependent_shape_representation"/>
+  <rdfs:range rdf:resource="#shape_representation_relationship"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="represented_product_relation">
+  <rdfs:domain rdf:resource="#context_dependent_shape_representation"/>
+  <rdfs:range rdf:resource="#product_definition_shape"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="context_dependent_unit"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#context_dependent_unit"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="contract"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#contract"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="purpose">
+  <rdfs:domain rdf:resource="#contract"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="kind">
+  <rdfs:domain rdf:resource="#contract"/>
+  <rdfs:range rdf:resource="#contract_type"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="contract_assignment"/>
+<owl:ObjectProperty rdf:ID="assigned_contract">
+  <rdfs:domain rdf:resource="#contract_assignment"/>
+  <rdfs:range rdf:resource="#contract"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="contract_type"/>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#contract_type"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="conversion_based_unit"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#conversion_based_unit"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="conversion_factor">
+  <rdfs:domain rdf:resource="#conversion_based_unit"/>
+  <rdfs:range rdf:resource="#measure_with_unit"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="coordinated_universal_time_offset"/>
+<owl:ObjectProperty rdf:ID="hour_offset">
+  <rdfs:domain rdf:resource="#coordinated_universal_time_offset"/>
+  <rdfs:range rdf:resource="#hour_in_day"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="sense">
+  <rdfs:domain rdf:resource="#coordinated_universal_time_offset"/>
+  <rdfs:range rdf:resource="#ahead_or_behind"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="curve"/>
+<owl:Class rdf:ID="curve_bounded_surface"/>
+<owl:ObjectProperty rdf:ID="basis_surface">
+  <rdfs:domain rdf:resource="#curve_bounded_surface"/>
+  <rdfs:range rdf:resource="#surface"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="boundaries">
+  <rdfs:domain rdf:resource="#curve_bounded_surface"/>
+  <rdfs:range rdf:resource="#boundary_curve"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="boundaries_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#curve_bounded_surface"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="boundaries_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#curve_bounded_surface"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="boundaries_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#curve_bounded_surface"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="implicit_outer">
+  <rdfs:domain rdf:resource="#curve_bounded_surface"/>
+  <rdfs:range rdf:resource="&xsd;boolean"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="curve_replica"/>
+<owl:ObjectProperty rdf:ID="parent_curve">
+  <rdfs:domain rdf:resource="#curve_replica"/>
+  <rdfs:range rdf:resource="#curve"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="transformation">
+  <rdfs:domain rdf:resource="#curve_replica"/>
+  <rdfs:range rdf:resource="#cartesian_transformation_operator"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="cylindrical_surface"/>
+<owl:ObjectProperty rdf:ID="radius">
+  <rdfs:domain rdf:resource="#cylindrical_surface"/>
+  <rdfs:range rdf:resource="#positive_length_measure"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="date"/>
+<owl:ObjectProperty rdf:ID="year_component">
+  <rdfs:domain rdf:resource="#date"/>
+  <rdfs:range rdf:resource="#year_number"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="date_and_time"/>
+<owl:ObjectProperty rdf:ID="date_component">
+  <rdfs:domain rdf:resource="#date_and_time"/>
+  <rdfs:range rdf:resource="#date"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="time_component">
+  <rdfs:domain rdf:resource="#date_and_time"/>
+  <rdfs:range rdf:resource="#local_time"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="date_and_time_assignment"/>
+<owl:ObjectProperty rdf:ID="assigned_date_and_time">
+  <rdfs:domain rdf:resource="#date_and_time_assignment"/>
+  <rdfs:range rdf:resource="#date_and_time"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="role">
+  <rdfs:domain rdf:resource="#date_and_time_assignment"/>
+  <rdfs:range rdf:resource="#date_time_role"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="date_time_role"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#date_time_role"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="dated_effectivity"/>
+<owl:ObjectProperty rdf:ID="effectivity_start_date">
+  <rdfs:domain rdf:resource="#dated_effectivity"/>
+  <rdfs:range rdf:resource="#date_and_time"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="definitional_representation"/>
+<owl:Class rdf:ID="degenerate_pcurve"/>
+<owl:ObjectProperty rdf:ID="basis_surface">
+  <rdfs:domain rdf:resource="#degenerate_pcurve"/>
+  <rdfs:range rdf:resource="#surface"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="reference_to_curve">
+  <rdfs:domain rdf:resource="#degenerate_pcurve"/>
+  <rdfs:range rdf:resource="#definitional_representation"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="degenerate_toroidal_surface"/>
+<owl:DatatypeProperty rdf:ID="select_outer">
+  <rdfs:domain rdf:resource="#degenerate_toroidal_surface"/>
+  <rdfs:range rdf:resource="&xsd;boolean"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="design_context"/>
+<owl:Class rdf:ID="design_make_from_relationship"/>
+<owl:Class rdf:ID="dimensional_exponents"/>
+<owl:DatatypeProperty rdf:ID="length_exponent">
+  <rdfs:domain rdf:resource="#dimensional_exponents"/>
+  <rdfs:range rdf:resource="&xsd;real"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="mass_exponent">
+  <rdfs:domain rdf:resource="#dimensional_exponents"/>
+  <rdfs:range rdf:resource="&xsd;real"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="time_exponent">
+  <rdfs:domain rdf:resource="#dimensional_exponents"/>
+  <rdfs:range rdf:resource="&xsd;real"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="electric_current_exponent">
+  <rdfs:domain rdf:resource="#dimensional_exponents"/>
+  <rdfs:range rdf:resource="&xsd;real"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="thermodynamic_temperature_exponent">
+  <rdfs:domain rdf:resource="#dimensional_exponents"/>
+  <rdfs:range rdf:resource="&xsd;real"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="amount_of_substance_exponent">
+  <rdfs:domain rdf:resource="#dimensional_exponents"/>
+  <rdfs:range rdf:resource="&xsd;real"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="luminous_intensity_exponent">
+  <rdfs:domain rdf:resource="#dimensional_exponents"/>
+  <rdfs:range rdf:resource="&xsd;real"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="directed_action"/>
+<owl:ObjectProperty rdf:ID="directive">
+  <rdfs:domain rdf:resource="#directed_action"/>
+  <rdfs:range rdf:resource="#action_directive"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="direction"/>
+<owl:DatatypeProperty rdf:ID="direction_ratios">
+  <rdfs:domain rdf:resource="#direction"/>
+  <rdfs:range rdf:resource="&xsd;real"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="direction_ratios_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#direction"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="direction_ratios_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#direction"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="direction_ratios_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#direction"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="document"/>
+<owl:ObjectProperty rdf:ID="id">
+  <rdfs:domain rdf:resource="#document"/>
+  <rdfs:range rdf:resource="#identifier"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#document"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#document"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="kind">
+  <rdfs:domain rdf:resource="#document"/>
+  <rdfs:range rdf:resource="#document_type"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="document_reference"/>
+<owl:ObjectProperty rdf:ID="assigned_document">
+  <rdfs:domain rdf:resource="#document_reference"/>
+  <rdfs:range rdf:resource="#document"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="source">
+  <rdfs:domain rdf:resource="#document_reference"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="document_relationship"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#document_relationship"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#document_relationship"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="relating_document">
+  <rdfs:domain rdf:resource="#document_relationship"/>
+  <rdfs:range rdf:resource="#document"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="related_document">
+  <rdfs:domain rdf:resource="#document_relationship"/>
+  <rdfs:range rdf:resource="#document"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="document_type"/>
+<owl:ObjectProperty rdf:ID="product_data_type">
+  <rdfs:domain rdf:resource="#document_type"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="document_usage_constraint"/>
+<owl:ObjectProperty rdf:ID="source">
+  <rdfs:domain rdf:resource="#document_usage_constraint"/>
+  <rdfs:range rdf:resource="#document"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="subject_element">
+  <rdfs:domain rdf:resource="#document_usage_constraint"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="subject_element_value">
+  <rdfs:domain rdf:resource="#document_usage_constraint"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="document_with_class"/>
+<owl:ObjectProperty rdf:ID="class">
+  <rdfs:domain rdf:resource="#document_with_class"/>
+  <rdfs:range rdf:resource="#identifier"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="edge"/>
+<owl:ObjectProperty rdf:ID="edge_start">
+  <rdfs:domain rdf:resource="#edge"/>
+  <rdfs:range rdf:resource="#vertex"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="edge_end">
+  <rdfs:domain rdf:resource="#edge"/>
+  <rdfs:range rdf:resource="#vertex"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="edge_based_wireframe_model"/>
+<owl:DatatypeProperty rdf:ID="ebwm_boundary">
+  <rdfs:domain rdf:resource="#edge_based_wireframe_model"/>
+  <rdfs:range rdf:resource="#connected_edge_set"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="ebwm_boundary_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#edge_based_wireframe_model"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="ebwm_boundary_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#edge_based_wireframe_model"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="ebwm_boundary_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#edge_based_wireframe_model"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="edge_based_wireframe_shape_representation"/>
+<owl:Class rdf:ID="edge_curve"/>
+<owl:ObjectProperty rdf:ID="edge_geometry">
+  <rdfs:domain rdf:resource="#edge_curve"/>
+  <rdfs:range rdf:resource="#curve"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="same_sense">
+  <rdfs:domain rdf:resource="#edge_curve"/>
+  <rdfs:range rdf:resource="&xsd;boolean"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="edge_loop"/>
+<owl:Class rdf:ID="effectivity"/>
+<owl:ObjectProperty rdf:ID="id">
+  <rdfs:domain rdf:resource="#effectivity"/>
+  <rdfs:range rdf:resource="#identifier"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="elementary_surface"/>
+<owl:ObjectProperty rdf:ID="position">
+  <rdfs:domain rdf:resource="#elementary_surface"/>
+  <rdfs:range rdf:resource="#axis2_placement_3d"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="ellipse"/>
+<owl:ObjectProperty rdf:ID="semi_axis_1">
+  <rdfs:domain rdf:resource="#ellipse"/>
+  <rdfs:range rdf:resource="#positive_length_measure"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="semi_axis_2">
+  <rdfs:domain rdf:resource="#ellipse"/>
+  <rdfs:range rdf:resource="#positive_length_measure"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="evaluated_degenerate_pcurve"/>
+<owl:ObjectProperty rdf:ID="equivalent_point">
+  <rdfs:domain rdf:resource="#evaluated_degenerate_pcurve"/>
+  <rdfs:range rdf:resource="#cartesian_point"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="executed_action"/>
+<owl:Class rdf:ID="face"/>
+<owl:DatatypeProperty rdf:ID="bounds">
+  <rdfs:domain rdf:resource="#face"/>
+  <rdfs:range rdf:resource="#face_bound"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="bounds_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#face"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="bounds_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#face"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="bounds_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#face"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="face_bound"/>
+<owl:ObjectProperty rdf:ID="bound">
+  <rdfs:domain rdf:resource="#face_bound"/>
+  <rdfs:range rdf:resource="#loop"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="orientation">
+  <rdfs:domain rdf:resource="#face_bound"/>
+  <rdfs:range rdf:resource="&xsd;boolean"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="face_outer_bound"/>
+<owl:Class rdf:ID="face_surface"/>
+<owl:ObjectProperty rdf:ID="face_geometry">
+  <rdfs:domain rdf:resource="#face_surface"/>
+  <rdfs:range rdf:resource="#surface"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="same_sense">
+  <rdfs:domain rdf:resource="#face_surface"/>
+  <rdfs:range rdf:resource="&xsd;boolean"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="faceted_brep"/>
+<owl:Class rdf:ID="faceted_brep_shape_representation"/>
+<owl:Class rdf:ID="founded_item"/>
+<owl:Class rdf:ID="functionally_defined_transformation"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#functionally_defined_transformation"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#functionally_defined_transformation"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="geometric_curve_set"/>
+<owl:Class rdf:ID="geometric_representation_context"/>
+<owl:ObjectProperty rdf:ID="coordinate_space_dimension">
+  <rdfs:domain rdf:resource="#geometric_representation_context"/>
+  <rdfs:range rdf:resource="#dimension_count"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="geometric_representation_item"/>
+<owl:Class rdf:ID="geometric_set"/>
+<owl:DatatypeProperty rdf:ID="elements">
+  <rdfs:domain rdf:resource="#geometric_set"/>
+  <rdfs:range rdf:resource="#geometric_set_select"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="elements_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#geometric_set"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="elements_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#geometric_set"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="elements_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#geometric_set"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="geometrically_bounded_surface_shape_representation"/>
+<owl:Class rdf:ID="geometrically_bounded_wireframe_shape_representation"/>
+<owl:Class rdf:ID="global_uncertainty_assigned_context"/>
+<owl:DatatypeProperty rdf:ID="uncertainty">
+  <rdfs:domain rdf:resource="#global_uncertainty_assigned_context"/>
+  <rdfs:range rdf:resource="#uncertainty_measure_with_unit"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="uncertainty_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#global_uncertainty_assigned_context"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="uncertainty_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#global_uncertainty_assigned_context"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="uncertainty_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#global_uncertainty_assigned_context"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="global_unit_assigned_context"/>
+<owl:DatatypeProperty rdf:ID="units">
+  <rdfs:domain rdf:resource="#global_unit_assigned_context"/>
+  <rdfs:range rdf:resource="#unit"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="units_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#global_unit_assigned_context"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="units_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#global_unit_assigned_context"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="units_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#global_unit_assigned_context"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="hyperbola"/>
+<owl:ObjectProperty rdf:ID="semi_axis">
+  <rdfs:domain rdf:resource="#hyperbola"/>
+  <rdfs:range rdf:resource="#positive_length_measure"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="semi_imag_axis">
+  <rdfs:domain rdf:resource="#hyperbola"/>
+  <rdfs:range rdf:resource="#positive_length_measure"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="intersection_curve"/>
+<owl:Class rdf:ID="item_defined_transformation"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#item_defined_transformation"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#item_defined_transformation"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="transform_item_1">
+  <rdfs:domain rdf:resource="#item_defined_transformation"/>
+  <rdfs:range rdf:resource="#representation_item"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="transform_item_2">
+  <rdfs:domain rdf:resource="#item_defined_transformation"/>
+  <rdfs:range rdf:resource="#representation_item"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="length_measure_with_unit"/>
+<owl:Class rdf:ID="length_unit"/>
+<owl:Class rdf:ID="line"/>
+<owl:ObjectProperty rdf:ID="pnt">
+  <rdfs:domain rdf:resource="#line"/>
+  <rdfs:range rdf:resource="#cartesian_point"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="dir">
+  <rdfs:domain rdf:resource="#line"/>
+  <rdfs:range rdf:resource="#vector"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="local_time"/>
+<owl:ObjectProperty rdf:ID="hour_component">
+  <rdfs:domain rdf:resource="#local_time"/>
+  <rdfs:range rdf:resource="#hour_in_day"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="zone">
+  <rdfs:domain rdf:resource="#local_time"/>
+  <rdfs:range rdf:resource="#coordinated_universal_time_offset"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="loop"/>
+<owl:Class rdf:ID="lot_effectivity"/>
+<owl:ObjectProperty rdf:ID="effectivity_lot_id">
+  <rdfs:domain rdf:resource="#lot_effectivity"/>
+  <rdfs:range rdf:resource="#identifier"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="effectivity_lot_size">
+  <rdfs:domain rdf:resource="#lot_effectivity"/>
+  <rdfs:range rdf:resource="#measure_with_unit"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="manifold_solid_brep"/>
+<owl:ObjectProperty rdf:ID="outer">
+  <rdfs:domain rdf:resource="#manifold_solid_brep"/>
+  <rdfs:range rdf:resource="#closed_shell"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="manifold_surface_shape_representation"/>
+<owl:Class rdf:ID="mapped_item"/>
+<owl:ObjectProperty rdf:ID="mapping_source">
+  <rdfs:domain rdf:resource="#mapped_item"/>
+  <rdfs:range rdf:resource="#representation_map"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="mapping_target">
+  <rdfs:domain rdf:resource="#mapped_item"/>
+  <rdfs:range rdf:resource="#representation_item"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="mass_measure_with_unit"/>
+<owl:Class rdf:ID="mass_unit"/>
+<owl:Class rdf:ID="measure_with_unit"/>
+<owl:ObjectProperty rdf:ID="value_component">
+  <rdfs:domain rdf:resource="#measure_with_unit"/>
+  <rdfs:range rdf:resource="#measure_value"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="unit_component">
+  <rdfs:domain rdf:resource="#measure_with_unit"/>
+  <rdfs:range rdf:resource="#unit"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="mechanical_context"/>
+<owl:Class rdf:ID="named_unit"/>
+<owl:ObjectProperty rdf:ID="dimensions">
+  <rdfs:domain rdf:resource="#named_unit"/>
+  <rdfs:range rdf:resource="#dimensional_exponents"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="next_assembly_usage_occurrence"/>
+<owl:Class rdf:ID="offset_curve_3d"/>
+<owl:ObjectProperty rdf:ID="basis_curve">
+  <rdfs:domain rdf:resource="#offset_curve_3d"/>
+  <rdfs:range rdf:resource="#curve"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="distance">
+  <rdfs:domain rdf:resource="#offset_curve_3d"/>
+  <rdfs:range rdf:resource="#length_measure"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="self_intersect">
+  <rdfs:domain rdf:resource="#offset_curve_3d"/>
+  <rdfs:range rdf:resource="&xsd;logical"/>
+</owl:DatatypeProperty>
+<owl:ObjectProperty rdf:ID="ref_direction">
+  <rdfs:domain rdf:resource="#offset_curve_3d"/>
+  <rdfs:range rdf:resource="#direction"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="offset_surface"/>
+<owl:ObjectProperty rdf:ID="basis_surface">
+  <rdfs:domain rdf:resource="#offset_surface"/>
+  <rdfs:range rdf:resource="#surface"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="distance">
+  <rdfs:domain rdf:resource="#offset_surface"/>
+  <rdfs:range rdf:resource="#length_measure"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="self_intersect">
+  <rdfs:domain rdf:resource="#offset_surface"/>
+  <rdfs:range rdf:resource="&xsd;logical"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="open_shell"/>
+<owl:Class rdf:ID="ordinal_date"/>
+<owl:ObjectProperty rdf:ID="day_component">
+  <rdfs:domain rdf:resource="#ordinal_date"/>
+  <rdfs:range rdf:resource="#day_in_year_number"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="organization"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#organization"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#organization"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="organization_relationship"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#organization_relationship"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#organization_relationship"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="relating_organization">
+  <rdfs:domain rdf:resource="#organization_relationship"/>
+  <rdfs:range rdf:resource="#organization"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="related_organization">
+  <rdfs:domain rdf:resource="#organization_relationship"/>
+  <rdfs:range rdf:resource="#organization"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="organizational_address"/>
+<owl:DatatypeProperty rdf:ID="organizations">
+  <rdfs:domain rdf:resource="#organizational_address"/>
+  <rdfs:range rdf:resource="#organization"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="organizations_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#organizational_address"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="organizations_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#organizational_address"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="organizations_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#organizational_address"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#organizational_address"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="organizational_project"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#organizational_project"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#organizational_project"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="responsible_organizations">
+  <rdfs:domain rdf:resource="#organizational_project"/>
+  <rdfs:range rdf:resource="#organization"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="responsible_organizations_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#organizational_project"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="responsible_organizations_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#organizational_project"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="responsible_organizations_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#organizational_project"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="oriented_closed_shell"/>
+<owl:ObjectProperty rdf:ID="closed_shell_element">
+  <rdfs:domain rdf:resource="#oriented_closed_shell"/>
+  <rdfs:range rdf:resource="#closed_shell"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="orientation">
+  <rdfs:domain rdf:resource="#oriented_closed_shell"/>
+  <rdfs:range rdf:resource="&xsd;boolean"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="oriented_edge"/>
+<owl:ObjectProperty rdf:ID="edge_element">
+  <rdfs:domain rdf:resource="#oriented_edge"/>
+  <rdfs:range rdf:resource="#edge"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="orientation">
+  <rdfs:domain rdf:resource="#oriented_edge"/>
+  <rdfs:range rdf:resource="&xsd;boolean"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="oriented_face"/>
+<owl:ObjectProperty rdf:ID="face_element">
+  <rdfs:domain rdf:resource="#oriented_face"/>
+  <rdfs:range rdf:resource="#face"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="orientation">
+  <rdfs:domain rdf:resource="#oriented_face"/>
+  <rdfs:range rdf:resource="&xsd;boolean"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="oriented_open_shell"/>
+<owl:ObjectProperty rdf:ID="open_shell_element">
+  <rdfs:domain rdf:resource="#oriented_open_shell"/>
+  <rdfs:range rdf:resource="#open_shell"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="orientation">
+  <rdfs:domain rdf:resource="#oriented_open_shell"/>
+  <rdfs:range rdf:resource="&xsd;boolean"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="oriented_path"/>
+<owl:ObjectProperty rdf:ID="path_element">
+  <rdfs:domain rdf:resource="#oriented_path"/>
+  <rdfs:range rdf:resource="#path"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="orientation">
+  <rdfs:domain rdf:resource="#oriented_path"/>
+  <rdfs:range rdf:resource="&xsd;boolean"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="outer_boundary_curve"/>
+<owl:Class rdf:ID="parabola"/>
+<owl:ObjectProperty rdf:ID="focal_dist">
+  <rdfs:domain rdf:resource="#parabola"/>
+  <rdfs:range rdf:resource="#length_measure"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="parametric_representation_context"/>
+<owl:Class rdf:ID="path"/>
+<owl:DatatypeProperty rdf:ID="edge_list">
+  <rdfs:domain rdf:resource="#path"/>
+  <rdfs:range rdf:resource="#oriented_edge"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="edge_list_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#path"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="edge_list_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#path"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="edge_list_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#path"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="pcurve"/>
+<owl:ObjectProperty rdf:ID="basis_surface">
+  <rdfs:domain rdf:resource="#pcurve"/>
+  <rdfs:range rdf:resource="#surface"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="reference_to_curve">
+  <rdfs:domain rdf:resource="#pcurve"/>
+  <rdfs:range rdf:resource="#definitional_representation"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="person"/>
+<owl:ObjectProperty rdf:ID="id">
+  <rdfs:domain rdf:resource="#person"/>
+  <rdfs:range rdf:resource="#identifier"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="person_and_organization"/>
+<owl:ObjectProperty rdf:ID="the_person">
+  <rdfs:domain rdf:resource="#person_and_organization"/>
+  <rdfs:range rdf:resource="#person"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="the_organization">
+  <rdfs:domain rdf:resource="#person_and_organization"/>
+  <rdfs:range rdf:resource="#organization"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="person_and_organization_assignment"/>
+<owl:ObjectProperty rdf:ID="assigned_person_and_organization">
+  <rdfs:domain rdf:resource="#person_and_organization_assignment"/>
+  <rdfs:range rdf:resource="#person_and_organization"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="role">
+  <rdfs:domain rdf:resource="#person_and_organization_assignment"/>
+  <rdfs:range rdf:resource="#person_and_organization_role"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="person_and_organization_role"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#person_and_organization_role"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="personal_address"/>
+<owl:DatatypeProperty rdf:ID="people">
+  <rdfs:domain rdf:resource="#personal_address"/>
+  <rdfs:range rdf:resource="#person"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="people_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#personal_address"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="people_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#personal_address"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="people_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#personal_address"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#personal_address"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="placement"/>
+<owl:ObjectProperty rdf:ID="location">
+  <rdfs:domain rdf:resource="#placement"/>
+  <rdfs:range rdf:resource="#cartesian_point"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="plane"/>
+<owl:Class rdf:ID="plane_angle_measure_with_unit"/>
+<owl:Class rdf:ID="plane_angle_unit"/>
+<owl:Class rdf:ID="point"/>
+<owl:Class rdf:ID="point_on_curve"/>
+<owl:ObjectProperty rdf:ID="basis_curve">
+  <rdfs:domain rdf:resource="#point_on_curve"/>
+  <rdfs:range rdf:resource="#curve"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="point_parameter">
+  <rdfs:domain rdf:resource="#point_on_curve"/>
+  <rdfs:range rdf:resource="#parameter_value"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="point_on_surface"/>
+<owl:ObjectProperty rdf:ID="basis_surface">
+  <rdfs:domain rdf:resource="#point_on_surface"/>
+  <rdfs:range rdf:resource="#surface"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="point_parameter_u">
+  <rdfs:domain rdf:resource="#point_on_surface"/>
+  <rdfs:range rdf:resource="#parameter_value"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="point_parameter_v">
+  <rdfs:domain rdf:resource="#point_on_surface"/>
+  <rdfs:range rdf:resource="#parameter_value"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="point_replica"/>
+<owl:ObjectProperty rdf:ID="parent_pt">
+  <rdfs:domain rdf:resource="#point_replica"/>
+  <rdfs:range rdf:resource="#point"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="transformation">
+  <rdfs:domain rdf:resource="#point_replica"/>
+  <rdfs:range rdf:resource="#cartesian_transformation_operator"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="poly_loop"/>
+<owl:DatatypeProperty rdf:ID="polygon">
+  <rdfs:domain rdf:resource="#poly_loop"/>
+  <rdfs:range rdf:resource="#cartesian_point"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="polygon_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#poly_loop"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="polygon_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#poly_loop"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="polygon_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#poly_loop"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="polyline"/>
+<owl:DatatypeProperty rdf:ID="points">
+  <rdfs:domain rdf:resource="#polyline"/>
+  <rdfs:range rdf:resource="#cartesian_point"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="points_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#polyline"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="points_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#polyline"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="points_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#polyline"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="product"/>
+<owl:ObjectProperty rdf:ID="id">
+  <rdfs:domain rdf:resource="#product"/>
+  <rdfs:range rdf:resource="#identifier"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#product"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#product"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="frame_of_reference">
+  <rdfs:domain rdf:resource="#product"/>
+  <rdfs:range rdf:resource="#product_context"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="frame_of_reference_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#product"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="frame_of_reference_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#product"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="frame_of_reference_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#product"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="product_category"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#product_category"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="product_category_relationship"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#product_category_relationship"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#product_category_relationship"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="category">
+  <rdfs:domain rdf:resource="#product_category_relationship"/>
+  <rdfs:range rdf:resource="#product_category"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="sub_category">
+  <rdfs:domain rdf:resource="#product_category_relationship"/>
+  <rdfs:range rdf:resource="#product_category"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="product_concept"/>
+<owl:ObjectProperty rdf:ID="id">
+  <rdfs:domain rdf:resource="#product_concept"/>
+  <rdfs:range rdf:resource="#identifier"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#product_concept"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#product_concept"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="market_context">
+  <rdfs:domain rdf:resource="#product_concept"/>
+  <rdfs:range rdf:resource="#product_concept_context"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="product_concept_context"/>
+<owl:ObjectProperty rdf:ID="market_segment_type">
+  <rdfs:domain rdf:resource="#product_concept_context"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="product_context"/>
+<owl:ObjectProperty rdf:ID="discipline_type">
+  <rdfs:domain rdf:resource="#product_context"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="product_definition"/>
+<owl:ObjectProperty rdf:ID="id">
+  <rdfs:domain rdf:resource="#product_definition"/>
+  <rdfs:range rdf:resource="#identifier"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#product_definition"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="formation">
+  <rdfs:domain rdf:resource="#product_definition"/>
+  <rdfs:range rdf:resource="#product_definition_formation"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="frame_of_reference">
+  <rdfs:domain rdf:resource="#product_definition"/>
+  <rdfs:range rdf:resource="#product_definition_context"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="product_definition_context"/>
+<owl:ObjectProperty rdf:ID="life_cycle_stage">
+  <rdfs:domain rdf:resource="#product_definition_context"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="product_definition_effectivity"/>
+<owl:ObjectProperty rdf:ID="usage">
+  <rdfs:domain rdf:resource="#product_definition_effectivity"/>
+  <rdfs:range rdf:resource="#product_definition_relationship"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="product_definition_formation"/>
+<owl:ObjectProperty rdf:ID="id">
+  <rdfs:domain rdf:resource="#product_definition_formation"/>
+  <rdfs:range rdf:resource="#identifier"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#product_definition_formation"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="of_product">
+  <rdfs:domain rdf:resource="#product_definition_formation"/>
+  <rdfs:range rdf:resource="#product"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="product_definition_formation_with_specified_source"/>
+<owl:ObjectProperty rdf:ID="make_or_buy">
+  <rdfs:domain rdf:resource="#product_definition_formation_with_specified_source"/>
+  <rdfs:range rdf:resource="#source"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="product_definition_relationship"/>
+<owl:ObjectProperty rdf:ID="id">
+  <rdfs:domain rdf:resource="#product_definition_relationship"/>
+  <rdfs:range rdf:resource="#identifier"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#product_definition_relationship"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#product_definition_relationship"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="relating_product_definition">
+  <rdfs:domain rdf:resource="#product_definition_relationship"/>
+  <rdfs:range rdf:resource="#product_definition"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="related_product_definition">
+  <rdfs:domain rdf:resource="#product_definition_relationship"/>
+  <rdfs:range rdf:resource="#product_definition"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="product_definition_shape"/>
+<owl:Class rdf:ID="product_definition_usage"/>
+<owl:Class rdf:ID="product_definition_with_associated_documents"/>
+<owl:DatatypeProperty rdf:ID="documentation_ids">
+  <rdfs:domain rdf:resource="#product_definition_with_associated_documents"/>
+  <rdfs:range rdf:resource="#document"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="documentation_ids_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#product_definition_with_associated_documents"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="documentation_ids_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#product_definition_with_associated_documents"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="documentation_ids_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#product_definition_with_associated_documents"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="product_related_product_category"/>
+<owl:DatatypeProperty rdf:ID="products">
+  <rdfs:domain rdf:resource="#product_related_product_category"/>
+  <rdfs:range rdf:resource="#product"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="products_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#product_related_product_category"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="products_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#product_related_product_category"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="products_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#product_related_product_category"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="promissory_usage_occurrence"/>
+<owl:Class rdf:ID="property_definition"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#property_definition"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#property_definition"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="definition">
+  <rdfs:domain rdf:resource="#property_definition"/>
+  <rdfs:range rdf:resource="#characterized_definition"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="property_definition_representation"/>
+<owl:ObjectProperty rdf:ID="definition">
+  <rdfs:domain rdf:resource="#property_definition_representation"/>
+  <rdfs:range rdf:resource="#property_definition"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="used_representation">
+  <rdfs:domain rdf:resource="#property_definition_representation"/>
+  <rdfs:range rdf:resource="#representation"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="quantified_assembly_component_usage"/>
+<owl:ObjectProperty rdf:ID="quantity">
+  <rdfs:domain rdf:resource="#quantified_assembly_component_usage"/>
+  <rdfs:range rdf:resource="#measure_with_unit"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="quasi_uniform_curve"/>
+<owl:Class rdf:ID="quasi_uniform_surface"/>
+<owl:Class rdf:ID="rational_b_spline_curve"/>
+<owl:DatatypeProperty rdf:ID="weights_data">
+  <rdfs:domain rdf:resource="#rational_b_spline_curve"/>
+  <rdfs:range rdf:resource="&xsd;real"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="weights_data_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#rational_b_spline_curve"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="weights_data_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#rational_b_spline_curve"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="weights_data_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#rational_b_spline_curve"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="rational_b_spline_surface"/>
+<owl:DatatypeProperty rdf:ID="weights_data">
+  <rdfs:domain rdf:resource="#rational_b_spline_surface"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="weights_data_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#rational_b_spline_surface"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="weights_data_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#rational_b_spline_surface"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="weights_data_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#rational_b_spline_surface"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="rectangular_composite_surface"/>
+<owl:DatatypeProperty rdf:ID="segments">
+  <rdfs:domain rdf:resource="#rectangular_composite_surface"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="segments_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#rectangular_composite_surface"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="segments_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#rectangular_composite_surface"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="segments_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#rectangular_composite_surface"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="rectangular_trimmed_surface"/>
+<owl:ObjectProperty rdf:ID="basis_surface">
+  <rdfs:domain rdf:resource="#rectangular_trimmed_surface"/>
+  <rdfs:range rdf:resource="#surface"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="u1">
+  <rdfs:domain rdf:resource="#rectangular_trimmed_surface"/>
+  <rdfs:range rdf:resource="#parameter_value"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="u2">
+  <rdfs:domain rdf:resource="#rectangular_trimmed_surface"/>
+  <rdfs:range rdf:resource="#parameter_value"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="v1">
+  <rdfs:domain rdf:resource="#rectangular_trimmed_surface"/>
+  <rdfs:range rdf:resource="#parameter_value"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="v2">
+  <rdfs:domain rdf:resource="#rectangular_trimmed_surface"/>
+  <rdfs:range rdf:resource="#parameter_value"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="usense">
+  <rdfs:domain rdf:resource="#rectangular_trimmed_surface"/>
+  <rdfs:range rdf:resource="&xsd;boolean"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="vsense">
+  <rdfs:domain rdf:resource="#rectangular_trimmed_surface"/>
+  <rdfs:range rdf:resource="&xsd;boolean"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="reparametrised_composite_curve_segment"/>
+<owl:ObjectProperty rdf:ID="param_length">
+  <rdfs:domain rdf:resource="#reparametrised_composite_curve_segment"/>
+  <rdfs:range rdf:resource="#parameter_value"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="representation"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#representation"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="items">
+  <rdfs:domain rdf:resource="#representation"/>
+  <rdfs:range rdf:resource="#representation_item"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#representation"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#representation"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#representation"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:ObjectProperty rdf:ID="context_of_items">
+  <rdfs:domain rdf:resource="#representation"/>
+  <rdfs:range rdf:resource="#representation_context"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="representation_context"/>
+<owl:ObjectProperty rdf:ID="context_identifier">
+  <rdfs:domain rdf:resource="#representation_context"/>
+  <rdfs:range rdf:resource="#identifier"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="context_type">
+  <rdfs:domain rdf:resource="#representation_context"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="representation_item"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#representation_item"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="representation_map"/>
+<owl:ObjectProperty rdf:ID="mapping_origin">
+  <rdfs:domain rdf:resource="#representation_map"/>
+  <rdfs:range rdf:resource="#representation_item"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="mapped_representation">
+  <rdfs:domain rdf:resource="#representation_map"/>
+  <rdfs:range rdf:resource="#representation"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="representation_relationship"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#representation_relationship"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#representation_relationship"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="rep_1">
+  <rdfs:domain rdf:resource="#representation_relationship"/>
+  <rdfs:range rdf:resource="#representation"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="rep_2">
+  <rdfs:domain rdf:resource="#representation_relationship"/>
+  <rdfs:range rdf:resource="#representation"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="representation_relationship_with_transformation"/>
+<owl:ObjectProperty rdf:ID="transformation_operator">
+  <rdfs:domain rdf:resource="#representation_relationship_with_transformation"/>
+  <rdfs:range rdf:resource="#transformation"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="seam_curve"/>
+<owl:Class rdf:ID="security_classification"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#security_classification"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="purpose">
+  <rdfs:domain rdf:resource="#security_classification"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="security_level">
+  <rdfs:domain rdf:resource="#security_classification"/>
+  <rdfs:range rdf:resource="#security_classification_level"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="security_classification_assignment"/>
+<owl:ObjectProperty rdf:ID="assigned_security_classification">
+  <rdfs:domain rdf:resource="#security_classification_assignment"/>
+  <rdfs:range rdf:resource="#security_classification"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="security_classification_level"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#security_classification_level"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="serial_numbered_effectivity"/>
+<owl:ObjectProperty rdf:ID="effectivity_start_id">
+  <rdfs:domain rdf:resource="#serial_numbered_effectivity"/>
+  <rdfs:range rdf:resource="#identifier"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="shape_aspect"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#shape_aspect"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#shape_aspect"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="of_shape">
+  <rdfs:domain rdf:resource="#shape_aspect"/>
+  <rdfs:range rdf:resource="#product_definition_shape"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="product_definitional">
+  <rdfs:domain rdf:resource="#shape_aspect"/>
+  <rdfs:range rdf:resource="&xsd;logical"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="shape_aspect_relationship"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#shape_aspect_relationship"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#shape_aspect_relationship"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="relating_shape_aspect">
+  <rdfs:domain rdf:resource="#shape_aspect_relationship"/>
+  <rdfs:range rdf:resource="#shape_aspect"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="related_shape_aspect">
+  <rdfs:domain rdf:resource="#shape_aspect_relationship"/>
+  <rdfs:range rdf:resource="#shape_aspect"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="shape_definition_representation"/>
+<owl:Class rdf:ID="shape_representation"/>
+<owl:Class rdf:ID="shape_representation_relationship"/>
+<owl:Class rdf:ID="shell_based_surface_model"/>
+<owl:DatatypeProperty rdf:ID="sbsm_boundary">
+  <rdfs:domain rdf:resource="#shell_based_surface_model"/>
+  <rdfs:range rdf:resource="#shell"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="sbsm_boundary_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#shell_based_surface_model"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="sbsm_boundary_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#shell_based_surface_model"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="sbsm_boundary_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#shell_based_surface_model"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="shell_based_wireframe_model"/>
+<owl:DatatypeProperty rdf:ID="sbwm_boundary">
+  <rdfs:domain rdf:resource="#shell_based_wireframe_model"/>
+  <rdfs:range rdf:resource="#shell"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="sbwm_boundary_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#shell_based_wireframe_model"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="sbwm_boundary_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#shell_based_wireframe_model"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="sbwm_boundary_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#shell_based_wireframe_model"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="shell_based_wireframe_shape_representation"/>
+<owl:Class rdf:ID="si_unit"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#si_unit"/>
+  <rdfs:range rdf:resource="#si_unit_name"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="solid_angle_measure_with_unit"/>
+<owl:Class rdf:ID="solid_angle_unit"/>
+<owl:Class rdf:ID="solid_model"/>
+<owl:Class rdf:ID="specified_higher_usage_occurrence"/>
+<owl:ObjectProperty rdf:ID="upper_usage">
+  <rdfs:domain rdf:resource="#specified_higher_usage_occurrence"/>
+  <rdfs:range rdf:resource="#assembly_component_usage"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="next_usage">
+  <rdfs:domain rdf:resource="#specified_higher_usage_occurrence"/>
+  <rdfs:range rdf:resource="#next_assembly_usage_occurrence"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="spherical_surface"/>
+<owl:ObjectProperty rdf:ID="radius">
+  <rdfs:domain rdf:resource="#spherical_surface"/>
+  <rdfs:range rdf:resource="#positive_length_measure"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="start_request"/>
+<owl:DatatypeProperty rdf:ID="items">
+  <rdfs:domain rdf:resource="#start_request"/>
+  <rdfs:range rdf:resource="#start_request_item"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#start_request"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#start_request"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#start_request"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="start_work"/>
+<owl:DatatypeProperty rdf:ID="items">
+  <rdfs:domain rdf:resource="#start_work"/>
+  <rdfs:range rdf:resource="#work_item"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#start_work"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#start_work"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="items_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#start_work"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="supplied_part_relationship"/>
+<owl:Class rdf:ID="surface"/>
+<owl:Class rdf:ID="surface_curve"/>
+<owl:ObjectProperty rdf:ID="curve_3d">
+  <rdfs:domain rdf:resource="#surface_curve"/>
+  <rdfs:range rdf:resource="#curve"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="associated_geometry">
+  <rdfs:domain rdf:resource="#surface_curve"/>
+  <rdfs:range rdf:resource="#pcurve_or_surface"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="associated_geometry_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#surface_curve"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="associated_geometry_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#surface_curve"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="associated_geometry_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#surface_curve"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:ObjectProperty rdf:ID="master_representation">
+  <rdfs:domain rdf:resource="#surface_curve"/>
+  <rdfs:range rdf:resource="#preferred_surface_curve_representation"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="surface_of_linear_extrusion"/>
+<owl:ObjectProperty rdf:ID="extrusion_axis">
+  <rdfs:domain rdf:resource="#surface_of_linear_extrusion"/>
+  <rdfs:range rdf:resource="#vector"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="surface_of_revolution"/>
+<owl:ObjectProperty rdf:ID="axis_position">
+  <rdfs:domain rdf:resource="#surface_of_revolution"/>
+  <rdfs:range rdf:resource="#axis1_placement"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="surface_patch"/>
+<owl:ObjectProperty rdf:ID="parent_surface">
+  <rdfs:domain rdf:resource="#surface_patch"/>
+  <rdfs:range rdf:resource="#bounded_surface"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="u_transition">
+  <rdfs:domain rdf:resource="#surface_patch"/>
+  <rdfs:range rdf:resource="#transition_code"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="v_transition">
+  <rdfs:domain rdf:resource="#surface_patch"/>
+  <rdfs:range rdf:resource="#transition_code"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="u_sense">
+  <rdfs:domain rdf:resource="#surface_patch"/>
+  <rdfs:range rdf:resource="&xsd;boolean"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="v_sense">
+  <rdfs:domain rdf:resource="#surface_patch"/>
+  <rdfs:range rdf:resource="&xsd;boolean"/>
+</owl:DatatypeProperty>
+<owl:Class rdf:ID="surface_replica"/>
+<owl:ObjectProperty rdf:ID="parent_surface">
+  <rdfs:domain rdf:resource="#surface_replica"/>
+  <rdfs:range rdf:resource="#surface"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="transformation">
+  <rdfs:domain rdf:resource="#surface_replica"/>
+  <rdfs:range rdf:resource="#cartesian_transformation_operator_3d"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="swept_surface"/>
+<owl:ObjectProperty rdf:ID="swept_curve">
+  <rdfs:domain rdf:resource="#swept_surface"/>
+  <rdfs:range rdf:resource="#curve"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="topological_representation_item"/>
+<owl:Class rdf:ID="toroidal_surface"/>
+<owl:ObjectProperty rdf:ID="major_radius">
+  <rdfs:domain rdf:resource="#toroidal_surface"/>
+  <rdfs:range rdf:resource="#positive_length_measure"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="minor_radius">
+  <rdfs:domain rdf:resource="#toroidal_surface"/>
+  <rdfs:range rdf:resource="#positive_length_measure"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="trimmed_curve"/>
+<owl:ObjectProperty rdf:ID="basis_curve">
+  <rdfs:domain rdf:resource="#trimmed_curve"/>
+  <rdfs:range rdf:resource="#curve"/>
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:ID="trim_1">
+  <rdfs:domain rdf:resource="#trimmed_curve"/>
+  <rdfs:range rdf:resource="#trimming_select"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="trim_1_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#trimmed_curve"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="trim_1_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#trimmed_curve"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="trim_1_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#trimmed_curve"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="trim_2">
+  <rdfs:domain rdf:resource="#trimmed_curve"/>
+  <rdfs:range rdf:resource="#trimming_select"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="trim_2_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#trimmed_curve"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="trim_2_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#trimmed_curve"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="trim_2_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#trimmed_curve"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="sense_agreement">
+  <rdfs:domain rdf:resource="#trimmed_curve"/>
+  <rdfs:range rdf:resource="&xsd;boolean"/>
+</owl:DatatypeProperty>
+<owl:ObjectProperty rdf:ID="master_representation">
+  <rdfs:domain rdf:resource="#trimmed_curve"/>
+  <rdfs:range rdf:resource="#trimming_preference"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="uncertainty_measure_with_unit"/>
+<owl:ObjectProperty rdf:ID="name">
+  <rdfs:domain rdf:resource="#uncertainty_measure_with_unit"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#uncertainty_measure_with_unit"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="uniform_curve"/>
+<owl:Class rdf:ID="uniform_surface"/>
+<owl:Class rdf:ID="vector"/>
+<owl:ObjectProperty rdf:ID="orientation">
+  <rdfs:domain rdf:resource="#vector"/>
+  <rdfs:range rdf:resource="#direction"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="magnitude">
+  <rdfs:domain rdf:resource="#vector"/>
+  <rdfs:range rdf:resource="#length_measure"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="versioned_action_request"/>
+<owl:ObjectProperty rdf:ID="id">
+  <rdfs:domain rdf:resource="#versioned_action_request"/>
+  <rdfs:range rdf:resource="#identifier"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="version">
+  <rdfs:domain rdf:resource="#versioned_action_request"/>
+  <rdfs:range rdf:resource="#label"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="purpose">
+  <rdfs:domain rdf:resource="#versioned_action_request"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="description">
+  <rdfs:domain rdf:resource="#versioned_action_request"/>
+  <rdfs:range rdf:resource="#text"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="vertex"/>
+<owl:Class rdf:ID="vertex_loop"/>
+<owl:ObjectProperty rdf:ID="loop_vertex">
+  <rdfs:domain rdf:resource="#vertex_loop"/>
+  <rdfs:range rdf:resource="#vertex"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="vertex_point"/>
+<owl:ObjectProperty rdf:ID="vertex_geometry">
+  <rdfs:domain rdf:resource="#vertex_point"/>
+  <rdfs:range rdf:resource="#point"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="vertex_shell"/>
+<owl:ObjectProperty rdf:ID="vertex_shell_extent">
+  <rdfs:domain rdf:resource="#vertex_shell"/>
+  <rdfs:range rdf:resource="#vertex_loop"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="volume_measure_with_unit"/>
+<owl:Class rdf:ID="volume_unit"/>
+<owl:Class rdf:ID="week_of_year_and_day_date"/>
+<owl:ObjectProperty rdf:ID="week_component">
+  <rdfs:domain rdf:resource="#week_of_year_and_day_date"/>
+  <rdfs:range rdf:resource="#week_in_year_number"/>
+</owl:ObjectProperty>
+<owl:Class rdf:ID="wire_shell"/>
+<owl:DatatypeProperty rdf:ID="wire_shell_extent">
+  <rdfs:domain rdf:resource="#wire_shell"/>
+  <rdfs:range rdf:resource="#loop"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="wire_shell_extent_LowBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#wire_shell"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="wire_shell_extent_UpperBound">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#wire_shell"/>
+  <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:ID="wire_shell_extent_index">
+  <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#wire_shell"/>
+  <rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty>

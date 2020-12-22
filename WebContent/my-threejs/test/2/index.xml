@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<step-assembly root="id236">
+<product id="id236" name="1" shape="id124"/>
+<shape id="id124" unit="mm 0.001000">
+    <child ref="id101" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+    <child ref="id50" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+</shape>
+<shape id="id101" unit="mm 0.001000"/>
+<shape id="id50" unit="mm 0.001000" shell="id98"/>
+<shell id="id98" size="256" bbox="-114.411 -287.981 0 -81.4111 -254.981 12" href="shell_id98.xml"/>
+</step-assembly>

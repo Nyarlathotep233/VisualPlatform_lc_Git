@@ -1,0 +1,439 @@
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.nist.gov/OntoSTEP/automotive_design"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    ontologyIRI="http://www.nist.gov/OntoSTEP/automotive_design">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+<Semantic type="part">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+		<block>(#block1,#block2)</block>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#part">
+    </Instance>
+  </body>
+  <tail>
+  </tail>
+</Semantic>
+<Semantic type="block">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    	<attachfeature>(#hole1,#hole2,#hole3,#hole4,#concave1,#concave2,#concave3,#hole7,#hole8,#hole9,#hole10,#hole11,#hole12,#hole13,#hole14,#hole15)</attachfeature>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#block1">
+		<elementface>(#733,#734,#735,#736,#737,#741)</elementface>
+    </Instance>
+  </body>
+  <tail>
+  	<description></description>
+  </tail>
+</Semantic>
+<Semantic type="block">
+  <head>
+    <geometry_link>
+    </geometry_link>
+    <semantic_link>
+    	<attachfeature>(#hole5,#hole6,#hole7,#hole8,#hole9,#hole10,#hole11,#hole12,#hole13,#hole14,#hole15,#compoundfeature)</attachfeature>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#block2">
+		<elementface>(#730,#731,#732,#738,#739,#740)</elementface>
+    </Instance>
+  </body>
+  <tail>
+  	<description></description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>#712</elementface>
+    </geometry_link>
+    <semantic_link>
+		<hasDependence>(#733,#734)</hasDependence>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#hole1">
+		<vector>[0,21,21,21,0,0,21,0,0]</vector>
+		<diameter>3.</diameter>
+		<depth>15.</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>throughhole</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>#713</elementface>
+    </geometry_link>
+    <semantic_link>
+		<hasDependence>(#733,#734)</hasDependence>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#hole2">
+		<vector>[0,21,21,21,0,0,21,0,0]</vector>
+		<diameter>5.</diameter>
+		<depth>12.</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>throughhole</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>#714</elementface>
+    </geometry_link>
+    <semantic_link>
+		<hasDependence>(#733,#734)</hasDependence>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#hole3">
+		<vector>[0,21,21,21,0,0,21,0,0]</vector>
+		<diameter>8.</diameter>
+		<depth>10.</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>throughhole</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>#715</elementface>
+    </geometry_link>
+    <semantic_link>
+		<hasDependence>(#733,#734)</hasDependence>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#hole4">
+		<vector>[0,21,21,21,0,0,21,0,0]</vector>
+		<diameter>3.</diameter>
+		<depth>15.</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>throughhole</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>(#696,#697,#698,#699,#700)</elementface>
+    </geometry_link>
+    <semantic_link>
+		<hasDependence></hasDependence>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#concave1">
+		<vector>[0,10,10,10,10,10,0,10,0,10,10,10,0,10,0,10,0,10,0,10,10,10,0,10,0]</vector>
+		<width>12.8</width>
+		<depth>11</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>groove</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>(#701,#702,#703,#704,#705)</elementface>
+    </geometry_link>
+    <semantic_link>
+		<hasDependence></hasDependence>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#concave2">
+		<vector>[0,10,10,10,10,10,0,10,0,10,10,10,0,10,0,10,0,10,0,10,10,10,0,10,0]</vector>
+		<width>12.8</width>
+		<depth>11</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>groove</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>(#706,#707,#708,#709,#710)</elementface>
+    </geometry_link>
+    <semantic_link>
+		<hasDependence></hasDependence>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#concave3">
+		<vector>[0,10,10,10,10,10,0,10,0,10,10,10,0,10,0,10,0,10,0,10,10,10,0,10,0]</vector>
+		<width>12.8</width>
+		<depth>11</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>groove</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>#711</elementface>
+    </geometry_link>
+    <semantic_link>
+		<hasDependence>(#740,#731)</hasDependence>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#hole5">
+		<vector>[0,21,21,21,0,0,21,0,0]</vector>
+		<diameter>3.</diameter>
+		<depth>15.</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>throughhole</description>
+  </tail> 
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>(#728,#729)</elementface>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#hole6">
+		<vector>[0,10,10,0]</vector>
+		<diameter>8.</diameter>
+		<depth>5.</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>blindhole</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>(#726,#727,#728)</elementface>
+    </geometry_link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#compoundfeature">
+		<vector>[0,10,0,10,0,21,0,21,0]</vector>
+		<diameter>8.</diameter>
+		<depth>5.</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>stairhole</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>#716</elementface>
+    </geometry_link>
+    <semantic_link>
+		<hasDependence>(#738,#733)</hasDependence>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#hole7">
+		<vector>[0,21,21,21,0,0,21,0,0]</vector>
+		<diameter>3.</diameter>
+		<depth>15.</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>throughhole</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>#717</elementface>
+    </geometry_link>
+    <semantic_link>
+		<hasDependence>(#738,#733)</hasDependence>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#hole8">
+		<vector>[0,21,21,21,0,0,21,0,0]</vector>
+		<diameter>3.</diameter>
+		<depth>15.</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>throughhole</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>#718</elementface>
+    </geometry_link>
+    <semantic_link>
+		<hasDependence>(#738,#733)</hasDependence>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#hole9">
+		<vector>[0,21,21,21,0,0,21,0,0]</vector>
+		<diameter>3.</diameter>
+		<depth>15.</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>throughhole</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>#719</elementface>
+    </geometry_link>
+    <semantic_link>
+		<hasDependence>(#738,#733)</hasDependence>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#hole10">
+		<vector>[0,21,21,21,0,0,21,0,0]</vector>
+		<diameter>3.</diameter>
+		<depth>15.</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>throughhole</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>#720</elementface>
+    </geometry_link>
+    <semantic_link>
+		<hasDependence>(#738,#733)</hasDependence>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#hole11">
+		<vector>[0,21,21,21,0,0,21,0,0]</vector>
+		<diameter>3.</diameter>
+		<depth>15.</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>throughhole</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>#721</elementface>
+    </geometry_link>
+    <semantic_link>
+		<hasDependence>(#738,#733)</hasDependence>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#hole12">
+		<vector>[0,21,21,21,0,0,21,0,0]</vector>
+		<diameter>3.</diameter>
+		<depth>15.</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>throughhole</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>#722</elementface>
+    </geometry_link>
+    <semantic_link>
+		<hasDependence>(#738,#733)</hasDependence>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#hole13">
+		<vector>[0,21,21,21,0,0,21,0,0]</vector>
+		<diameter>3.</diameter>
+		<depth>15.</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>throughhole</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>#723</elementface>
+    </geometry_link>
+    <semantic_link>
+		<hasDependence>(#738,#733)</hasDependence>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#hole14">
+		<vector>[0,21,21,21,0,0,21,0,0]</vector>
+		<diameter>3.</diameter>
+		<depth>15.</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>throughhole</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <geometry_link>
+		<elementface>#724</elementface>
+    </geometry_link>
+    <semantic_link>
+		<hasDependence>(#738,#733)</hasDependence>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="#hole15">
+		<vector>[0,21,21,21,0,0,21,0,0]</vector>
+		<diameter>3.</diameter>
+		<depth>15.</depth>
+    </Instance>
+  </body>
+  <tail>
+  	<description>throughhole</description>
+  </tail>
+</Semantic>
+</Ontology>

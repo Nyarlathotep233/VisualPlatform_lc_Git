@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<step-assembly root="id257">
+<product id="id257" name="mengaixiao" shape="id131"/>
+<shape id="id131" unit="mm 0.001000">
+    <child ref="id51" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+</shape>
+<shape id="id51" unit="mm 0.001000" shell="id129"/>
+<shell id="id129" size="380" bbox="-117.282 -55.6104 0 -63.2817 -1.6104 7" href="shell_id129.xml"/>
+</step-assembly>

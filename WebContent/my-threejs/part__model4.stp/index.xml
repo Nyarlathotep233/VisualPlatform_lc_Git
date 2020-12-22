@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<step-assembly root="id110">
+<product id="id110" step="part__model4.stp" name="_model4" shape="id166"/>
+<shape id="id166" unit="mm 0.001000">
+    <child ref="id73" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+</shape>
+<shape id="id73" unit="mm 0.001000" shell="id390"/>
+<shell id="id390" size="596" bbox="0 -300 0 450 300 700" href="shell_id390.xml"/>
+</step-assembly>

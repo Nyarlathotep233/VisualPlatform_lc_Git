@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dashboard</title>
+        <!-- Mobile specific metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Force IE9 to render in normal mode -->
+        <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+        <meta name="author" content="SuggeElson" />
+        <meta name="description" content=""
+        />
+        <meta name="keywords" content=""
+        />
+        <meta name="application-name" content="sprFlat admin template" />
+        <!-- Import google fonts - Heading first/ text second -->
+        <link rel='stylesheet' type='text/css' >
+        <!--[if lt IE 9]>
+
+<![endif]-->
+        <!-- Css files -->
+        <!-- Icons -->
+        <link href="assets/css/icons.css" rel="stylesheet" />
+        <!-- jQueryUI -->
+        <!-- <link href="assets/css/sprflat-theme/jquery.ui.all.css" rel="stylesheet" /> -->
+        <!-- Bootstrap stylesheets (included template modifications) -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <!-- Plugins stylesheets (all plugin custom css) -->
+        <link href="assets/css/plugins.css" rel="stylesheet" />
+        <!-- Main stylesheets (template main css file) -->
+        <link href="assets/css/main.css" rel="stylesheet" />
+        <!-- Custom stylesheets ( Put your own changes here ) -->
+        <!-- <link href="assets/css/custom.css" rel="stylesheet" /> -->
+        <!-- Windows8 touch icon ( http://www.buildmypinnedsite.com/ )-->
+
+        <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/jquery-ui-1.11.0.css">
+        <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
+        <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+        <link rel="stylesheet" href="dist/css/lobipanel.min.css"/>
+
+        <meta name="msapplication-TileColor" content="#3399cc" />
+        <style>
+            .resizable { background-position: center; }
+            .draggable { padding: 0.5em; }
+            .content-wrapper {left: -150px;}
+
+            /* ------------------ list style --------------------*/
+            ol{
+				counter-reset: li;
+				list-style: none;
+				*list-style: decimal;
+				font: 15px 'trebuchet MS', 'lucida sans';
+				padding: 0;
+				margin-bottom: 4em;
+				text-shadow: 0 1px 0 rgba(255,255,255,.5);
+			}
+
+			ol ol{
+				margin: 0 0 0 2em;
+			}
+
+			/* -------------------------------------- */			
+
+			.rounded-list a{
+				position: relative;
+				display: block;
+				padding: .4em .4em .4em 2em;
+				*padding: .4em;
+				margin: .5em 0;
+				background: #ddd;
+				color: #444;
+				text-decoration: none;
+				-moz-border-radius: .3em;
+				-webkit-border-radius: .3em;
+				border-radius: .3em;
+				-webkit-transition: all .3s ease-out;
+				-moz-transition: all .3s ease-out;
+				-ms-transition: all .3s ease-out;
+				-o-transition: all .3s ease-out;
+				transition: all .3s ease-out;	
+			}
+
+			.rounded-list a:hover{
+				background: #eee;
+			}
+
+			.rounded-list a:hover:before{
+				-moz-transform: rotate(360deg);
+			  	-webkit-transform: rotate(360deg);
+			    -moz-transform: rotate(360deg);
+			    -ms-transform: rotate(360deg);
+			    -o-transform: rotate(360deg);
+			    transform: rotate(360deg);	
+			}
+
+			.rounded-list a:before{
+				content: counter(li);
+				counter-increment: li;
+				position: absolute;	
+				left: -1.3em;
+				top: 50%;
+				margin-top: -1.3em;
+				background: #87ceeb;
+				height: 2em;
+				width: 2em;
+				line-height: 2em;
+				border: .3em solid #fff;
+				text-align: center;
+				font-weight: bold;
+				-moz-border-radius: 2em;
+				-webkit-border-radius: 2em;
+				border-radius: 2em;
+				-webkit-transition: all .3s ease-out;
+				-moz-transition: all .3s ease-out;
+				-ms-transition: all .3s ease-out;
+				-o-transition: all .3s ease-out;
+				transition: all .3s ease-out;
+			}
+        </style>
+    </head>
+    <body>
+        <!-- Start #header -->
+        <div id="header">
+            <div class="container-fluid">
+                <div class="navbar">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">
+                            <i class="im-windows8 text-logo-element animated bounceIn"></i><span class="text-logo">可视化</span><span class="text-slogan">平台</span> 
+                        </a>
+                    </div>
+                     <!-- 上方导航菜单左侧 -->
+                    <nav class="top-nav" role="navigation">
+                        <ul class="nav navbar-nav pull-left">
+                        </ul>
+                        <!-- 上方导航菜单右侧 -->
+                        <ul class="nav navbar-nav pull-right">
+                            <li>
+                                <a href="#" id="toggle-header-area"><i class="ec-download"></i></a>
+                            </li>
+                            <li>
+                                    <a href="#" class="full-screen"><i class="fa-fullscreen"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Start #header-area -->
+                <!-- 下拉菜单内容 -->
+                <div id="header-area" class="fadeInDown">
+                    <div class="header-area-inner">
+                        <ul class="list-unstyled list-inline">
+                            <li>
+                                <div class="shortcut-button">
+                                    <a href = "javascript:void(0)" onclick = "document.getElementById('one').style.display='block';">
+                                        <i class="im-pie"></i>
+                                        <span>Earning Stats</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="shortcut-button">
+                                    <a href = "javascript:void(0)" onclick = "document.getElementById('two').style.display='block';">
+                                        <i class="ec-images color-dark"></i>
+                                        <span>Gallery</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="shortcut-button">
+                                    <a href="#">
+                                        <i class="en-light-bulb color-orange"></i>
+                                        <span>Fresh ideas</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="shortcut-button">
+                                    <a href="#">
+                                        <i class="ec-link color-blue"></i>
+                                        <span>Links</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="shortcut-button">
+                                    <a href="#">
+                                        <i class="ec-support color-red"></i>
+                                        <span>Support</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="shortcut-button">
+                                    <a href="#">
+                                        <i class="st-lock color-teal"></i>
+                                        <span>Lock area</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End #header-area -->
+            </div>
+            <!-- Start .header-inner -->
+        </div>
+        <!-- End #header -->
+        <!-- Start #content -->
+        <div id="content">
+            <!-- Start .content-wrapper -->
+            <div class="content-wrapper">
+                    <div class="row">
+                        <!-- Start .row -->
+                        <div class="col-lg-2 col-md-2 sortable-layout" style=" height: 600px; padding-top: 20px;">
+                            <ol class="rounded-list">
+                                <li><a href="">List item</a></li>
+                                <li><a href="">List item</a></li>
+                                <li><a href="">List item</a></li>
+                                <li><a href="">List item</a></li>
+                                <li><a href="">List item</a>
+                                    <ol>
+                                        <li><a href="">List sub item</a></li>
+                                        <li><a href="">List sub item</a></li>
+                    
+                                        <li><a href="">List sub item</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="">List item</a></li>
+                                <li><a href="">List item</a></li>
+                                <li><a href="">List item</a></li>
+                                <li><a href="">List item</a></li>
+                                <li><a href="">List item</a></li>						
+                            </ol>
+                            
+                        </div>
+                        <div class="col-lg-5 col-md-5 sortable-layout" id="one">
+                            <!-- Start col-lg-5 -->
+                            <div class="panel panel-teal">
+                                <!-- Start .panel -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><i class="im-bars"></i> 标题01</h4>
+                                </div>
+                                <div class="panel-body">
+                                    panel-body
+                                </div>
+                                <div class="panel-footer">面板脚注</div>
+                            </div>
+                            <!-- End .panel -->
+                        </div>
+                        <!-- End col-lg-5 -->
+                        <div class="col-lg-5 col-md-5 sortable-layout" id="two">
+                            <!-- Start col-lg-5 -->
+                            <div class="panel panel-primary">
+                                <!-- Start .panel -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><i class="im-bars"></i>标题02</h4>
+                                </div>
+                                <div class="panel-body">
+                                    panel-body
+                                </div>
+                                <div class="panel-footer">面板脚注</div>
+                            </div>
+                            <!-- End .panel -->
+                        </div>
+                        <!-- End col-lg-6 -->
+                    </div>
+                    <!-- End .row -->
+                    <!-- Page End here -->
+                </div>
+                <!-- End .outlet -->
+            </div>
+            <!-- End .content-wrapper -->
+            <div class="clearfix"></div>
+        </div>
+        <!-- End #content --> 
+        <!-- Javascripts -->
+        <!-- Load pace first -->
+        </script>
+        <script src="assets/plugins/core/pace/pace.min.js"></script>
+        <!-- Important javascript libs(put in all pages) -->
+        <script src="assets/js/jquery-1.8.3.min.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="assets/js/libs/jquery-2.1.1.min.js">\x3C/script>')
+        </script>
+        <script src="assets/js/jquery-ui.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="assets/js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')
+        </script>
+        <script>
+            jQuery(document).ready(function($) {
+          $( ".resizable" ).resizable();
+          $( ".draggable" ).draggable({ containment: ".containment-wrapper", scroll: false });
+        } );
+      </script>
+      <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+      <script src="lib/jquery-ui.min.js"></script>
+      <script src="lib/jquery.ui.touch-punch.min.js"></script>
+      <script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
+
+
+      <script src="dist/js/lobipanel.js"></script>
+      <script type="text/javascript">
+          $(function(){
+  $('.panel').lobiPanel({
+      // 配置参数
+      sortable:true,
+          minWidth: 300,
+  minHeight: 300,
+  maxWidth: 600,
+  maxHeight: 480,
+  unpin:{
+      tooltip:'拖动'
+  },
+  reload:{
+      tooltip:'重新加载'
+  },
+  minimize:{
+      tooltip:'最小化'
+  },
+  close:{
+      tooltip:'关闭'
+  },
+  editTitle:{
+      tooltip:'停止编辑'
+  },
+  expand:{
+      tooltip:'全屏'
+  }
+  });
+}); 
+
+      </script>
+        <!--[if lt IE 9]>
+  <script type="text/javascript" src="assets/js/libs/excanvas.min.js"></script>
+  <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script type="text/javascript" src="assets/js/libs/respond.min.js"></script>
+<![endif]-->
+        <!-- Bootstrap plugins -->
+        <script src="assets/js/bootstrap/bootstrap.js"></script>
+        <!-- Core plugins ( not remove ever) -->
+        <!-- Handle responsive view functions -->
+        <script src="assets/js/jRespond.min.js"></script>
+        <!-- Custom scroll for sidebars,tables and etc. -->
+        <script src="assets/plugins/core/slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="assets/plugins/core/slimscroll/jquery.slimscroll.horizontal.min.js"></script>
+        <!-- Resize text area in most pages -->
+        <script src="assets/plugins/forms/autosize/jquery.autosize.js"></script>
+        <!-- Proivde quick search for many widgets -->
+        <script src="assets/plugins/core/quicksearch/jquery.quicksearch.js"></script>
+        <!-- Bootbox confirm dialog for reset postion on panels -->
+        <script src="assets/plugins/ui/bootbox/bootbox.js"></script>
+        <!-- Other plugins ( load only nessesary plugins for every page) -->
+        <script src="assets/plugins/charts/flot/jquery.flot.js"></script>
+        <script src="assets/plugins/charts/flot/jquery.flot.pie.js"></script>
+        <script src="assets/plugins/charts/flot/jquery.flot.resize.js"></script>
+        <script src="assets/plugins/charts/flot/jquery.flot.time.js"></script>
+        <script src="assets/plugins/charts/flot/jquery.flot.growraf.js"></script>
+        <script src="assets/plugins/charts/flot/jquery.flot.categories.js"></script>
+        <script src="assets/plugins/charts/flot/jquery.flot.stack.js"></script>
+        <script src="assets/plugins/charts/flot/jquery.flot.tooltip.min.js"></script>
+        <script src="assets/plugins/charts/flot/date.js"></script>
+        <script src="assets/plugins/charts/sparklines/jquery.sparkline.js"></script>
+        <script src="assets/plugins/charts/pie-chart/jquery.easy-pie-chart.js"></script>
+        <script src="assets/plugins/forms/icheck/jquery.icheck.js"></script>
+        <script src="assets/plugins/forms/tags/jquery.tagsinput.min.js"></script>
+        <script src="assets/plugins/forms/tinymce/tinymce.min.js"></script>
+        <script src="assets/plugins/misc/highlight/highlight.pack.js"></script>
+        <script src="assets/plugins/misc/countTo/jquery.countTo.js"></script>
+        <script src="assets/plugins/ui/weather/skyicons.js"></script>
+        <script src="assets/plugins/ui/notify/jquery.gritter.js"></script>
+        <script src="assets/plugins/ui/calendar/fullcalendar.js"></script>
+        <script src="assets/js/jquery.sprFlat.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/pages/dashboard.js"></script>
+    </body>
+</html>

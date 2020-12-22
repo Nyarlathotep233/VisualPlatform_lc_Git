@@ -1,0 +1,1022 @@
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.nist.gov/OntoSTEP/automotive_design"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    ontologyIRI="http://www.nist.gov/OntoSTEP/automotive_design">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+<Semantic type="design_intent">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<issue>*issue</issue>
+    	<solution>*solution</solution>
+    	<assembly>*assembly</assembly>
+    	<part>*part</part>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*design_intent">
+    </Instance>
+  </body>
+  <tail>
+  	<description>设计意图</description>
+  </tail>
+</Semantic>
+<Semantic type="issue">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<factual>*factual</factual>
+    	<inquiring>*inquiring</inquiring>
+    	<explanatory>*explanatory</explanatory>
+    	<instrumental>*instrumental</instrumental>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*issue">
+    </Instance>
+  </body>
+  <tail>
+  	<description>设计问题</description>
+  </tail>
+</Semantic>
+<Semantic type="solution">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<experience>*experience</experience>
+    	<manufacture>*manufacture</manufacture>
+    	<physical>*physical</physical>
+    	<recycling>*recycling</recycling>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*solution">
+    </Instance>
+  </body>
+  <tail>
+  	<description>解决方案</description>
+  </tail>
+</Semantic>
+<Semantic type="assembly">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<part>*part</part>
+    	<constraint>*constraint</constraint>
+    	<construction_history>*construction_history</construction_history>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*assembly">
+    </Instance>
+  </body>
+  <tail>
+  	<description>装配体</description>
+  </tail>
+</Semantic>
+<Semantic type="part">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<construction_history>*construction_history</construction_history>
+    	<parameter>*parameter</parameter>
+    	<constraint>*constraint</constraint>
+    	<feature>*feature</feature>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*part">
+    </Instance>
+  </body>
+  <tail>
+  	<description>零件</description>
+  </tail>
+</Semantic>
+<Semantic type="factual">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*factual">
+    </Instance>
+  </body>
+  <tail>
+  	<description>事实性问题</description>
+  </tail>
+</Semantic>
+<Semantic type="inquiring">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<function>*function</function>
+    	<performance>*performance</performance>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*inquiring">
+    </Instance>
+  </body>
+  <tail>
+  	<description>查询性问题</description>
+  </tail>
+</Semantic>
+<Semantic type="explanatory">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*explanatory">
+    </Instance>
+  </body>
+  <tail>
+  	<description>解释性问题</description>
+  </tail>
+</Semantic>
+<Semantic type="instrumental">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<transform_tool>*transform_tool</transform_tool>
+    	<viewer_tool>*viewer_tool</viewer_tool>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*instrumental">
+    </Instance>
+  </body>
+  <tail>
+  	<description>工具性问题</description>
+  </tail>
+</Semantic>
+<Semantic type="function">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*function">
+    </Instance>
+  </body>
+  <tail>
+  	<description>功能</description>
+  </tail>
+</Semantic>
+<Semantic type="performance">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<reliability>*reliability</reliability>
+    	<efficiency>*efficiency</efficiency>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*performance">
+    </Instance>
+  </body>
+  <tail>
+  	<description>性能</description>
+  </tail>
+</Semantic>
+<Semantic type="reliability">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*reliability">
+    </Instance>
+  </body>
+  <tail>
+  	<description>可靠性</description>
+  </tail>
+</Semantic>
+<Semantic type="efficiency">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*efficiency">
+    </Instance>
+  </body>
+  <tail>
+  	<description>效率</description>
+  </tail>
+</Semantic>
+<Semantic type="transform_tool">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*transform_tool">
+    </Instance>
+  </body>
+  <tail>
+  	<description>转换工具</description>
+  </tail>
+</Semantic>
+<Semantic type="viewer_tool">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*viewer_tool">
+    </Instance>
+  </body>
+  <tail>
+  	<description>可视工具</description>
+  </tail>
+</Semantic>
+<Semantic type="experience">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*experience">
+    </Instance>
+  </body>
+  <tail>
+  	<description>经验</description>
+  </tail>
+</Semantic>
+<Semantic type="manufacture">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*manufacture">
+    </Instance>
+  </body>
+  <tail>
+  	<description>制造</description>
+  </tail>
+</Semantic>
+<Semantic type="physical">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<structure>*structure</structure>
+    	<material>*material</material>
+    	<electric>*electric</electric>
+    	<hydraulic>*hydraulic</hydraulic>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*physical">
+    </Instance>
+  </body>
+  <tail>
+  	<description>物理</description>
+  </tail>
+</Semantic>
+<Semantic type="recycling">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*recycling">
+    </Instance>
+  </body>
+  <tail>
+  	<description>回收</description>
+  </tail>
+</Semantic>
+<Semantic type="structure">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*structure">
+    </Instance>
+  </body>
+  <tail>
+  	<description>结构</description>
+  </tail>
+</Semantic>
+<Semantic type="material">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*material">
+    </Instance>
+  </body>
+  <tail>
+  	<description>材料</description>
+  </tail>
+</Semantic>
+<Semantic type="electric">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*electric">
+    </Instance>
+  </body>
+  <tail>
+  	<description>电气</description>
+  </tail>
+</Semantic>
+<Semantic type="hydraulic">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*hydraulic">
+    </Instance>
+  </body>
+  <tail>
+  	<description>液压</description>
+  </tail>
+</Semantic>
+<Semantic type="constraint">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<explicit_constraint>*explicit_constraint</explicit_constraint>
+    	<implicit_constraint>*implicit_constraint</implicit_constraint>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*constraint">
+    </Instance>
+  </body>
+  <tail>
+  	<description>约束</description>
+  </tail>
+</Semantic>
+<Semantic type="construction_history">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<design_procedure>*design_procedure</design_procedure>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*construction_history">
+    </Instance>
+  </body>
+  <tail>
+  	<description>构造历史</description>
+  </tail>
+</Semantic>
+<Semantic type="design_procedure">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*design_procedure">
+    </Instance>
+  </body>
+  <tail>
+  	<description>设计过程</description>
+  </tail>
+</Semantic>
+<Semantic type="parameter">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<explicit_parameter>*explicit_parameter</explicit_parameter>
+    	<implicit_parameter>*implicit_parameter</implicit_parameter>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*parameter">
+    </Instance>
+  </body>
+  <tail>
+  	<description>参数</description>
+  </tail>
+</Semantic>
+<Semantic type="explicit_parameter">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<diameter>*diameter</diameter>
+    	<width>*width</width>
+    	<height>*height</height>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*explicit_parameter">
+    </Instance>
+  </body>
+  <tail>
+  	<description>显式参数</description>
+  </tail>
+</Semantic>
+<Semantic type="implicit_parameter">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*implicit_parameter">
+    </Instance>
+  </body>
+  <tail>
+  	<description>隐式参数</description>
+  </tail>
+</Semantic>
+<Semantic type="diameter">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*diameter">
+    </Instance>
+  </body>
+  <tail>
+  	<description>直径</description>
+  </tail>
+</Semantic>
+<Semantic type="width">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*width">
+    </Instance>
+  </body>
+  <tail>
+  	<description>长度</description>
+  </tail>
+</Semantic>
+<Semantic type="height">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*height">
+    </Instance>
+  </body>
+  <tail>
+  	<description>高度</description>
+  </tail>
+</Semantic>
+<Semantic type="explicit_constraint">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<algebraic_constraint>*algebraic_constraint</algebraic_constraint>
+    	<logical_constraint>*logical_constraint</logical_constraint>
+    	<dimensional_constraint>*dimensional_constraint</dimensional_constraint>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*explicit_constraint">
+    </Instance>
+  </body>
+  <tail>
+  	<description>显式约束</description>
+  </tail>
+</Semantic>
+<Semantic type="implicit_constraint">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*implicit_constraint">
+    </Instance>
+  </body>
+  <tail>
+  	<description>隐式约束</description>
+  </tail>
+</Semantic>
+<Semantic type="algebraic_constraint">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<geometric_constraint>*geometric_constraint</geometric_constraint>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*algebraic_constraint">
+    </Instance>
+  </body>
+  <tail>
+  	<description>代数约束</description>
+  </tail>
+</Semantic>
+<Semantic type="logical_constraint">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*logical_constraint">
+    </Instance>
+  </body>
+  <tail>
+  	<description>逻辑约束</description>
+  </tail>
+</Semantic>
+<Semantic type="dimensional_constraint">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<geometric_constraint>*parallel_constraint</geometric_constraint>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*dimensional_constraint">
+    </Instance>
+  </body>
+  <tail>
+  	<description>尺寸约束</description>
+  </tail>
+</Semantic>
+<Semantic type="geometric_constraint">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*geometric_constraint">
+    </Instance>
+  </body>
+  <tail>
+  	<description>几何约束</description>
+  </tail>
+</Semantic>
+<Semantic type="parallel_constraint">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*parallel_constraint">
+    </Instance>
+  </body>
+  <tail>
+  	<description>平行约束</description>
+  </tail>
+</Semantic>
+<Semantic type="feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<reference_feature>*reference_feature</reference_feature>
+    	<sketch_feature>*sketch_feature</sketch_feature>
+    	<base_sketch_feature>*base_sketch_feature</base_sketch_feature>
+    	<local_feature>*local_feature</local_feature>
+    	<combine_feature>*combine_feature</combine_feature>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>特征</description>
+  </tail>
+</Semantic>
+<Semantic type="reference_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<reference_plane>*reference_plane</reference_plane>
+    	<reference_line>*reference_line</reference_line>
+    	<reference_point>*reference_point</reference_point>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*reference_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>参考特征</description>
+  </tail>
+</Semantic>
+<Semantic type="sketch_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*sketch_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>草图特征</description>
+  </tail>
+</Semantic>
+<Semantic type="base_sketch_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<extrude_feature>*extrude_feature</extrude_feature>
+    	<rotate_feature>*rotate_feature</rotate_feature>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*base_sketch_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>基于草图的特征</description>
+  </tail>
+</Semantic>
+<Semantic type="local_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<convex_feature>*convex_feature</convex_feature>
+    	<hole_feature>*hole_feature</hole_feature>
+    	<step_feature>*step_feature</step_feature>
+    	<slot_feature>*slot_feature</slot_feature>
+    	<rounded_feature>*rounded_feature</rounded_feature>
+    	<chamfering_feature>*chamfering_feature</chamfering_feature>
+    	<cut_corner_feature>*cut_corner_feature</cut_corner_feature>
+    	<thin_shell_feature>*thin_shell_feature</thin_shell_feature>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*local_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>局部特征</description>
+  </tail>
+</Semantic>
+<Semantic type="combine_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<mirror_feature>*mirror_feature</mirror_feature>
+    	<array_feature>*array_feature</array_feature>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*combine_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>组合特征</description>
+  </tail>
+</Semantic>
+<Semantic type="reference_plane">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*reference_plane">
+    </Instance>
+  </body>
+  <tail>
+  	<description>参考面</description>
+  </tail>
+</Semantic>
+<Semantic type="reference_line">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*reference_line">
+    </Instance>
+  </body>
+  <tail>
+  	<description>参考线</description>
+  </tail>
+</Semantic>
+<Semantic type="reference_point">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*reference_point">
+    </Instance>
+  </body>
+  <tail>
+  	<description>参考点</description>
+  </tail>
+</Semantic>
+<Semantic type="extrude_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*extrude_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>拉伸特征</description>
+  </tail>
+</Semantic>
+<Semantic type="rotate_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*rotate_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>旋转特征</description>
+  </tail>
+</Semantic>
+<Semantic type="convex_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<cylindrical_convex_feature>*cylindrical_convex_feature</cylindrical_convex_feature>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*convex_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>凸台特征</description>
+  </tail>
+</Semantic>
+<Semantic type="cylindrical_convex_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*cylindrical_convex_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>圆柱凸台特征</description>
+  </tail>
+</Semantic>
+<Semantic type="hole_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    	<blind_hole_feature>*blind_hole_feature</blind_hole_feature>
+    	<through_hole_feature>*through_hole_feature</through_hole_feature>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*hole_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>孔特征</description>
+  </tail>
+</Semantic>
+<Semantic type="blind_hole_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*blind_hole_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>盲孔特征</description>
+  </tail>
+</Semantic>
+<Semantic type="through_hole_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*through_hole_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>通孔特征</description>
+  </tail>
+</Semantic>
+<Semantic type="step_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*step_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>台阶特征</description>
+  </tail>
+</Semantic>
+<Semantic type="slot_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*slot_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>槽特征</description>
+  </tail>
+</Semantic>
+<Semantic type="rounded_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*rounded_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>圆角特征</description>
+  </tail>
+</Semantic>
+<Semantic type="chamfering_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*chamfering_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>倒角特征</description>
+  </tail>
+</Semantic>
+<Semantic type="cut_corner_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*cut_corner_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>切角特征</description>
+  </tail>
+</Semantic>
+<Semantic type="thin_shell_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*thin_shell_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>薄壳特征</description>
+  </tail>
+</Semantic>
+<Semantic type="mirror_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*mirror_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>镜像特征</description>
+  </tail>
+</Semantic>
+<Semantic type="array_feature">
+  <head>
+    <Geometry-link>
+    </Geometry-link>
+    <semantic_link>
+    </semantic_link>
+  </head>
+  <body>
+    <Instance rdf:ID="*array_feature">
+    </Instance>
+  </body>
+  <tail>
+  	<description>阵列特征</description>
+  </tail>
+</Semantic>
+</Ontology>

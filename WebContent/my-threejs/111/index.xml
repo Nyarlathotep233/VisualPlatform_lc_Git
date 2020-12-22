@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<step-assembly root="id16">
+<product id="id16" name="zhou" shape="id24"/>
+<shape id="id24" unit="mm 0.001000">
+    <child ref="id13" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+    <child ref="id10" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+</shape>
+<shape id="id13" unit="mm 0.001000" shell="id32" annotation="id100"/>
+<annotation id="id100" href="annotation_id100.xml"/>
+<shape id="id10" unit="mm 0.001000"/>
+<shell id="id32" size="938" bbox="-41 -201 -41 41 201 41" href="shell_id32.xml"/>
+</step-assembly>

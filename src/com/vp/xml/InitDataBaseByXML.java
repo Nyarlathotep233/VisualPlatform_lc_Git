@@ -1,0 +1,72 @@
+package com.vp.xml;
+
+import java.util.List;
+
+import com.vp.semanticcell.SemanticCell;
+import com.vp.dao.LinkDAO;
+import com.vp.dao.SemanticCellDAO;
+import com.vp.domain.Link;
+
+
+/**
+ * 将读取的xml文件写入到neo4j数据库中
+ * @author admin
+ *
+ */
+public class InitDataBaseByXML {
+	
+	private static SemanticCellDAO semanticCellDAO = new SemanticCellDAO();
+	private static LinkDAO linkDAO = new LinkDAO();
+	
+	//往图数据库中插入信息
+	public static void init(List<SemanticCell> scs, List<Link> links){
+		for(SemanticCell semanticCell : scs){
+			semanticCellDAO.createSemanticCell(semanticCell);
+		}
+		for(Link link : links){
+			linkDAO.createLink(link);
+		}
+	}
+	
+	public static void main(String[] args) {
+		try {
+			//以下两个方法用于清空图数据库
+			linkDAO.deleteAllLinks();
+			semanticCellDAO.deleteAllSCs();
+			//解析指定的xml文件
+//			List<SemanticCell> scs = ParseXML.getSemanticCells("zhouTry.xml");
+//			List<Link> links = ParseXML.getLinks(scs);
+//			//将解析好的语义元和连接的集合添加到图数据库
+//			init(scs,links);
+//			System.out.println("完成存入图数据库");
+//			List<SemanticCell> scs = ParseXML.getSemanticCells("firstXML\\zhoucheng206.xml");
+//			List<Link> links = ParseXML.getLinks(scs);
+			//将解析好的语义元和连接的集合添加到图数据库
+//			init(scs,links);
+			
+			//存入定义的设计意图
+//			List<SemanticCell> scs2 = ParseXML.getSemanticCells("designintent.xml");
+//			List<Link> links2 = ParseXML.getLinks(scs2);
+//			init(scs2,links2);
+			
+			//存入定义的特征元
+//			List<SemanticCell> scs3 = ParseXML.getSemanticCells("feature.xml");
+//			List<Link> links3 = ParseXML.getLinks(scs3);
+//			init(scs3,links3);
+
+//			List<SemanticCell> scs3 = ParseXML.getSemanticCells("tolerance.xml");
+//			List<Link> links3 = ParseXML.getLinks(scs3);
+//			init(scs3,links3);
+			
+			//存入装配体语义元
+//			List<SemanticAssembly> scs4 = ParseXML.getAssemblySemantics("example.xml");
+//			List<Link> links4 = ParseXML.getLinks(scs4);
+			
+
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+}
