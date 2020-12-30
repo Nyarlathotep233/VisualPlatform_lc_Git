@@ -1,22 +1,3 @@
-function LoadXMLFile(xmlFile) {
-  var xmlDom = null;
-  if (window.ActiveXObject) {
-    xmlDom = new ActiveXObject("Microsoft.XMLDOM");
-    //xmlDom.loadXML(xmlFile);//如果用的是XML字符串
-    xmlDom.load(xmlFile); //如果用的是xml文件。
-  } else if (
-    document.implementation &&
-    document.implementation.createDocument
-  ) {
-    var xmlhttp = new window.XMLHttpRequest();
-    xmlhttp.open("GET", xmlFile, false);
-    xmlhttp.send(null);
-    xmlDom = xmlhttp.responseXML.documentElement; //一定要有根节点(否则google浏览器读取不了)
-  } else {
-    xmlDom = null;
-  }
-  return xmlDom;
-}
 function initGeoGroup() {
   var count = 0;
   console.log("map1?" + map1);
@@ -61,7 +42,7 @@ function dealgeo(shellname, shellindex) {
   var xmlDoc;
   try {
     //判断文件是否存在
-    xmlDoc = LoadXMLFile(baseurl + shellname);
+    xmlDoc = window.LoadXMLFile(baseurl + shellname);
   } catch (err) {
     //如果文件不存在，退出，return 0;
     return 0;

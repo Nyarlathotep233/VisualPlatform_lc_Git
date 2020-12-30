@@ -51,26 +51,7 @@ var base = c[1].split("/");
 // var xmlDoc=document.implementation.createDocument("","",null);
 // xmlDoc.async=false;
 // xmlDoc.load(c[1]);
-function LoadXMLFile(xmlFile) {
-  var xmlDom = null;
-  if (window.ActiveXObject) {
-    xmlDom = new ActiveXObject("Microsoft.XMLDOM");
-    //xmlDom.loadXML(xmlFile);//如果用的是XML字符串
-    xmlDom.load(xmlFile); //如果用的是xml文件。
-  } else if (
-    document.implementation &&
-    document.implementation.createDocument
-  ) {
-    var xmlhttp = new window.XMLHttpRequest();
-    xmlhttp.open("GET", xmlFile, false);
-    xmlhttp.send(null);
-    xmlDom = xmlhttp.responseXML.documentElement; //一定要有根节点(否则google浏览器读取不了)
-  } else {
-    xmlDom = null;
-  }
-  return xmlDom;
-}
-var xmlDoc = LoadXMLFile(c[1]);
+var xmlDoc = window.LoadXMLFile(c[1]);
 console.log("LoadXMLFile(c[1])", xmlDoc);
 
 var xshell = xmlDoc.getElementsByTagName("shell");
@@ -94,10 +75,11 @@ for (var j = 1; j < shapes.length; j++) {
       shapes[s].getAttribute("shell") != null &&
       shapes[s].getAttribute("shell").length < 20
     ) {
-      var shell_id = shapes[s].getAttribute("shell");
+      var shellId = shapes[s].getAttribute("shell");
       var annotation_id = shapes[s].getAttribute("annotation");
-      var shell_url = "shell_" + shell_id + ".xml";
-      map2.push([ref, shell_id, shell_url, annotation_id]);
+      var shell_url = "shell_" + shellId + ".xml";
+      console.log("shellId", shellId);
+      map2.push([ref, shellId, shell_url, annotation_id]);
     } else continue;
   }
   j = j + child.length;
@@ -106,7 +88,7 @@ for (var j = 1; j < shapes.length; j++) {
 for (
   var i = 0;
   i < map1.length;
-  i++ //ref,xform,shell_id
+  i++ //ref,xform,shellId
 ) {
   for (var j in map2) {
     if (map1[i][0] == map2[j][0]) map1[i].push(map2[j][1]);
@@ -125,20 +107,17 @@ var num = 0;
 /*
  * 原来这里传的是固定的shell,以下动态的将第一个shell的名称取出并赋值
  */
-var shellId = xshell[0].getAttribute("id");
-var shellname = "shell_" + shellId;
-//console.log(shellname)
+// xshell:[shell#id388, shell#id386, shell#id391, shell#id392, shell#id390, shell#id389, shell#id387, shell#id393]
+
 initGeoGroup(); //画几何体
-initLineGroup(); //画所有面的轮廓
+var targetShellId = xshell[0].getAttribute("id");
+var targetShellName = "shell_" + targetShellId;
+initLineGroup(targetShellName); //画所有面的轮廓  TODO这里targetShellName的作用 ？
 
 var faceline = new THREE.Group();
-//drawfaceline([16,17,18,19],shellname);//画某些面的轮廓
-var shell_id = shellname.split("_")[1];
-console.log("shellname", shellname);
-// drawface([12, 13, 14, 15, 16, 17], shellname, "381154"); //画某些面
-drawface([0, 1, 2, 3], shellname, "381154"); //画某些面
-//redrawGeo(shellname);
-//console.log(objects)
+// drawfaceline([16,17,18,19],targetShellName);//画某些面的轮廓  （？）
+drawface([0], targetShellName, "381154"); //高亮某些面
+// redrawGeo(targetShellName);
 
 render();
 onWindowResize();

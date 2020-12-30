@@ -1,22 +1,3 @@
-function LoadXMLFile(xmlFile) {
-  var xmlDom = null;
-  if (window.ActiveXObject) {
-    xmlDom = new ActiveXObject("Microsoft.XMLDOM");
-    //xmlDom.loadXML(xmlFile);//如果用的是XML字符串
-    xmlDom.load(xmlFile); //如果用的是xml文件。
-  } else if (
-    document.implementation &&
-    document.implementation.createDocument
-  ) {
-    var xmlhttp = new window.XMLHttpRequest();
-    xmlhttp.open("GET", xmlFile, false);
-    xmlhttp.send(null);
-    xmlDom = xmlhttp.responseXML.documentElement; //一定要有根节点(否则google浏览器读取不了)
-  } else {
-    xmlDom = null;
-  }
-  return xmlDom;
-}
 function hasArray(array) {
   //console.log(array);
   var str = "";
@@ -41,7 +22,7 @@ function drawface(theface, shellname, color) {
   var xmlDoc;
   try {
     //判断文件是否存在
-    xmlDoc = LoadXMLFile(baseurl + shellname + ".xml");
+    xmlDoc = window.LoadXMLFile(baseurl + shellname + ".xml");
   } catch (err) {
     //如果文件不存在，退出，return 0;
     return 0;
@@ -89,6 +70,7 @@ function drawface(theface, shellname, color) {
     var facecolor = "0x" + dealcolor(color);
     facecolor = parseInt(facecolor);
 
+    console.log("shellname", shellname);
     console.log("faces", faces);
     console.log("theface", theface);
     console.log("t", t);
@@ -144,7 +126,7 @@ function drawDesignface(theface, shellname, color) {
   var xmlDoc;
   try {
     //判断文件是否存在
-    xmlDoc = LoadXMLFile(baseurl + shellname + ".xml");
+    xmlDoc = window.LoadXMLFile(baseurl + shellname + ".xml");
   } catch (err) {
     //如果文件不存在，退出，return 0;
     return 0;
@@ -263,7 +245,7 @@ function redrawGeo(shellname) {
   var xmlDoc;
   try {
     //判断文件是否存在
-    xmlDoc = LoadXMLFile(baseurl + shellname + ".xml");
+    xmlDoc = window.LoadXMLFile(baseurl + shellname + ".xml");
   } catch (err) {
     //如果文件不存在，退出，return 0;
     return 0;
