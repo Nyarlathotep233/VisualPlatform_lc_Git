@@ -3,9 +3,11 @@
 // kf1:面1，kf2：面2， v点集合，faces：面集合
 // geogroup:把几何体 打成一组
 // linegroup:把每个物体打成一组
-var material = new THREE.MeshLambertMaterial({
+var material = new THREE.MeshPhongMaterial({
   vertexColors: THREE.VertexColors,
   side: THREE.DoubleSide,
+  specular: 0x4488ee,
+  shininess: 12,
 });
 var line_material1 = new THREE.LineBasicMaterial({ color: 0xff0000 });
 var lunkuo_material = new THREE.LineBasicMaterial({
@@ -49,17 +51,17 @@ var xshell = xmlDoc.getElementsByTagName('shell');
 var shapes = xmlDoc.getElementsByTagName('shape');
 var childOfShape0 = shapes[0].getElementsByTagName('child');
 var map1 = []; // 存放shape[0]child标签内的ref和xform的对应关系
-for (var i = 0; i < childOfShape0.length; i++) {
+for (var i = 0; i < childOfShape0.length; i += 1) {
   var ref = childOfShape0[i].getAttribute('ref');
-  var xform = childOfShape0[i].getAttribute('xform');
-  map1.push([ref, xform]);
+  var shapexform = childOfShape0[i].getAttribute('xform');
+  map1.push([ref, shapexform]);
 }
 
 var map2 = []; // ----------------2*3的数组:ref，shell的id和其对应的xml文件,以及对应的annotation的id
-for (var j = 1; j < shapes.length; j++) {
-  var ref = shapes[j].getAttribute('id');
+for (var j = 1; j < shapes.length; j += 1) {
+  var shapesRef = shapes[j].getAttribute('id');
   var child = shapes[j].getElementsByTagName('child');
-  for (var s = j; s <= j + child.length; s++) {
+  for (var s = j; s <= j + child.length; s += 1) {
     if (
       shapes[s] != null
       && shapes[s].getAttribute('shell') != null
@@ -69,31 +71,30 @@ for (var j = 1; j < shapes.length; j++) {
       var annotation_id = shapes[s].getAttribute('annotation');
       var shell_url = `shell_${shellId}.xml`;
       console.log('shellId', shellId);
-      map2.push([ref, shellId, shell_url, annotation_id]);
-    } else continue;
+      map2.push([shapesRef, shellId, shell_url, annotation_id]);
+    }
   }
   j += child.length;
 }
 
-for (
-  var i = 0;
-  i < map1.length;
-  i++ // ref,xform,shellId
-) {
-  for (var j in map2) {
-    if (map1[i][0] == map2[j][0]) map1[i].push(map2[j][1]);
-  }
-}
+map1.forEach((item, index) => {
+  map2.forEach((item2, index2) => {
+    // eslint-disable-next-line eqeqeq
+    if (item[0] == item2[0]) {
+      item.push(item2[1]);
+    }
+  });
+});
 
 var xform = [];
-for (var x = 0; x < map1.length; x++) {
+for (var x = 0; x < map1.length; x += 1) {
   var xxx = map1[x][1].split(' ');
   xform.push(xxx);
 }
 
 var products = xmlDoc.getElementsByTagName('product');
 var annotations = xmlDoc.getElementsByTagName('annotation'); // 开始读annotation标签
-var num = 0;
+window.num = 0;
 /*
  * 原来这里传的是固定的shell,以下动态的将第一个shell的名称取出并赋值
  */
@@ -119,7 +120,7 @@ dragControls.addEventListener('dragstart', (event) => {
 dragControls.addEventListener('dragend', (event) => {
   controls.enabled = true;
 });
-document.getElementById('3dfooter').innerHTML = `零件个数:${geogroup.length}<br>` + `标注个数：${annotations.length}`;
+document.getElementById('3dfooter').innerHTML = `零件个数:${geogroup.length}<br>标注个数：${annotations.length}`;
 // console.log(geogroup)
 
 // ----------------加载结束
@@ -137,10 +138,10 @@ function onWindowResize() {
   resolution.set(w, h);
 }
 
-function transform(xform, vec) {
+function transform(transformxform, vec) {
   // ----------------根据装配关系处理点坐标
   var inv = mat4.create();
-  mat4.inverse(xform, inv);
+  mat4.inverse(transformxform, inv);
   var xfomr = inv;
   var inv2 = mat4.create();
   mat4.inverse(xfomr, inv2);
@@ -148,11 +149,12 @@ function transform(xform, vec) {
   return vec;
 }
 function show_anno() {
+  // eslint-disable-next-line eqeqeq
   if (annotations && annogroup.length == 0) show_annotation(annotations);
 }
 function remove_anno() {
   if (annogroup.length > 0) {
-    for (var a = 0; a < annogroup.length; a++) scene.remove(annogroup[a]);
+    for (var a = 0; a < annogroup.length; a += 1) scene.remove(annogroup[a]);
     annogroup.length = 0;
   }
   // console.log(annogroup.length)
