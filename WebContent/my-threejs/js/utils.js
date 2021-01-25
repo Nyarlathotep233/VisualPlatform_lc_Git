@@ -17,4 +17,5 @@ function LoadXMLFile(xmlFile) {
   }
   return xmlDom;
 }
-export { LoadXMLFile };
+window.LoadXMLFile = LoadXMLFile;
+// export { LoadXMLFile };

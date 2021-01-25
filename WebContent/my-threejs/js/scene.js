@@ -1,14 +1,14 @@
 function initRenderer() {
-  renderer = new THREE.WebGLRenderer({ antialias: true }); //, alpha: true
-  //renderer.setSize( window.innerWidth/2, window.innerHeight);
+  renderer = new THREE.WebGLRenderer({ antialias: true }); // , alpha: true
+  // renderer.setSize( window.innerWidth/2, window.innerHeight);
   renderer.setSize(container.offsetWidth / 2, container.offsetHeight);
-  renderer.setClearColor(0xf4f1bb, 1); //场景的颜色f4f1bb,000020
+  renderer.setClearColor(0xf4f1bb, 1); // 场景的颜色f4f1bb,000020
   renderer.shadowMapEnabled = true;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 }
 function initLight() {
-  //add subtle ambient lighting
-  var ambiColor = "#0c0c0c";
+  // add subtle ambient lighting
+  var ambiColor = '#0c0c0c';
   var ambientLight = new THREE.AmbientLight(ambiColor);
   scene.add(ambientLight);
 
