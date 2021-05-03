@@ -7,7 +7,7 @@ var material = new THREE.MeshPhongMaterial({
   vertexColors: THREE.VertexColors,
   side: THREE.DoubleSide,
   specular: 0x4488ee,
-  shininess: 12,
+  shininess: 8,
 });
 var line_material1 = new THREE.LineBasicMaterial({ color: 0xff0000 });
 var lunkuo_material = new THREE.LineBasicMaterial({
@@ -107,13 +107,15 @@ initLineGroup(targetShellName); // 画所有面的轮廓  TODO:这里targetShell
 
 var faceline = new THREE.Group();
 // drawfaceline([16,17,18,19],targetShellName);//画某些面的轮廓  （？）
-drawface([0], targetShellName, '381154'); // 高亮某些面
+drawface([0, 1, 2], targetShellName, '381154'); // 高亮某些面
+// drawface([12, 13, 14, 15, 16, 17], targetShellName, '381154'); // 高亮某些面
 // redrawGeo(targetShellName);
 
 render();
 onWindowResize();
 window.addEventListener('resize', onWindowResize);
-var dragControls = new THREE.DragControls(objects, camera, renderer.domElement);
+var meshAll = geogroup[0].children;
+var dragControls = new THREE.DragControls(meshAll, camera, renderer.domElement);
 dragControls.addEventListener('dragstart', (event) => {
   controls.enabled = false;
 });

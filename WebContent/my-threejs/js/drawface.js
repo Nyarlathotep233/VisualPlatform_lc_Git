@@ -1,14 +1,11 @@
 function hasArray(array) {
-  // console.log(array);
   var str = '';
   for (var i = 0; i < array.length; i += 1) var str = str + array[i];
-  // console.log(str)
   if (scene.getObjectByName(str) == null) return false;
   return true;
 }
 
 function drawface(theface, shellname, color) {
-  // console.log("!!!!!")
   var baseurl = `${base[0]}/${base[1]}/`;
 
   // var xmlDoc=document.implementation.createDocument("","",null);
@@ -27,8 +24,6 @@ function drawface(theface, shellname, color) {
     // 如果文件不存在，退出，return 0;
     return 0;
   }
-  console.log('file', `${baseurl + shellname}.xml`);
-  console.log('xmlDoc', xmlDoc);
   var faces = xmlDoc.getElementsByTagName('facets');
   var verts = xmlDoc.getElementsByTagName('verts');
   var v = verts[0].getElementsByTagName('v'); // 数组，所有的v标签
@@ -70,11 +65,6 @@ function drawface(theface, shellname, color) {
     var facecolor = `0x${dealcolor(color)}`;
     facecolor = parseInt(facecolor);
 
-    console.log('shellname', shellname);
-    console.log('faces', faces);
-    console.log('theface', theface);
-    console.log('t', t);
-
     var f = faces[theface[t]].getElementsByTagName('f'); // 面中所以f标签，代表每个三角面片的信息
     for (
       var i = 0;
@@ -107,8 +97,7 @@ function drawface(theface, shellname, color) {
   }
   // mesh.position.set(300,300,300);
   facegroup.push(mesh); // 将此mesh对象放入facegroup组中
-  objects.push(mesh);
-  //	    console.log(objects);
+  // objects.push(mesh);
   scene.add(mesh);
 }
 
@@ -202,24 +191,17 @@ function drawDesignface(theface, shellname, color) {
   for (var t = 0; t < theface.length; t += 1) {
     mesh.name += theface[t];
   }
-  // mesh.position.set(300,300,300);
-  //		facegroup.push(mesh);//将此mesh对象放入facegroup组中
-  //	    objects.push(mesh);
-  console.log(`a:${mesh.name}`);
   scene.add(mesh);
 }
 
-function deleteFromObject(str) {
-  // console.log(objects)
-  // console.log(str)
-  for (var i = 0; i < objects.length; i += 1) {
-    if (objects[i].name == str) {
-      objects.splice(i, 1);
-      scene.remove(scene.getObjectByName(str));
-    }
-  }
-  console.log(objects);
-}
+// function deleteFromObject(str) {
+//   for (var i = 0; i < objects.length; i += 1) {
+//     if (objects[i].name == str) {
+//       objects.splice(i, 1);
+//       scene.remove(scene.getObjectByName(str));
+//     }
+//   }
+// }
 
 function transform(xform, vec) {
   // ----------------根据装配关系处理点坐标
@@ -318,10 +300,6 @@ function redrawGeo(shellname) {
     var mesh = new THREE.Mesh(geometry, material);
     scene.add(mesh);
     mesh.name = t;
-    objects.push(mesh);
+    // objects.push(mesh);
   }
-
-  //		facegroup.push(mesh);//将此mesh对象放入facegroup组中
-  //	    objects.push(mesh);
-  //	    //console.log(objects);
 }

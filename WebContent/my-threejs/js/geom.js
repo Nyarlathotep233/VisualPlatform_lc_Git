@@ -4,7 +4,6 @@ function initGeoGroup() {
   // geogroup
   // scene
   var count = 0;
-  console.log('map1?', map1);
   for (
     var i = 0;
     i < map1.length;
@@ -22,7 +21,6 @@ function initGeoGroup() {
       }
     }
     if (dex != '1') {
-      console.log('no here?');
       geogroup[count] = new THREE.Group();
       dealgeo(dex, i); /// / -----------dealgeo()先把组件、轮廓分别保存在geogroup，linegroup
       scene.add(geogroup[count]); // 将组件添加到场景中

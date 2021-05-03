@@ -37,6 +37,7 @@ function initLight() {
   light5.position.set(-5000, 500, 0);
   scene.add(light5);
 
+  // 初始位置正后方
   var light6;
   light6 = new THREE.PointLight(0xeeeeee);
   light6.position.set(5000, 0, 0);

@@ -1,0 +1,174 @@
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+xml:base="http://www.nist.gov/OntoSTEP/automotive_design"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+xmlns:xml="http://www.w3.org/XML/1998/namespace"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ontologyIRI="http://www.nist.gov/OntoSTEP/automotive_design">
+<Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+<Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+<Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+<Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+<!-- 倾斜度公差 -->
+<Semantic type="angularity_tolerance">
+	<head>
+		<geometry_link>
+			<elementface>#472</elementface>
+			<datumface>A</datumface>
+		</geometry_link>
+		<semantic_link>
+		</semantic_link>
+	</head>
+	<body>
+		<Instance rdf:ID="angularity_tolerance1">
+			<value>0.4567</value>
+		</Instance>
+	</body>
+	<tail>
+		<description></description>
+	</tail>
+</Semantic>
+<Semantic type="datum">
+	<head>
+		<geometry_link>
+			<elementface>#467</elementface>
+		</geometry_link>
+		<semantic_link>
+		</semantic_link>
+	</head>
+	<body>
+		<Instance rdf:ID="B">
+		</Instance>
+	</body>
+	<tail>
+		<description></description>
+	</tail>
+</Semantic>
+<Semantic type="datum">
+	<head>
+		<geometry_link>
+			<elementface>#468</elementface>
+		</geometry_link>
+		<semantic_link>
+		</semantic_link>
+	</head>
+	<body>
+		<Instance rdf:ID="A">
+		</Instance>
+	</body>
+	<tail>
+		<description></description>
+	</tail>
+</Semantic>
+<!-- 平面度 -->
+<Semantic type="flatness_tolerance">
+	<head>
+		<geometry_link>
+			<elementface>#467</elementface>
+		</geometry_link>
+		<semantic_link>
+		</semantic_link>
+	</head>
+	<body>
+		<Instance rdf:ID="flatness_tolerance1">
+			<value>0.2233</value>
+		</Instance>
+	</body>
+	<tail>
+		<description></description>
+	</tail>
+</Semantic>
+<!-- 位置度 -->
+<Semantic type="geometric_tolerance">
+	<head>
+		<geometry_link>
+			<elementface>#469</elementface>
+			<datumface>B</datumface>
+		</geometry_link>
+		<semantic_link>
+		</semantic_link>
+	</head>
+	<body>
+		<Instance rdf:ID="geometric_tolerance1">
+			<value>0.4455</value>
+		</Instance>
+	</body>
+	<tail>
+		<description></description>
+	</tail>
+</Semantic>
+<!-- 平行度 -->
+<Semantic type="parallelism_tolerance">
+	<head>
+		<geometry_link>
+			<elementface>#468</elementface>
+			<datumface>B</datumface>
+		</geometry_link>
+		<semantic_link>
+		</semantic_link>
+	</head>
+	<body>
+		<Instance rdf:ID="parallelism_tolerance1">
+			<value>0.3344</value>
+		</Instance>
+	</body>
+	<tail>
+		<description></description>
+	</tail>
+</Semantic>
+<!-- 垂直度公差 -->
+<Semantic type="perpendicularity_tolerance">
+	<head>
+		<geometry_link>
+			<elementface>#467</elementface>
+			<datumface>A</datumface>
+		</geometry_link>
+		<semantic_link>
+		</semantic_link>
+	</head>
+	<body>
+		<Instance rdf:ID="perpendicularity_tolerance1">
+			<value>0.1122</value>
+		</Instance>
+	</body>
+	<tail>
+		<description></description>
+	</tail>
+</Semantic>
+<!-- 圆度公差 -->
+<Semantic type="roundness_tolerance">
+	<head>
+		<geometry_link>
+			<elementface>#472</elementface>
+		</geometry_link>
+		<semantic_link>
+		</semantic_link>
+	</head>
+	<body>
+		<Instance rdf:ID="roundness_tolerance1">
+			<value>0.5678</value>
+		</Instance>
+	</body>
+	<tail>
+		<description></description>
+	</tail>
+</Semantic>
+<!-- 直度公差 -->
+<Semantic type="straightness_tolerance">
+	<head>
+		<geometry_link>
+			<elementface>#469</elementface>
+		</geometry_link>
+		<semantic_link>
+		</semantic_link>
+	</head>
+	<body>
+		<Instance rdf:ID="straightness_tolerance1">
+			<value>0.5678</value>
+		</Instance>
+	</body>
+	<tail>
+		<description></description>
+	</tail>
+</Semantic>
+</Ontology>
