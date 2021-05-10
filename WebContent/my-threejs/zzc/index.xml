@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<step-assembly root="id1359">
+<product id="id1359" step="part_test1_242noPMI.stp" name="test1_242noPMI" shape="id857"/>
+<shape id="id857" unit="mm 0.001000">
+    <child ref="id11" xform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+</shape>
+<shape id="id11" unit="mm 0.001000" shell="id855" annotation="id100"/>
+<annotation id="id100" href="annotation_id100.xml"/>
+<shell id="id855" size="820" bbox="0 -140 -140 100 130 130" href="shell_id855.xml"/>
+</step-assembly>

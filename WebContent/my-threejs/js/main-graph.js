@@ -39,6 +39,7 @@ var alllinegeom = new THREE.Geometry();
 var annogroup = new Array(); // 标注的组
 var facegroup = new Array(); // 面
 var objects = new Array();
+var highLightFaceList = new Array(); // 目前高亮的面的数组
 
 // ------------读地址栏url，并自动解析
 var fileName = window.location.href.split('?')[1];
@@ -103,29 +104,51 @@ window.num = 0;
 initGeoGroup(); // 画几何体
 var targetShellId = xshell[0].getAttribute('id');
 var targetShellName = `shell_${targetShellId}`;
-initLineGroup(targetShellName); // 画所有面的轮廓  TODO:这里targetShellName的作用是什么？
+initLineGroup(targetShellName); // 画所有面的轮廓
 
 var faceline = new THREE.Group();
-// drawfaceline([16,17,18,19],targetShellName);//画某些面的轮廓  （？）
-drawface([0, 1, 2], targetShellName, '381154'); // 高亮某些面
-// drawface([12, 13, 14, 15, 16, 17], targetShellName, '381154'); // 高亮某些面
-// redrawGeo(targetShellName);
 
 render();
 onWindowResize();
 window.addEventListener('resize', onWindowResize);
-var meshAll = geogroup[0].children;
-var dragControls = new THREE.DragControls(meshAll, camera, renderer.domElement);
-dragControls.addEventListener('dragstart', (event) => {
-  controls.enabled = false;
-});
-dragControls.addEventListener('dragend', (event) => {
-  controls.enabled = true;
-});
+
 document.getElementById('3dfooter').innerHTML = `零件个数:${geogroup.length}<br>标注个数：${annotations.length}`;
-// console.log(geogroup)
 
 // ----------------加载结束
+
+/**
+ * @param  {} faces 高亮面的数组
+ */
+function highLight(faces) {
+  highLightFaceList.forEach((mesh) => {
+    scene.remove(mesh);
+  });
+  highLightFaceList = new Array();
+
+  drawfaceline(faces, targetShellName);// 画某些面的轮廓  （？）
+  var highLightFace = drawface(faces, targetShellName, '381154'); // 高亮某些面
+  highLightFaceList.push(highLightFace);
+  // redrawGeo(targetShellName);
+
+  var dragControls = new THREE.DragControls(highLightFaceList, camera, renderer.domElement);
+  dragControls.addEventListener('dragstart', (event) => {
+    controls.enabled = false;
+  });
+  dragControls.addEventListener('dragend', (event) => {
+    controls.enabled = true;
+  });
+  dragControls.addEventListener('clickDragObject', (event) => {
+    var selected = event.object;
+    // 改透明度
+    if (selected.material.opacity == 0.5) {
+    // selected.material.visible=true;
+      selected.material.opacity = 1;
+    } else {
+      selected.material.opacity = 0.5;
+    }
+  // 改透明度结束
+  });
+}
 
 function onWindowResize() {
   var w = container.clientWidth;

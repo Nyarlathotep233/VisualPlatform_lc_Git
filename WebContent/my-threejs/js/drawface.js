@@ -65,6 +65,7 @@ function drawface(theface, shellname, color) {
     var facecolor = `0x${dealcolor(color)}`;
     facecolor = parseInt(facecolor);
 
+    console.log('! faces', faces);
     var f = faces[theface[t]].getElementsByTagName('f'); // 面中所以f标签，代表每个三角面片的信息
     for (
       var i = 0;
@@ -97,8 +98,10 @@ function drawface(theface, shellname, color) {
   }
   // mesh.position.set(300,300,300);
   facegroup.push(mesh); // 将此mesh对象放入facegroup组中
-  // objects.push(mesh);
+  objects.push(mesh);
   scene.add(mesh);
+
+  return mesh;
 }
 
 function drawDesignface(theface, shellname, color) {
@@ -194,14 +197,14 @@ function drawDesignface(theface, shellname, color) {
   scene.add(mesh);
 }
 
-// function deleteFromObject(str) {
-//   for (var i = 0; i < objects.length; i += 1) {
-//     if (objects[i].name == str) {
-//       objects.splice(i, 1);
-//       scene.remove(scene.getObjectByName(str));
-//     }
-//   }
-// }
+function deleteFromObject(str) {
+  for (var i = 0; i < objects.length; i += 1) {
+    if (objects[i].name == str) {
+      objects.splice(i, 1);
+      scene.remove(scene.getObjectByName(str));
+    }
+  }
+}
 
 function transform(xform, vec) {
   // ----------------根据装配关系处理点坐标
@@ -300,6 +303,6 @@ function redrawGeo(shellname) {
     var mesh = new THREE.Mesh(geometry, material);
     scene.add(mesh);
     mesh.name = t;
-    // objects.push(mesh);
+    objects.push(mesh);
   }
 }

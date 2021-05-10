@@ -94,50 +94,29 @@ THREE.DragControls = function (_objects, _camera, _domElement) {
   }
 
   function onDocumentMouseDown(event) {
-    if (event.shiftKey == 1) {
-      event.preventDefault();
+    event.preventDefault();
 
-      _raycaster.setFromCamera(_mouse, _camera);
+    _raycaster.setFromCamera(_mouse, _camera);
 
-      var intersects = _raycaster.intersectObjects(_objects);
+    var intersects = _raycaster.intersectObjects(_objects);
 
-      if (intersects.length > 0) {
-        _selected = intersects[0].object;
+    if (intersects.length > 0) {
+      _selected = intersects[0].object;
 
-        if (_raycaster.ray.intersectPlane(_plane, _intersection)) {
-          _offset.copy(_intersection).sub(_selected.position);
-        }
-
-        _domElement.style.cursor = 'move';
-
-        scope.dispatchEvent({ type: 'dragstart', object: _selected });
+      if (!event.shiftKey) {
+        scope.dispatchEvent({ type: 'clickDragObject', object: _selected });
       }
-    } else {
-      event.preventDefault();
 
-      _raycaster.setFromCamera(_mouse, _camera);
+      if (_raycaster.ray.intersectPlane(_plane, _intersection)) {
+        _offset.copy(_intersection).sub(_selected.position);
+      }
 
-      var intersects = _raycaster.intersectObjects(_objects);
+      _domElement.style.cursor = 'move';
 
-      if (intersects.length > 0) {
-        _selected = intersects[0].object;
-        // 改透明度
-        if (_selected.material.opacity == 0.5) {
-				 // _selected.material.visible=true;
-				 _selected.material.opacity = 1;
-        } else {
-          alert(`这个面是第${_selected.name}个面`);
-          _selected.material.opacity = 0.5;
-        }
-        // 改透明度结束
-
-        if (_raycaster.ray.intersectPlane(_plane, _intersection)) {
-          _offset.copy(_intersection).sub(_selected.position);
-        }
-
-        _domElement.style.cursor = 'move';
-
+      if (!event.shiftKey) {
         scope.dispatchEvent({ type: 'dragend', object: _selected });
+      } else {
+        scope.dispatchEvent({ type: 'dragstart', object: _selected });
       }
     }
   }

@@ -1,13 +1,9 @@
-var PMI = {
-  log(content) {
-    console.log('PMI:\n', content);
-  },
-};
+var faceList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; // 测试用
 
 function renderTree(OriginPMITreeData) {
   const { createElement } = React;
   const { useState, useEffect } = React;
-  let PMITreeData = JSON.parse(JSON.stringify(OriginPMITreeData));
+  let PMITreeData = _.cloneDeep(OriginPMITreeData);
 
   // init
   function initAllNode(showNode) {
@@ -24,8 +20,6 @@ function renderTree(OriginPMITreeData) {
     }
     return { ...showNode, ...initAttr, showChildren: true };
   }
-
-  PMITreeData = initAllNode(PMITreeData);
 
   function PMITree(props) {
     const [state, setState] = useState(props.data);
@@ -81,14 +75,36 @@ function renderTree(OriginPMITreeData) {
     // }
 
     function createNode(node) {
-      function ul(showul) {
+      function ul() {
+        const showul = node.children && node.children.length && node.showChildren;
         if (showul) {
           return <ul>{node.children.map((item, index) => createNode(item))}</ul>;
         }
         return null;
       }
 
-      function switchShow(nodeID) {
+      function switchBtn() {
+        const { showChildren } = node;
+        if (node.children && node.children.length) {
+          return showChildren ? <img src="./images/icons/minus.png"></img> : <img src="./images/icons/add.png"></img>;
+        }
+        return '';
+      }
+
+      function handleClick() {
+        if (haveClickEvent()) {
+          node.handleClick();
+        }
+      }
+
+      function haveClickEvent() {
+        if (node.handleClick && (typeof node.handleClick === 'function')) {
+          return true;
+        }
+        return false;
+      }
+
+      function switchShow() {
         // eslint-disable-next-line no-param-reassign
         node.showChildren = !node.showChildren;
         setState({
@@ -102,7 +118,23 @@ function renderTree(OriginPMITreeData) {
         target.style.display = 'none';
       }
 
-      function getLabel(label) {
+      function getLabel() {
+        if (haveClickEvent()) {
+          return (
+            <a onClick={handleClick}>
+              {getName()}
+            </a>
+          );
+        }
+        return (
+          <span>
+            {getName()}
+          </span>
+        );
+      }
+
+      function getName() {
+        const { label } = node;
         if (typeof label === 'string') {
           return label;
         } if (typeof label === 'object') {
@@ -118,10 +150,15 @@ function renderTree(OriginPMITreeData) {
 
       return (
         <li style={{ 'list-style-type': 'none' }}>
-          <a onClick={switchShow}>
-            {getLabel(node.label)}
-          </a>
-          {ul(node.children && node.children.length && node.showChildren)}
+          <div style={{
+            display: 'flex', 'align-items': 'center', height: '20px',
+          }} >
+            <span onClick={switchShow} className= 'spread-btn'>
+              {switchBtn()}
+            </span>
+            {getLabel()}
+          </div>
+          {ul()}
         </li>
       );
     }
@@ -139,6 +176,7 @@ function renderTree(OriginPMITreeData) {
     );
   }
 
+  PMITreeData = initAllNode(PMITreeData);
   const domContainer = document.querySelector('#tree-container');
   ReactDOM.render(<PMITree data={PMITreeData} />, domContainer);
 }
@@ -177,6 +215,10 @@ function loadPMI(xmlFile) {
         elementface,
         toleranceNum: 0,
         children: [], // 公差
+        handleClick: () => {
+          var randomFace = faceList[Math.floor((Math.random() * faceList.length))]; // 测试用
+          highLight([randomFace]);
+        },
       };
       elementFaceMap[elementface] = elementFaceElement;
     }
@@ -221,8 +263,8 @@ function loadPMI(xmlFile) {
         PMIElement.label = `未知类型 ${type}`;
     }
     elementFaceMap[elementface].children.push(PMIElement);
-    PMI.log(`----- ${elementface} -----`);
-    PMI.log(PMIElement);
+    console.log(`----- ${elementface} -----`);
+    console.log(PMIElement);
   });
 
   // elementFaceList
@@ -241,6 +283,8 @@ function loadPMI(xmlFile) {
     ],
   };
 
+  console.log('! treeData', treeData);
+
   renderTree(treeData);
 }
 
@@ -249,5 +293,5 @@ function loadPMI(xmlFile) {
 var fileName = 'my-threejs/pmi_output.xml';
 
 // 加载PMI数据
-PMI.log(fileName);
+console.log(fileName);
 loadPMI(fileName);
