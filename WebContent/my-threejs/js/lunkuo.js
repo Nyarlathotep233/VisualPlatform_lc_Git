@@ -1,3 +1,6 @@
+/**
+ * @param  {} shellname
+ */
 function initLineGroup(shellname) {
   var count = 0;
   // console.log(map1[0][0])
@@ -18,30 +21,18 @@ function initLineGroup(shellname) {
       }
     }
     if (dex != '1') {
-      // console.log("line"+count);
-      // console.log(dex)
       linegroup[count] = new THREE.Group();
-      dealline(dex, i); /// / -----------dealgeo()先把组件、轮廓分别保存在geogroup，linegroup
-      if (dex == `${shellname}.xml`) num = count;
+      dealline(dex, i); /// / -----------dealline()先把组件、轮廓分别保存在geogroup，linegroup
+      if (dex == `${shellname}.xml`) window.num = count; // 记录targetShell的count
       scene.add(linegroup[count]); // 将轮廓添加到场景中
       count++;
     }
   }
-  // scene.add(new THREE.Mesh(alllinegeom, line_material1));
-  // console.log(linegroup.length)
 }
 
 function dealline(shellname, shellindex) {
   // 加载xml文件
   var baseurl = `${base[0]}/${base[1]}/`;
-  // var xmlDoc=document.implementation.createDocument("","",null);
-  // xmlDoc.async=false;
-  // try {//判断文件是否存在
-  //   xmlDoc.load(baseurl+shellname);
-  // }
-  // catch(err){//如果文件不存在，退出，return 0;
-  //   return 0;
-  // }
   var xmlDoc;
   try {
     // 判断文件是否存在
@@ -180,15 +171,6 @@ function drawlain1(kf1, kf2, v, faces, shellindex) {
 function drawfaceline(theface, shellname) {
   // theface:要画的面的下标的数组，shellname：shell_id20235
   var baseurl = `${base[0]}/${base[1]}/`;
-
-  // var xmlDoc=document.implementation.createDocument("","",null);
-  // xmlDoc.async=false;
-  // try {//判断文件是否存在
-  //   xmlDoc.load(baseurl+shellname+".xml");
-  // }
-  // catch(err){//如果文件不存在，退出，return 0;
-  //   return 0;
-  // }
   var xmlDoc;
   try {
     // 判断文件是否存在
@@ -217,12 +199,19 @@ function drawfaceline(theface, shellname) {
     }
   }
   // console.log(shellindex);
+  var allFaceLines = new Array();
   for (var t = 0; t < theface.length; t++) {
     for (var i = 0; i < faces.length; i++) {
-      drawlain(i, theface[t], allverts, faces, shellindex);
+      var facelines = drawlain(i, theface[t], allverts, faces, shellindex);
+      if (facelines && facelines.length) {
+        facelines.forEach((faceline) => {
+          allFaceLines.push(faceline);
+        });
+      }
     }
   }
   // console.log(verts)
+  return allFaceLines;
 }
 
 // kf1:面1，kf2：面2， v点集合，faces：面集合
@@ -276,6 +265,7 @@ function drawlain(kf1, kf2, v, faces, shellindex) {
   }
   // 存在公共 点，就划线
   // allvindex =[["1","2"],["0","123"]]
+  var facelines = new Array();
   for (var m = 0; m < allvindex.length; m += 2) {
     var dian1 = v[parseInt(allvindex[m][0])].split(' '); // ["x","y","z"]
     var dian2 = v[parseInt(allvindex[m][1])].split(' '); // ["x","y","z"]
@@ -302,10 +292,11 @@ function drawlain(kf1, kf2, v, faces, shellindex) {
     indian2.x = vec2[0];
     indian2.y = vec2[1];
     indian2.z = vec2[2];
-    addline(indian2, indian1, shellindex);
+    var faceline = addline(indian2, indian1, shellindex);
+    facelines.push(faceline);
   }
 
-  return 1;
+  return facelines;
 }
 
 function addline(p1, p2, shellindex) {
@@ -314,6 +305,9 @@ function addline(p1, p2, shellindex) {
   geometry.vertices.push(p1);
   geometry.vertices.push(p2);
   var line = new THREE.Line(geometry, material);
+  var faceline = new THREE.Group(); // TODO：新增一个group的作用？
   faceline.add(line);
   scene.add(faceline);
+
+  return faceline;
 }

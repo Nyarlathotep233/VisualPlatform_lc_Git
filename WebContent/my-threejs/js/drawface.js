@@ -1,24 +1,16 @@
 function hasArray(array) {
-  // console.log(array);
   var str = '';
   for (var i = 0; i < array.length; i += 1) var str = str + array[i];
-  // console.log(str)
   if (scene.getObjectByName(str) == null) return false;
   return true;
 }
-
+/**
+ * @param  {} theface 零件中面的序号
+ * @param  {} shellname 零件名
+ * @param  {} color 面的颜色
+ */
 function drawface(theface, shellname, color) {
-  // console.log("!!!!!")
   var baseurl = `${base[0]}/${base[1]}/`;
-
-  // var xmlDoc=document.implementation.createDocument("","",null);
-  // xmlDoc.async=false;
-  // try {//判断文件是否存在
-  //   xmlDoc.load(baseurl+shellname+".xml");
-  // }
-  // catch(err){//如果文件不存在，退出，return 0;
-  //   return 0;
-  // }
   var xmlDoc;
   try {
     // 判断文件是否存在
@@ -27,8 +19,6 @@ function drawface(theface, shellname, color) {
     // 如果文件不存在，退出，return 0;
     return 0;
   }
-  console.log('file', `${baseurl + shellname}.xml`);
-  console.log('xmlDoc', xmlDoc);
   var faces = xmlDoc.getElementsByTagName('facets');
   var verts = xmlDoc.getElementsByTagName('verts');
   var v = verts[0].getElementsByTagName('v'); // 数组，所有的v标签
@@ -70,11 +60,6 @@ function drawface(theface, shellname, color) {
     var facecolor = `0x${dealcolor(color)}`;
     facecolor = parseInt(facecolor);
 
-    console.log('shellname', shellname);
-    console.log('faces', faces);
-    console.log('theface', theface);
-    console.log('t', t);
-
     var f = faces[theface[t]].getElementsByTagName('f'); // 面中所以f标签，代表每个三角面片的信息
     for (
       var i = 0;
@@ -106,23 +91,15 @@ function drawface(theface, shellname, color) {
     mesh.name += theface[t];
   }
   // mesh.position.set(300,300,300);
-  facegroup.push(mesh); // 将此mesh对象放入facegroup组中
+  facegroup.push(mesh);
   objects.push(mesh);
-  //	    console.log(objects);
   scene.add(mesh);
+
+  return mesh;
 }
 
 function drawDesignface(theface, shellname, color) {
   var baseurl = `${base[0]}/${base[1]}/`;
-
-  // var xmlDoc=document.implementation.createDocument("","",null);
-  // xmlDoc.async=false;
-  // try {//判断文件是否存在
-  //   xmlDoc.load(baseurl+shellname+".xml");
-  // }
-  // catch(err){//如果文件不存在，退出，return 0;
-  //   return 0;
-  // }
   var xmlDoc;
   try {
     // 判断文件是否存在
@@ -202,23 +179,17 @@ function drawDesignface(theface, shellname, color) {
   for (var t = 0; t < theface.length; t += 1) {
     mesh.name += theface[t];
   }
-  // mesh.position.set(300,300,300);
-  //		facegroup.push(mesh);//将此mesh对象放入facegroup组中
-  //	    objects.push(mesh);
-  console.log(`a:${mesh.name}`);
   scene.add(mesh);
 }
 
+// TODO：未被使用的函数
 function deleteFromObject(str) {
-  // console.log(objects)
-  // console.log(str)
   for (var i = 0; i < objects.length; i += 1) {
     if (objects[i].name == str) {
       objects.splice(i, 1);
       scene.remove(scene.getObjectByName(str));
     }
   }
-  console.log(objects);
 }
 
 function transform(xform, vec) {
@@ -234,14 +205,6 @@ function transform(xform, vec) {
 
 function redrawGeo(shellname) {
   var baseurl = `${base[0]}/${base[1]}/`;
-  // var xmlDoc=document.implementation.createDocument("","",null);
-  // xmlDoc.async=false;
-  // try {//判断文件是否存在
-  //   xmlDoc.load(baseurl+shellname+".xml");
-  // }
-  // catch(err){//如果文件不存在，退出，return 0;
-  //   return 0;
-  // }
   var xmlDoc;
   try {
     // 判断文件是否存在
@@ -320,8 +283,4 @@ function redrawGeo(shellname) {
     mesh.name = t;
     objects.push(mesh);
   }
-
-  //		facegroup.push(mesh);//将此mesh对象放入facegroup组中
-  //	    objects.push(mesh);
-  //	    //console.log(objects);
 }

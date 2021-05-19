@@ -7,7 +7,7 @@ var material = new THREE.MeshPhongMaterial({
   vertexColors: THREE.VertexColors,
   side: THREE.DoubleSide,
   specular: 0x4488ee,
-  shininess: 12,
+  shininess: 8,
 });
 var line_material1 = new THREE.LineBasicMaterial({ color: 0xff0000 });
 var lunkuo_material = new THREE.LineBasicMaterial({
@@ -37,8 +37,11 @@ var geogroup = new Array(); // 几何体
 var linegroup = new Array(); // 轮廓
 var alllinegeom = new THREE.Geometry();
 var annogroup = new Array(); // 标注的组
-var facegroup = new Array(); // 面
-var objects = new Array();
+var facegroup = new Array(); // 面 TODO：作用是什么？
+var objects = new Array(); // TODO：作用是什么？
+var highLightFaceList = new Array(); // 目前高亮的面的数组
+var allFaceLineList = new Array(); // 目前高亮的轮廓的数组
+var meshClickManager = new MeshClick();
 
 // ------------读地址栏url，并自动解析
 var fileName = window.location.href.split('?')[1];
@@ -100,30 +103,66 @@ window.num = 0;
  */
 // xshell:[shell#id388, shell#id386, shell#id391, shell#id392, shell#id390, shell#id389, shell#id387, shell#id393]
 
-initGeoGroup(); // 画几何体
 var targetShellId = xshell[0].getAttribute('id');
 var targetShellName = `shell_${targetShellId}`;
-initLineGroup(targetShellName); // 画所有面的轮廓  TODO:这里targetShellName的作用是什么？
-
-var faceline = new THREE.Group();
-// drawfaceline([16,17,18,19],targetShellName);//画某些面的轮廓  （？）
-drawface([0], targetShellName, '381154'); // 高亮某些面
-// redrawGeo(targetShellName);
+initGeoGroup(); // 绘制几何体
+initLineGroup(targetShellName); // 绘制所有面的轮廓 (TODO：同时记录targetShell的count,是为了什么？)
 
 render();
 onWindowResize();
 window.addEventListener('resize', onWindowResize);
-var dragControls = new THREE.DragControls(objects, camera, renderer.domElement);
-dragControls.addEventListener('dragstart', (event) => {
-  controls.enabled = false;
-});
-dragControls.addEventListener('dragend', (event) => {
-  controls.enabled = true;
-});
 document.getElementById('3dfooter').innerHTML = `零件个数:${geogroup.length}<br>标注个数：${annotations.length}`;
-// console.log(geogroup)
 
 // ----------------加载结束
+
+function chooseFace(faces, shellName) {
+  highLight(faces, shellName);
+}
+
+/**
+ * @param  {} faces 高亮面的数组
+ * @param  {} shellName 高亮面所在零件的ID
+ */
+function highLight(faces, shellName) {
+  console.log('! ', shellName);
+  allFaceLineList.forEach((line) => {
+    scene.remove(line);
+  });
+  allFaceLineList = new Array();
+  highLightFaceList.forEach((mesh) => {
+    scene.remove(mesh);
+  });
+  highLightFaceList = new Array();
+
+  var allFaceLines = drawfaceline(faces, shellName);// 画某些面的轮廓  （？）
+  allFaceLines.forEach((allFaceLine) => {
+    allFaceLineList.push(allFaceLine);
+  });
+  var highLightFace = drawface(faces, shellName, '381154'); // 高亮某些面
+  highLightFaceList.push(highLightFace);
+
+  // redrawGeo(shellName);
+
+  var dragControls = new THREE.DragControls(highLightFaceList, camera, renderer.domElement);
+  dragControls.addEventListener('dragstart', (event) => {
+    controls.enabled = false;
+  });
+  dragControls.addEventListener('dragend', (event) => {
+    controls.enabled = true;
+  });
+  dragControls.addEventListener('clickDragObject', (event) => {
+    var selected = event.object;
+    // 改透明度
+    // eslint-disable-next-line eqeqeq
+    if (selected.material.opacity == 0.5) {
+    // selected.material.visible=true;
+      selected.material.opacity = 1;
+    } else {
+      selected.material.opacity = 0.5;
+    }
+  // 改透明度结束
+  });
+}
 
 function onWindowResize() {
   var w = container.clientWidth;
