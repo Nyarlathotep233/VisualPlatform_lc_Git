@@ -4,18 +4,13 @@ function hasArray(array) {
   if (scene.getObjectByName(str) == null) return false;
   return true;
 }
-
+/**
+ * @param  {} theface 零件中面的序号
+ * @param  {} shellname 零件名
+ * @param  {} color 面的颜色
+ */
 function drawface(theface, shellname, color) {
   var baseurl = `${base[0]}/${base[1]}/`;
-
-  // var xmlDoc=document.implementation.createDocument("","",null);
-  // xmlDoc.async=false;
-  // try {//判断文件是否存在
-  //   xmlDoc.load(baseurl+shellname+".xml");
-  // }
-  // catch(err){//如果文件不存在，退出，return 0;
-  //   return 0;
-  // }
   var xmlDoc;
   try {
     // 判断文件是否存在
@@ -65,7 +60,6 @@ function drawface(theface, shellname, color) {
     var facecolor = `0x${dealcolor(color)}`;
     facecolor = parseInt(facecolor);
 
-    console.log('! faces', faces);
     var f = faces[theface[t]].getElementsByTagName('f'); // 面中所以f标签，代表每个三角面片的信息
     for (
       var i = 0;
@@ -97,7 +91,7 @@ function drawface(theface, shellname, color) {
     mesh.name += theface[t];
   }
   // mesh.position.set(300,300,300);
-  facegroup.push(mesh); // 将此mesh对象放入facegroup组中
+  facegroup.push(mesh);
   objects.push(mesh);
   scene.add(mesh);
 
@@ -106,15 +100,6 @@ function drawface(theface, shellname, color) {
 
 function drawDesignface(theface, shellname, color) {
   var baseurl = `${base[0]}/${base[1]}/`;
-
-  // var xmlDoc=document.implementation.createDocument("","",null);
-  // xmlDoc.async=false;
-  // try {//判断文件是否存在
-  //   xmlDoc.load(baseurl+shellname+".xml");
-  // }
-  // catch(err){//如果文件不存在，退出，return 0;
-  //   return 0;
-  // }
   var xmlDoc;
   try {
     // 判断文件是否存在
@@ -197,6 +182,7 @@ function drawDesignface(theface, shellname, color) {
   scene.add(mesh);
 }
 
+// TODO：未被使用的函数
 function deleteFromObject(str) {
   for (var i = 0; i < objects.length; i += 1) {
     if (objects[i].name == str) {
@@ -219,14 +205,6 @@ function transform(xform, vec) {
 
 function redrawGeo(shellname) {
   var baseurl = `${base[0]}/${base[1]}/`;
-  // var xmlDoc=document.implementation.createDocument("","",null);
-  // xmlDoc.async=false;
-  // try {//判断文件是否存在
-  //   xmlDoc.load(baseurl+shellname+".xml");
-  // }
-  // catch(err){//如果文件不存在，退出，return 0;
-  //   return 0;
-  // }
   var xmlDoc;
   try {
     // 判断文件是否存在

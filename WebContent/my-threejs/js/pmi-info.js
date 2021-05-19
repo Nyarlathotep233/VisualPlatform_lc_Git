@@ -1,4 +1,5 @@
-var faceList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; // 测试用
+/* eslint-disable no-underscore-dangle */
+const FACELIST = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; // 测试用
 
 function renderTree(OriginPMITreeData) {
   const { createElement } = React;
@@ -9,6 +10,7 @@ function renderTree(OriginPMITreeData) {
   function initAllNode(showNode) {
     const initAttr = {
       showChildren: true,
+      _choosed: false,
       nodeID: window.uuidv1(),
     };
     if (showNode.children && showNode.children.length) {
@@ -23,6 +25,28 @@ function renderTree(OriginPMITreeData) {
 
   function PMITree(props) {
     const [state, setState] = useState(props.data);
+
+    // eslint-disable-next-line no-underscore-dangle
+    function _changeNodeAttr(nodeID, attrName, value) {
+      _loopAllNode((item) => {
+        if (item.nodeID === nodeID) {
+          // eslint-disable-next-line no-param-reassign
+          item[attrName] = value;
+        }
+      }, state);
+      setState({
+        ...state,
+      });
+    }
+    // eslint-disable-next-line no-underscore-dangle
+    function _loopAllNode(cb, node) {
+      cb(node);
+      if (node.children && node.children.length) {
+        node.children.forEach((item) => {
+          _loopAllNode(cb, item);
+        });
+      }
+    }
 
     function expAll() {
       function recExpAll(childrenList) {
@@ -63,17 +87,6 @@ function renderTree(OriginPMITreeData) {
 
     function changeNodeAttr(nodeID, attrName, value) {}
 
-    function expNode() {}
-
-    function colNode() {}
-
-    // function switchShow(nodeID) {
-    //   node.showChildren = !node.showChildren;
-    //   setState({
-    //     ...state,
-    //   });
-    // }
-
     function createNode(node) {
       function ul() {
         const showul = node.children && node.children.length && node.showChildren;
@@ -91,9 +104,19 @@ function renderTree(OriginPMITreeData) {
         return '';
       }
 
+      function setCurrentNodeAttr(attrName, value) {
+        _changeNodeAttr(node.nodeID, attrName, value);
+      }
+
       function handleClick() {
         if (haveClickEvent()) {
-          node.handleClick();
+          node.handleClick(setCurrentNodeAttr, node);
+        }
+        if (node.chooseable) {
+          _loopAllNode((item, cb) => {
+            _changeNodeAttr(item.nodeID, '_choosed', false);
+          }, state);
+          setCurrentNodeAttr('_choosed', true);
         }
       }
 
@@ -105,11 +128,7 @@ function renderTree(OriginPMITreeData) {
       }
 
       function switchShow() {
-        // eslint-disable-next-line no-param-reassign
-        node.showChildren = !node.showChildren;
-        setState({
-          ...state,
-        });
+        setCurrentNodeAttr('showChildren', !node.showChildren);
       }
 
       function imgError({ target }) {
@@ -127,7 +146,7 @@ function renderTree(OriginPMITreeData) {
           );
         }
         return (
-          <span>
+          <span onClick={handleClick}>
             {getName()}
           </span>
         );
@@ -135,21 +154,30 @@ function renderTree(OriginPMITreeData) {
 
       function getName() {
         const { label } = node;
+        let content;
+        if (typeof label === 'object') {
+          content = label.content;
+        } else {
+          content = label;
+        }
+        // test
+        content = `${content} ${JSON.stringify(node._choosed)}`;
+
         if (typeof label === 'string') {
-          return label;
+          return content;
         } if (typeof label === 'object') {
           return (
             <div style = {{ display: 'flex', 'align-items': 'center' }}>
               <img src={label.icon} style = {{ display: 'flex', height: '16px', 'margin-right': '6px' }} onError={imgError}></img>
-              <span>{label.content}</span>
+              <span>{content}</span>
             </div>
           );
         }
-        return label;
+        return content;
       }
 
       return (
-        <li style={{ 'list-style-type': 'none' }}>
+        <li style={{ 'list-style-type': 'none', border: `${node._choosed ? '2' : '0'}px red solid` }}>
           <div style={{
             display: 'flex', 'align-items': 'center', height: '20px',
           }} >
@@ -215,9 +243,10 @@ function loadPMI(xmlFile) {
         elementface,
         toleranceNum: 0,
         children: [], // 公差
+        chooseable: true,
         handleClick: () => {
-          var randomFace = faceList[Math.floor((Math.random() * faceList.length))]; // 测试用
-          highLight([randomFace]);
+          var randomFace = FACELIST[Math.floor((Math.random() * FACELIST.length))]; // 测试用
+          chooseFace([randomFace], targetShellName); // targetShellName 为测试用
         },
       };
       elementFaceMap[elementface] = elementFaceElement;
