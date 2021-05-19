@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 /* eslint-disable radix */
 /* eslint-disable prefer-destructuring */
 function initGeoGroup() {
@@ -104,14 +105,14 @@ function initface(v, faces, shellindex) {
     geogroup[p - 1].add(faceMesh);
     // geogroup[shellindex].add(mesh);
 
-    // eslint-disable-next-line no-underscore-dangle
     const _targetShellName = targetShellName;
-    // eslint-disable-next-line no-underscore-dangle
     const _chooseFace = chooseFace;
 
-    meshClickManager.addMesh(faceMesh, (mesh) => {
-      console.log('!', mesh, faceIndex);
-      _chooseFace([faceIndex], _targetShellName); // targetShellName 为测试用
+    // eslint-disable-next-line no-loop-func
+    meshClickManager.addMesh(faceMesh, () => {
+      if (highLightFaceIndex.indexOf(faceIndex) === -1) {
+        _chooseFace([faceIndex], _targetShellName); // targetShellName 为测试用
+      }
     });
   }
 }

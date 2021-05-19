@@ -160,8 +160,6 @@ function renderTree(OriginPMITreeData) {
         } else {
           content = label;
         }
-        // test
-        content = `${content} ${JSON.stringify(node._choosed)}`;
 
         if (typeof label === 'string') {
           return content;

@@ -39,8 +39,9 @@ var alllinegeom = new THREE.Geometry();
 var annogroup = new Array(); // 标注的组
 var facegroup = new Array(); // 面 TODO：作用是什么？
 var objects = new Array(); // TODO：作用是什么？
-var highLightFaceList = new Array(); // 目前高亮的面的数组
-var allFaceLineList = new Array(); // 目前高亮的轮廓的数组
+var highLightFaceIndex = new Array(); // 目前高亮的面的序号
+var highLightFaceList = new Array(); // 目前高亮面的mesh的数组
+var allFaceLineList = new Array(); // 目前高亮轮廓的mesh的数组
 var meshClickManager = new MeshClick();
 
 // ------------读地址栏url，并自动解析
@@ -124,7 +125,6 @@ function chooseFace(faces, shellName) {
  * @param  {} shellName 高亮面所在零件的ID
  */
 function highLight(faces, shellName) {
-  console.log('! ', shellName);
   allFaceLineList.forEach((line) => {
     scene.remove(line);
   });
@@ -140,8 +140,6 @@ function highLight(faces, shellName) {
   });
   var highLightFace = drawface(faces, shellName, '381154'); // 高亮某些面
   highLightFaceList.push(highLightFace);
-
-  // redrawGeo(shellName);
 
   var dragControls = new THREE.DragControls(highLightFaceList, camera, renderer.domElement);
   dragControls.addEventListener('dragstart', (event) => {
@@ -162,6 +160,9 @@ function highLight(faces, shellName) {
     }
   // 改透明度结束
   });
+
+  highLightFaceIndex = [];
+  highLightFaceIndex.push(...faces);
 }
 
 function onWindowResize() {
