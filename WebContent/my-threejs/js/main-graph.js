@@ -43,6 +43,7 @@ var highLightFaceIndex = new Array(); // 目前高亮的面的序号
 var highLightFaceList = new Array(); // 目前高亮面的mesh的数组
 var allFaceLineList = new Array(); // 目前高亮轮廓的mesh的数组
 var meshClickManager = new MeshClick();
+var PMITreeData = null;
 
 // ------------读地址栏url，并自动解析
 var fileName = window.location.href.split('?')[1];
@@ -116,15 +117,16 @@ document.getElementById('3dfooter').innerHTML = `零件个数:${geogroup.length}
 
 // ----------------加载结束
 
-function chooseFace(faces, shellName) {
-  highLight(faces, shellName);
+function chooseFace(faceIndexList, shellName) {
+  highLight(faceIndexList, shellName);
+  highLightTreeNode(faceIndexList, shellName);
 }
 
 /**
- * @param  {} faces 高亮面的数组
+ * @param  {} faceIndexList 高亮面的数组
  * @param  {} shellName 高亮面所在零件的ID
  */
-function highLight(faces, shellName) {
+function highLight(faceIndexList, shellName) {
   allFaceLineList.forEach((line) => {
     scene.remove(line);
   });
@@ -134,11 +136,11 @@ function highLight(faces, shellName) {
   });
   highLightFaceList = new Array();
 
-  var allFaceLines = drawfaceline(faces, shellName);// 画某些面的轮廓  （？）
+  var allFaceLines = drawfaceline(faceIndexList, shellName);// 画某些面的轮廓  （？）
   allFaceLines.forEach((allFaceLine) => {
     allFaceLineList.push(allFaceLine);
   });
-  var highLightFace = drawface(faces, shellName, '381154'); // 高亮某些面
+  var highLightFace = drawface(faceIndexList, shellName, '381154'); // 高亮某些面
   highLightFaceList.push(highLightFace);
 
   var dragControls = new THREE.DragControls(highLightFaceList, camera, renderer.domElement);
@@ -162,7 +164,7 @@ function highLight(faces, shellName) {
   });
 
   highLightFaceIndex = [];
-  highLightFaceIndex.push(...faces);
+  highLightFaceIndex.push(...faceIndexList);
 }
 
 function onWindowResize() {
