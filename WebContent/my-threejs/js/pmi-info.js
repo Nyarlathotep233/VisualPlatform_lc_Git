@@ -163,7 +163,7 @@ function renderPMITree(originPMITreeData, currentArray) {
       }
 
       function getLabel() {
-        if (haveClickEvent()) {
+        if (haveClickEvent() || node.chooseable) {
           return (
             <a onClick={handleClick}>
               {getName()}
@@ -252,7 +252,7 @@ function loadPMI(xmlFile) {
     const tail = element.getElementsByTagName('tail')[0];
 
     const elementface = head.getElementsByTagName('elementface')[0].firstChild.nodeValue;
-    const PMIElement = {
+    let PMIElement = {
       children: [],
     };
     const typeNameList = {
@@ -282,16 +282,20 @@ function loadPMI(xmlFile) {
       };
       elementFaceMap[elementface] = elementFaceElement;
     }
-    let faceID;
-    let typeName;
-    let datumface;
-    let toleranceID;
-    let value;
-    let toleranceNum;
+
+    const faceID = body.getElementsByTagName('Instance')[0].getAttribute('rdf:ID');
+    const typeName = typeNameList[type];
+    const datumface = head.getElementsByTagName('datumface')[0] && head.getElementsByTagName('datumface')[0].firstChild.nodeValue;
+    const toleranceID = body.getElementsByTagName('Instance')[0] && body.getElementsByTagName('Instance')[0].getAttribute('rdf:ID');
+    const value = body.getElementsByTagName('value')[0] && body.getElementsByTagName('value')[0].firstChild.nodeValue;
+    const toleranceNum = elementFaceMap[elementface].toleranceNum + 1;
+
     switch (type) {
       case 'datum':
-        faceID = body.getElementsByTagName('Instance')[0].getAttribute('rdf:ID');
         PMIElement.label = `基准面${faceID}`;
+        if (!elementFaceName2ID[faceID]) {
+          elementFaceName2ID[faceID] = { elementface };
+        }
         break;
       case 'angularity_tolerance':
       case 'flatness_tolerance':
@@ -302,14 +306,25 @@ function loadPMI(xmlFile) {
       case 'geometric_tolerance':
       case 'plus_minus_tolerance':
       case 'circular_runoutput_tolerance':
-        typeName = typeNameList[type];
-        datumface = head.getElementsByTagName('datumface')[0] && head.getElementsByTagName('datumface')[0].firstChild.nodeValue;
-        toleranceID = body.getElementsByTagName('Instance')[0] && body.getElementsByTagName('Instance')[0].getAttribute('rdf:ID');
-        value = body.getElementsByTagName('value')[0] && body.getElementsByTagName('value')[0].firstChild.nodeValue;
-        toleranceNum = elementFaceMap[elementface].toleranceNum + 1;
 
         elementFaceMap[elementface].toleranceNum += 1;
-        PMIElement.label = { content: `公差${toleranceNum}`, icon: `./images/icons/semantic/${type}.png` };
+        PMIElement = {
+          ...PMIElement,
+          label: {
+            content: `公差${toleranceNum}`,
+            icon: `./images/icons/semantic/${type}.png`,
+
+          },
+          chooseable: true,
+          key: toleranceID,
+          handleClick: () => {
+            const faceIndex = String(elementface).slice(1) - FIRSTINDEX;
+            chooseTolerance([faceIndex, datumface], targetShellName, toleranceID); // targetShellName 为测试用
+            console.log('! 高亮面', faceIndex, datumface);
+            console.log('! 公差ID', toleranceID);
+            console.log('! elementFaceName2ID', elementFaceName2ID);
+          },
+        };
         PMIElement.children.push({
           label: `类型: ${typeName}`,
           children: [],

@@ -44,6 +44,7 @@ var highLightFaceList = new Array(); // 目前高亮面的mesh的数组
 var allFaceLineList = new Array(); // 目前高亮轮廓的mesh的数组
 var meshClickManager = new MeshClick();
 var PMITreeData = null;
+var elementFaceName2ID = {};
 
 // ------------读地址栏url，并自动解析
 var fileName = window.location.href.split('?')[1];
@@ -117,7 +118,31 @@ document.getElementById('3dfooter').innerHTML = `零件个数:${geogroup.length}
 
 // ----------------加载结束
 
-function chooseFace(faceIndexList, shellName) {
+function getFaceIndexList(faceList) {
+  const faceIndexList = [];
+  faceList.forEach((value, index) => {
+    if (typeof value === 'number') {
+      faceIndexList.push(value);
+    } if (typeof value === 'string') {
+      let elementface = value;
+      if (value.charAt(0) !== '#') {
+        elementface = window.elementFaceName2ID[value].elementface;
+      }
+      faceIndexList.push(String(elementface).slice(1) - FIRSTINDEX);
+    }
+  });
+
+  return faceIndexList;
+}
+
+function chooseTolerance(faceList, shellName, toleranceID) {
+  const faceIndexList = getFaceIndexList(faceList);
+  highLight(faceIndexList, shellName);
+  highLightTreeNode([...faceIndexList, toleranceID], shellName);
+}
+
+function chooseFace(faceList, shellName) {
+  const faceIndexList = getFaceIndexList(faceList);
   highLight(faceIndexList, shellName);
   highLightTreeNode(faceIndexList, shellName);
 }
