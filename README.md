@@ -1,8 +1,8 @@
 # VisualPlatform_lc_Git
 
-## 三维展示和语义展示模块说明
+## 三维展示模块说明
 
-> 对三维展示和语义展示模块的进行的修改和开发的说明
+> 对三维展示和语义展示模块的进行的修改和开发的说明(2021/5/25)
 
 ### 1.utils.js文件里存放工具函数
 
@@ -54,8 +54,35 @@ try {
 > 利用React可以逐步采用的特性,部分组件使用了React来开发
 
 在testMain.jsp中使用script标签引入react的两个js文件,都是压缩后的生产就绪（production-ready）版本
+
 ```html
 <!-- testMain.jsp -->
 <script src="assets/js/react.production.min.js"></script>
 <script src="assets/js/react-dom.production.min.js"></script>
 ```
+
+#### (2)babel-standalone
+为了在React中使用JSX语法,使用了babel-standalone,它可以直接在浏览器中转换编译JS代码,只要在需要编译的JS文件的script标签上添加 type="text/babel" 属性就行了,所有有这个属性的script标签都会被转换编译
+
+babel也可以确保ES6语法可以在一些低版本浏览器中使用
+
+> 使用babel-standalone会导致一个副作用,那就是需要被它编译的script标签会在其它不需要编译的script标签后被加载,因此需要小心script标签加载的顺序
+> 
+> 同时babel-standalone在浏览器上编译JS文件会影响性能,有条件的话感觉还是应该在nodejs下用预处理器来处理这些JS文件
+
+```html
+<!-- testMain.jsp -->
+<script src="assets/js/babel.min.js"></script>
+<!-- ... -->
+<script src="my-threejs/js/pmi-info.js" type="text/babel"></script>
+```
+
+#### (3)Lodash
+除了React外还引入了Lodash,可以提供一些JavaScript的常用的实用工具
+
+```html
+<!-- testMain.jsp -->
+<script src="assets/js/lodash.js"></script>
+```
+
+### 具体的一些函数的说明写在代码的注释中

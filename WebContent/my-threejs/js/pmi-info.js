@@ -1,6 +1,18 @@
 /* eslint-disable no-underscore-dangle */
 const FIRSTINDEX = 467; // 测试用
-
+/**
+ * @param  {Object} originPMITreeData PMI树的根节点
+ * Example: {
+ *  label: 'MBD产品模型',
+ *  children: [
+ *    {
+ *      label: '零件PMI',
+ *      children: ...,
+ *    },
+ *  ],
+ *};
+ * @param  {Array} currentArray PMI树高亮的节点的ID Example:['#467', '#468']
+ */
 function renderPMITree(originPMITreeData, currentArray) {
   const { createElement } = React;
   const { useState, useEffect } = React;
@@ -146,7 +158,6 @@ function renderPMITree(originPMITreeData, currentArray) {
       }
 
       function imgError({ target }) {
-        console.log('imgError', target);
         // eslint-disable-next-line no-param-reassign
         target.style.display = 'none';
       }
@@ -218,7 +229,10 @@ function renderPMITree(originPMITreeData, currentArray) {
   const domContainer = document.querySelector('#tree-container');
   ReactDOM.render(<PMITree data={originPMITreeData} current={currentArray}/>, domContainer);
 }
-
+/**
+ * @param  {Array} faces 高亮的面的index Example:[0,1,2]
+ * @param  {String} shellName 高亮的面所在的零件的shellName
+ */
 function highLightTreeNode(faces, shellName) {
   const faceIDList = faces.map((faceIndex) => `#${faceIndex + FIRSTINDEX}`);
   renderPMITree(window.PMITreeData, faceIDList);
@@ -315,8 +329,6 @@ function loadPMI(xmlFile) {
         PMIElement.label = `未知类型 ${type}`;
     }
     elementFaceMap[elementface].children.push(PMIElement);
-    console.log(`----- ${elementface} -----`);
-    console.log(PMIElement);
   });
 
   // elementFaceList
@@ -345,5 +357,5 @@ function loadPMI(xmlFile) {
 const fileName = 'my-threejs/pmi_output.xml';
 
 // 加载PMI数据
-console.log(fileName);
+
 loadPMI(fileName);

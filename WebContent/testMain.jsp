@@ -53,7 +53,7 @@
           border: 1px solid #979797;
           background: #f1f1f1 url(http://js.fgm.cc/learn/lesson6/img/line.png) 24px 0 repeat-y;
           padding: 2px;
-          box-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
         }
 
         #rightMenu ul li {
@@ -91,7 +91,7 @@
           border: 1px solid #979797;
           background: #f1f1f1 url(http://js.fgm.cc/learn/lesson6/img/line.png);
           padding: 2px;
-          box-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
         }
 
         #showAttributes span {
@@ -104,7 +104,7 @@
         #showAttributes span select {
           width: 150px;
           text-align: center;
-          height: 24px
+          height: 24px;
         }
 
         #rightMenu3 {
@@ -118,7 +118,7 @@
           border: 1px solid #979797;
           background: #f1f1f1 url(http://js.fgm.cc/learn/lesson6/img/line.png) 24px 0 repeat-y;
           padding: 2px;
-          box-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
         }
 
         #rightMenu3 ul li {
@@ -163,7 +163,7 @@
           border: 1px solid #979797;
           background: #f1f1f1 url(http://js.fgm.cc/learn/lesson6/img/line.png) 24px 0 repeat-y;
           padding: 2px;
-          width: 502px
+          width: 502px;
         }
 
         #rightMenu4 ul li {
@@ -212,7 +212,7 @@
         #showAttributes4 span {padding-left: 27px;height:34px;display: block;border-top:2px solid #979797;}
         #showAttributes4 span select {width:150px;text-align:center;height:34px} */
         .button {
-          background-color: #D19275;
+          background-color: #d19275;
           /* Green */
           border: none;
           color: white;
@@ -267,7 +267,11 @@
         #showAttributes4 span select {
           width: 150px;
           text-align: center;
-          height: 30px
+          height: 30px;
+        }
+
+        .spread-btn img {
+          width: 20px;
         }
       </style>
     </head>
@@ -707,17 +711,15 @@
               </div>
               <!-- End col-lg-6 -->
             </div>
-            <div class="special3 col-lg-5 col-md-5 sortable-layout" id="seven">
+            <div class="special3 col-lg-5 col-md-5 sortable-layout" id="seven" style="display: none">
               <!-- Start 二维pmi显示 -->
               <!-- Start col-lg-5 -->
               <div class="panel panel-brown">
                 <!-- Start .panel -->
                 <div class="panel-heading">
-                  <h4 class="panel-title"><i class="im-bars"></i>语义展示
-                  </h4><br />
+                  <h4 class="panel-title"><i class="im-bars"></i>语义展示</h4>
                 </div>
-                <div id="tree-container" class="panel-body">
-                </div>
+                <div id="tree-container" class="panel-body"></div>
                 <div id="3dfooter" class="panel-footer"></div>
                 <!-- End .panel -->
               </div>
@@ -739,7 +741,8 @@
       <!-- 三方库 -->
       <script src="assets/js/react.production.min.js"></script>
       <script src="assets/js/react-dom.production.min.js"></script>
-      <script src="assets/js/babel.min.js"></script>=
+      <script src="assets/js/lodash.js"></script>
+      <script src="assets/js/babel.min.js"></script>
 
       <script src="assets/plugins/core/pace/pace.min.js"></script>
       <!-- Important javascript libs(put in all pages) -->
@@ -981,6 +984,7 @@
 
           $(".but3").click(function (e) {
             $("#three").toggle();
+            $("#seven").toggle();
           });
           $(".but4").click(function (e) {
             $("#four").toggle();
@@ -1059,14 +1063,15 @@
       <script src="my-threejs/js/libs/THREE.MeshLine.js"></script>
       <script src="my-threejs/js/libs/gl-matrix-min.js"></script>
       <script src="my-threejs/js/libs/gl-matrix.js"></script>
-      <script src="my-threejs/js/utils.js"></script>
+      <script src="my-threejs/js/utils.js" type="text/babel"></script>
+      <script src="my-threejs/js/annotation.js" type="text/babel"></script>
+      <script src="my-threejs/js/geom.js" type="text/babel"></script>
+      <script src="my-threejs/js/lunkuo.js" type="text/babel"></script>
+      <script src="my-threejs/js/scene.js" type="text/babel"></script>
+      <script src="my-threejs/js/drawface.js" type="text/babel"></script>
+      <script src="my-threejs/js/MeshClick.js" type="text/babel"></script>
+      <script src="my-threejs/js/main-graph.js" type="text/babel"></script>
       <script src="my-threejs/js/pmi-info.js" type="text/babel"></script>
-      <script src="my-threejs/js/annotation.js"></script>
-      <script src="my-threejs/js/geom.js"></script>
-      <script src="my-threejs/js/lunkuo.js"></script>
-      <script src="my-threejs/js/scene.js"></script>
-      <script src="my-threejs/js/drawface.js"></script>
-      <script src="my-threejs/js/main-graph.js"></script>
       <!-- <script type="text/babel">
         const e = React.createElement;
 

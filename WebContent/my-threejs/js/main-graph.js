@@ -16,7 +16,7 @@ var lunkuo_material = new THREE.LineBasicMaterial({
   opacity: 0.5,
 });
 var container = document.getElementById('container');
-// console.log(container.clientWidth)
+//
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(
   60,
@@ -75,7 +75,7 @@ for (var j = 1; j < shapes.length; j += 1) {
       var shellId = shapes[s].getAttribute('shell');
       var annotation_id = shapes[s].getAttribute('annotation');
       var shell_url = `shell_${shellId}.xml`;
-      console.log('shellId', shellId);
+
       map2.push([shapesRef, shellId, shell_url, annotation_id]);
     }
   }
@@ -124,7 +124,7 @@ function chooseFace(faceIndexList, shellName) {
 
 /**
  * @param  {} faceIndexList 高亮面的数组
- * @param  {} shellName 高亮面所在零件的ID
+ * @param  {} shellName 高亮面所在零件的shellName
  */
 function highLight(faceIndexList, shellName) {
   allFaceLineList.forEach((line) => {
@@ -199,5 +199,5 @@ function remove_anno() {
     for (var a = 0; a < annogroup.length; a += 1) scene.remove(annogroup[a]);
     annogroup.length = 0;
   }
-  // console.log(annogroup.length)
+  //
 }
