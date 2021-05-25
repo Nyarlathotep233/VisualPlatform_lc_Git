@@ -56,6 +56,8 @@ function renderPMITree(originPMITreeData, currentArray) {
     }
 
     function expAll() {
+      let rstPMITreeData = state.PMITreeData;
+
       function recExpAll(childrenList) {
         if (childrenList && childrenList.length) {
           return childrenList.map((item, index) => {
@@ -69,13 +71,16 @@ function renderPMITree(originPMITreeData, currentArray) {
         return [];
       }
 
-      state.PMITreeData = { ...state, _showChildren: false, children: recExpAll(state.children) };
+      rstPMITreeData = { ...rstPMITreeData, _showChildren: false, children: recExpAll(rstPMITreeData.children) };
+      state.PMITreeData = rstPMITreeData;
 
       setState({
         ...state,
       });
     }
     function colAll() {
+      let rstPMITreeData = state.PMITreeData;
+
       function recColAll(childrenList) {
         if (childrenList && childrenList.length) {
           return childrenList.map((item, index) => {
@@ -89,7 +94,8 @@ function renderPMITree(originPMITreeData, currentArray) {
         return [];
       }
 
-      state.PMITreeData = { ...state, _showChildren: true, children: recColAll(state.children) };
+      rstPMITreeData = { ...rstPMITreeData, _showChildren: true, children: recColAll(rstPMITreeData.children) };
+      state.PMITreeData = rstPMITreeData;
 
       setState({
         ...state,
