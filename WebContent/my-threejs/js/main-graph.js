@@ -134,24 +134,43 @@ function getFaceIndexList(faceList) {
 
   return faceIndexList;
 }
+function getFaceIDList(faceList) {
+  const faceIDList = [];
+  faceList.forEach((value, index) => {
+    if (typeof value === 'number') {
+      faceIDList.push(`#${value + FIRSTINDEX}`);
+    } if (typeof value === 'string') {
+      let elementface = value;
+      if (value.charAt(0) !== '#') {
+        elementface = window.elementFaceName2ID[value].elementface;
+      }
+      faceIDList.push(elementface);
+    }
+  });
+
+  return faceIDList;
+}
 
 function chooseTolerance(faceList, shellName, toleranceID) {
-  const faceIndexList = getFaceIndexList(faceList);
-  highLight(faceIndexList, shellName);
-  highLightTreeNode([...faceIndexList, toleranceID], shellName);
+  const faceIDList = getFaceIDList(faceList);
+
+  highLight(faceIDList, shellName);
+  highLightTreeNode([...faceIDList, toleranceID], shellName);
 }
 
 function chooseFace(faceList, shellName) {
-  const faceIndexList = getFaceIndexList(faceList);
-  highLight(faceIndexList, shellName);
-  highLightTreeNode(faceIndexList, shellName);
+  const faceIDList = getFaceIDList(faceList);
+  highLight(faceIDList, shellName);
+  highLightTreeNode(faceIDList, shellName);
 }
 
 /**
  * @param  {} faceIndexList 高亮面的数组
  * @param  {} shellName 高亮面所在零件的shellName
  */
-function highLight(faceIndexList, shellName) {
+function highLight(faceList, shellName) {
+  const faceIndexList = getFaceIndexList(faceList);
+
   allFaceLineList.forEach((line) => {
     scene.remove(line);
   });

@@ -230,12 +230,11 @@ function renderPMITree(originPMITreeData, currentArray) {
   ReactDOM.render(<PMITree data={originPMITreeData} current={currentArray}/>, domContainer);
 }
 /**
- * @param  {Array} faces 高亮的面的index Example:[0,1,2]
+ * @param  {Array} nodeID  ["#467", "flatness_tolerance1"]
  * @param  {String} shellName 高亮的面所在的零件的shellName
  */
-function highLightTreeNode(faces, shellName) {
-  const faceIDList = faces.map((faceIndex) => `#${faceIndex + FIRSTINDEX}`);
-  renderPMITree(window.PMITreeData, faceIDList);
+function highLightTreeNode(nodeID, shellName) {
+  renderPMITree(window.PMITreeData, nodeID);
 }
 
 function loadPMI(xmlFile) {
@@ -289,13 +288,14 @@ function loadPMI(xmlFile) {
     const toleranceID = body.getElementsByTagName('Instance')[0] && body.getElementsByTagName('Instance')[0].getAttribute('rdf:ID');
     const value = body.getElementsByTagName('value')[0] && body.getElementsByTagName('value')[0].firstChild.nodeValue;
     const toleranceNum = elementFaceMap[elementface].toleranceNum + 1;
+    if (!elementFaceName2ID[faceID]) {
+      elementFaceName2ID[faceID] = { elementface };
+    }
 
     switch (type) {
       case 'datum':
         PMIElement.label = `基准面${faceID}`;
-        if (!elementFaceName2ID[faceID]) {
-          elementFaceName2ID[faceID] = { elementface };
-        }
+
         break;
       case 'angularity_tolerance':
       case 'flatness_tolerance':
@@ -313,16 +313,12 @@ function loadPMI(xmlFile) {
           label: {
             content: `公差${toleranceNum}`,
             icon: `./images/icons/semantic/${type}.png`,
-
           },
           chooseable: true,
           key: toleranceID,
           handleClick: () => {
             const faceIndex = String(elementface).slice(1) - FIRSTINDEX;
             chooseTolerance([faceIndex, datumface], targetShellName, toleranceID); // targetShellName 为测试用
-            console.log('! 高亮面', faceIndex, datumface);
-            console.log('! 公差ID', toleranceID);
-            console.log('! elementFaceName2ID', elementFaceName2ID);
           },
         };
         PMIElement.children.push({
