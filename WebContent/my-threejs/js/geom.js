@@ -111,7 +111,7 @@ function initface(v, faces, shellindex) {
     // eslint-disable-next-line no-loop-func
     meshClickManager.addMesh(faceMesh, () => {
       if (highLightFaceIndex.indexOf(faceIndex) === -1) {
-        _chooseFace([faceIndex], _targetShellName); // targetShellName 为测试用
+        _chooseFace([faceIndex], _targetShellName); // targetShellName 临时用targetShellName，不确定多零件下是否有问题
       }
     });
   }

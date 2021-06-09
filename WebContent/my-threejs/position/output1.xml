@@ -1,0 +1,148 @@
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+xml:base="http://www.nist.gov/OntoSTEP/automotive_design"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+xmlns:xml="http://www.w3.org/XML/1998/namespace"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ontologyIRI="http://www.nist.gov/OntoSTEP/automotive_design">
+<Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+<Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+<Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+<Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+<Semantic type="FirstFace">
+	<head>
+		<geometry_link>
+			<elementface>#1050</elementface>
+		</geometry_link>
+		<semantic_link>
+		</semantic_link>
+	</head>
+	<body>
+	</body>
+	<tail>
+		<description></description>
+	</tail>
+</Semantic>
+<Semantic type="datum">
+	<head>
+		<geometry_link>
+			<elementface>#1056</elementface>
+		</geometry_link>
+		<semantic_link>
+		</semantic_link>
+	</head>
+	<body>
+		<Instance rdf:ID="A">
+		</Instance>
+	</body>
+	<tail>
+		<description></description>
+	</tail>
+</Semantic>
+<Semantic type="datum">
+	<head>
+		<geometry_link>
+			<elementface>#1063</elementface>
+		</geometry_link>
+		<semantic_link>
+		</semantic_link>
+	</head>
+	<body>
+		<Instance rdf:ID="B">
+		</Instance>
+	</body>
+	<tail>
+		<description></description>
+	</tail>
+</Semantic>
+<Semantic type="plus_minus_tolerance">
+	<head>
+		<geometry_link>
+			<elementface>#1050,#1054</elementface>
+		</geometry_link>
+		<semantic_link>
+		</semantic_link>
+	</head>
+	<body>
+		<Instance rdf:ID="plus_minus_tolerance1">
+			<value>82.</value>
+			<tolerancevalue>-0.123,0.123</tolerancevalue>
+		</Instance>
+	</body>
+	<tail>
+		<description></description>
+	</tail>
+</Semantic>
+<Semantic type="plus_minus_tolerance">
+	<head>
+		<geometry_link>
+			<elementface>#1051</elementface>
+		</geometry_link>
+		<semantic_link>
+		</semantic_link>
+	</head>
+	<body>
+		<Instance rdf:ID="plus_minus_tolerance2">
+			<value>55.</value>
+			<tolerancevalue>0.002,0.021</tolerancevalue>
+		</Instance>
+	</body>
+	<tail>
+		<description></description>
+	</tail>
+</Semantic>
+<Semantic type="plus_minus_tolerance">
+	<head>
+		<geometry_link>
+			<elementface>#1063</elementface>
+		</geometry_link>
+		<semantic_link>
+		</semantic_link>
+	</head>
+	<body>
+		<Instance rdf:ID="plus_minus_tolerance3">
+			<value>65.</value>
+			<tolerancevalue>0.011,0.03</tolerancevalue>
+		</Instance>
+	</body>
+	<tail>
+		<description></description>
+	</tail>
+</Semantic>
+<Semantic type="plus_minus_tolerance">
+	<head>
+		<geometry_link>
+			<elementface>#1056</elementface>
+		</geometry_link>
+		<semantic_link>
+		</semantic_link>
+	</head>
+	<body>
+		<Instance rdf:ID="plus_minus_tolerance4">
+			<value>65.</value>
+			<tolerancevalue>0.011,0.03</tolerancevalue>
+		</Instance>
+	</body>
+	<tail>
+		<description></description>
+	</tail>
+</Semantic>
+<Semantic type="plus_minus_tolerance">
+	<head>
+		<geometry_link>
+			<elementface>#1053</elementface>
+		</geometry_link>
+		<semantic_link>
+		</semantic_link>
+	</head>
+	<body>
+		<Instance rdf:ID="plus_minus_tolerance5">
+			<value>70.</value>
+			<tolerancevalue>0.02,0.039</tolerancevalue>
+		</Instance>
+	</body>
+	<tail>
+		<description></description>
+	</tail>
+</Semantic>
+</Ontology>

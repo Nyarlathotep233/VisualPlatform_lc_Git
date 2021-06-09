@@ -5,6 +5,7 @@ function LoadXMLFile(xmlFile) {
   var xmlDom = null;
   if (window.ActiveXObject) {
     xmlDom = new ActiveXObject('Microsoft.XMLDOM');
+    xmlDoc.async = 'false';
     // xmlDom.loadXML(xmlFile);//如果用的是XML字符串
     xmlDom.load(xmlFile); // 如果用的是xml文件。
   } else if (
@@ -18,6 +19,7 @@ function LoadXMLFile(xmlFile) {
   } else {
     xmlDom = null;
   }
+
   return xmlDom;
 }
 try {

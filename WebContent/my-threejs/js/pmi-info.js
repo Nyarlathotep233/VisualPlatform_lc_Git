@@ -1,5 +1,5 @@
 /* eslint-disable no-underscore-dangle */
-const FIRSTINDEX = 467; // 测试用
+let FIRSTINDEX;
 /**
  * @param  {Object} originPMITreeData PMI树的根节点
  * Example: {
@@ -13,7 +13,7 @@ const FIRSTINDEX = 467; // 测试用
  *};
  * @param  {Array} currentArray PMI树高亮的节点的ID Example:['#467', '#468']
  */
-function renderPMITree(originPMITreeData, currentArray) {
+function renderPMITree(originPMITreeData, currentArray = []) {
   const { createElement } = React;
   const { useState, useEffect } = React;
   function PMITree(props) {
@@ -83,7 +83,11 @@ function renderPMITree(originPMITreeData, currentArray) {
         return [];
       }
 
-      rstPMITreeData = { ...rstPMITreeData, _showChildren: false, children: recExpAll(rstPMITreeData.children) };
+      rstPMITreeData = {
+        ...rstPMITreeData,
+        _showChildren: false,
+        children: recExpAll(rstPMITreeData.children),
+      };
       state.PMITreeData = rstPMITreeData;
 
       setState({
@@ -106,7 +110,11 @@ function renderPMITree(originPMITreeData, currentArray) {
         return [];
       }
 
-      rstPMITreeData = { ...rstPMITreeData, _showChildren: true, children: recColAll(rstPMITreeData.children) };
+      rstPMITreeData = {
+        ...rstPMITreeData,
+        _showChildren: true,
+        children: recColAll(rstPMITreeData.children),
+      };
       state.PMITreeData = rstPMITreeData;
 
       setState({
@@ -117,7 +125,9 @@ function renderPMITree(originPMITreeData, currentArray) {
       function ul() {
         const showul = node.children && node.children.length && node._showChildren;
         if (showul) {
-          return <ul>{node.children.map((item, index) => createNode(item))}</ul>;
+          return (
+            <ul>{node.children.map((item, index) => createNode(item))}</ul>
+          );
         }
         return null;
       }
@@ -125,7 +135,11 @@ function renderPMITree(originPMITreeData, currentArray) {
       function switchBtn() {
         const { _showChildren } = node;
         if (node.children && node.children.length) {
-          return _showChildren ? <img src="./images/icons/minus.png"></img> : <img src="./images/icons/add.png"></img>;
+          return _showChildren ? (
+            <img src="./images/icons/minus.png"></img>
+          ) : (
+            <img src="./images/icons/add.png"></img>
+          );
         }
         return '';
       }
@@ -147,7 +161,7 @@ function renderPMITree(originPMITreeData, currentArray) {
       }
 
       function haveClickEvent() {
-        if (node.handleClick && (typeof node.handleClick === 'function')) {
+        if (node.handleClick && typeof node.handleClick === 'function') {
           return true;
         }
         return false;
@@ -164,17 +178,9 @@ function renderPMITree(originPMITreeData, currentArray) {
 
       function getLabel() {
         if (haveClickEvent() || node.chooseable) {
-          return (
-            <a onClick={handleClick}>
-              {getName()}
-            </a>
-          );
+          return <a onClick={handleClick}>{getName()}</a>;
         }
-        return (
-          <span onClick={handleClick}>
-            {getName()}
-          </span>
-        );
+        return <span onClick={handleClick}>{getName()}</span>;
       }
 
       function getName() {
@@ -188,10 +194,19 @@ function renderPMITree(originPMITreeData, currentArray) {
 
         if (typeof label === 'string') {
           return content;
-        } if (typeof label === 'object') {
+        }
+        if (typeof label === 'object') {
           return (
-            <div style = {{ display: 'flex', 'align-items': 'center' }}>
-              <img src={label.icon} style = {{ display: 'flex', height: '16px', 'margin-right': '6px' }} onError={imgError}></img>
+            <div style={{ display: 'flex', 'align-items': 'center' }}>
+              <img
+                src={label.icon}
+                style={{
+                  display: 'flex',
+                  height: '16px',
+                  'margin-right': '6px',
+                }}
+                onError={imgError}
+              ></img>
               <span>{content}</span>
             </div>
           );
@@ -200,11 +215,20 @@ function renderPMITree(originPMITreeData, currentArray) {
       }
 
       return (
-        <li style={{ 'list-style-type': 'none', border: `${node._choosed ? '2' : '0'}px red solid` }}>
-          <div style={{
-            display: 'flex', 'align-items': 'center', height: '20px',
-          }} >
-            <span onClick={switchShow} className= 'spread-btn'>
+        <li
+          style={{
+            'list-style-type': 'none',
+            border: `${node._choosed ? '2' : '0'}px red solid`,
+          }}
+        >
+          <div
+            style={{
+              display: 'flex',
+              'align-items': 'center',
+              height: '20px',
+            }}
+          >
+            <span onClick={switchShow} className="spread-btn">
               {switchBtn()}
             </span>
             {getLabel()}
@@ -220,18 +244,23 @@ function renderPMITree(originPMITreeData, currentArray) {
           <button onClick={colAll}>展开</button>
         </div>
         <div>
-          <ul style={{ 'list-style-type': 'none' }}>{createNode(state.PMITreeData)}</ul>
+          <ul style={{ 'list-style-type': 'none' }}>
+            {createNode(state.PMITreeData)}
+          </ul>
         </div>
       </div>
     );
   }
 
   const domContainer = document.querySelector('#tree-container');
-  ReactDOM.render(<PMITree data={originPMITreeData} current={currentArray}/>, domContainer);
+  ReactDOM.render(
+    <PMITree data={originPMITreeData} current={currentArray} />,
+    domContainer,
+  );
 }
 /**
  * @param  {Array} nodeID  ["#467", "flatness_tolerance1"]
- * @param  {String} shellName 高亮的面所在的零件的shellName
+ * @param  {String} shellName 高亮的面所在的零件的shellName，由于pmi树暂时未考虑多零件所以暂时不起作用
  */
 function highLightTreeNode(nodeID, shellName) {
   renderPMITree(window.PMITreeData, nodeID);
@@ -243,103 +272,128 @@ function loadPMI(xmlFile) {
   const elementFaceList = [];
   const elementFaceMap = {};
 
+  Array.from(SemanticList).forEach((element) => {
+    const type = element.getAttribute('type');
+
+    if (type === 'FirstFace') {
+      const faceID = element.getElementsByTagName('elementface')[0].firstChild.nodeValue.slice(1);
+      FIRSTINDEX = Number(faceID);
+    }
+  });
+
   // 解析 SemanticList elementFaceList
   Array.from(SemanticList).forEach((element) => {
     const type = element.getAttribute('type');
+    if (type === 'FirstFace') {
+      return;
+    }
     const head = element.getElementsByTagName('head')[0];
     const body = element.getElementsByTagName('body')[0];
     const tail = element.getElementsByTagName('tail')[0];
 
-    const elementface = head.getElementsByTagName('elementface')[0].firstChild.nodeValue;
-    let PMIElement = {
-      children: [],
-    };
-    const typeNameList = {
-      angularity_tolerance: '倾斜度公差',
-      flatness_tolerance: '平面度公差',
-      parallelism_tolerance: '平行度公差',
-      perpendicularity_tolerance: '垂直度公差',
-      roundness_tolerance: '圆度公差',
-      straightness_tolerance: '直线度公差',
-      geometric_tolerance: '位置度',
-      plus_minus_tolerance: '正负',
-      circular_runoutput_tolerance: '圆跳动公差',
-    };
-    if (!elementFaceMap[elementface]) {
-      const elementFaceElement = {
-        label: `面${elementface}`,
-        elementface,
-        toleranceNum: 0,
-        children: [], // 公差
-        chooseable: true,
-        key: elementface,
-        handleClick: () => {
-          const faceIndex = String(elementface).slice(1) - FIRSTINDEX;
+    const elementfaceStr = head.getElementsByTagName('elementface')[0].firstChild.nodeValue;
+    const elementfaceList = elementfaceStr.split(',');
 
-          chooseFace([faceIndex], targetShellName); // targetShellName 为测试用
-        },
+    elementfaceList.forEach((elementface) => {
+      let PMIElement = {
+        children: [],
       };
-      elementFaceMap[elementface] = elementFaceElement;
-    }
-
-    const faceID = body.getElementsByTagName('Instance')[0].getAttribute('rdf:ID');
-    const typeName = typeNameList[type];
-    const datumface = head.getElementsByTagName('datumface')[0] && head.getElementsByTagName('datumface')[0].firstChild.nodeValue;
-    const toleranceID = body.getElementsByTagName('Instance')[0] && body.getElementsByTagName('Instance')[0].getAttribute('rdf:ID');
-    const value = body.getElementsByTagName('value')[0] && body.getElementsByTagName('value')[0].firstChild.nodeValue;
-    const toleranceNum = elementFaceMap[elementface].toleranceNum + 1;
-    if (!elementFaceName2ID[faceID]) {
-      elementFaceName2ID[faceID] = { elementface };
-    }
-
-    switch (type) {
-      case 'datum':
-        PMIElement.label = `基准面${faceID}`;
-
-        break;
-      case 'angularity_tolerance':
-      case 'flatness_tolerance':
-      case 'parallelism_tolerance':
-      case 'perpendicularity_tolerance':
-      case 'roundness_tolerance':
-      case 'straightness_tolerance':
-      case 'geometric_tolerance':
-      case 'plus_minus_tolerance':
-      case 'circular_runoutput_tolerance':
-
-        elementFaceMap[elementface].toleranceNum += 1;
-        PMIElement = {
-          ...PMIElement,
-          label: {
-            content: `公差${toleranceNum}`,
-            icon: `./images/icons/semantic/${type}.png`,
-          },
+      const typeNameList = {
+        angularity_tolerance: '倾斜度公差',
+        flatness_tolerance: '平面度公差',
+        parallelism_tolerance: '平行度公差',
+        perpendicularity_tolerance: '垂直度公差',
+        roundness_tolerance: '圆度公差',
+        straightness_tolerance: '直线度公差',
+        geometric_tolerance: '位置度',
+        plus_minus_tolerance: '正负',
+        circular_runoutput_tolerance: '圆跳动公差',
+      };
+      if (!elementFaceMap[elementface]) {
+        const elementFaceElement = {
+          label: `面${elementface}`,
+          elementface,
+          toleranceNum: 0,
+          children: [], // 公差
           chooseable: true,
-          key: toleranceID,
+          key: elementface,
           handleClick: () => {
             const faceIndex = String(elementface).slice(1) - FIRSTINDEX;
-            chooseTolerance([faceIndex, datumface], targetShellName, toleranceID); // targetShellName 为测试用
+
+            chooseFace([faceIndex], targetShellName); // 临时用targetShellName，不确定多零件下是否有问题
           },
         };
-        PMIElement.children.push({
-          label: `类型: ${typeName}`,
-          children: [],
-        });
-        PMIElement.children.push({
-          label: `值: ${value}`,
-          children: [],
-        });
-        if (datumface) {
+        elementFaceMap[elementface] = elementFaceElement;
+      }
+
+      const faceID = body.getElementsByTagName('Instance')[0] && body.getElementsByTagName('Instance')[0].getAttribute('rdf:ID');
+      const typeName = typeNameList[type];
+      const datumface = head.getElementsByTagName('datumface')[0]
+      && head.getElementsByTagName('datumface')[0].firstChild.nodeValue;
+      const toleranceID = body.getElementsByTagName('Instance')[0]
+      && body.getElementsByTagName('Instance')[0].getAttribute('rdf:ID');
+      const value = body.getElementsByTagName('value')[0]
+      && body.getElementsByTagName('value')[0].firstChild.nodeValue;
+      const tolerancevalue = (body.getElementsByTagName('tolerancevalue')[0]
+      && body.getElementsByTagName('tolerancevalue')[0].firstChild.nodeValue) || '';
+      const toleranceNum = elementFaceMap[elementface].toleranceNum + 1;
+      if (!elementFaceName2ID[faceID]) {
+        elementFaceName2ID[faceID] = { elementface };
+      }
+
+      switch (type) {
+        case 'datum':
+          PMIElement.label = `基准面${faceID}`;
+
+          break;
+        case 'angularity_tolerance':
+        case 'flatness_tolerance':
+        case 'parallelism_tolerance':
+        case 'perpendicularity_tolerance':
+        case 'roundness_tolerance':
+        case 'straightness_tolerance':
+        case 'geometric_tolerance':
+        case 'plus_minus_tolerance':
+        case 'circular_runoutput_tolerance':
+          elementFaceMap[elementface].toleranceNum += 1;
+          PMIElement = {
+            ...PMIElement,
+            label: {
+              content: `公差${toleranceNum}`,
+              icon: `./images/icons/semantic/${type}.png`,
+            },
+            chooseable: true,
+            key: toleranceID,
+            handleClick: () => {
+              const faceIndex = String(elementface).slice(1) - FIRSTINDEX;
+              chooseTolerance(
+                [faceIndex, datumface],
+                targetShellName,
+                toleranceID,
+              ); // t临时用argetShellName，不确定多零件下是否有问题
+            },
+          };
           PMIElement.children.push({
-            label: `基准面: ${datumface}`,
+            label: `类型: ${typeName}`,
             children: [],
           });
-        }
-        break;
-      default:
-        PMIElement.label = `未知类型 ${type}`;
-    }
-    elementFaceMap[elementface].children.push(PMIElement);
+          PMIElement.children.push({
+            label: `值: ${value} ${tolerancevalue}`,
+            children: [],
+          });
+          if (datumface) {
+            PMIElement.children.push({
+              label: `基准面: ${datumface}`,
+              children: [],
+            });
+          }
+          break;
+        default:
+          PMIElement.label = `未知类型 ${type}`;
+      }
+
+      elementFaceMap[elementface].children.push(PMIElement);
+    });
   });
 
   // elementFaceList
@@ -347,7 +401,10 @@ function loadPMI(xmlFile) {
     elementFaceList.push(elementFaceMap[elementface]);
   });
   // 排序
-  elementFaceList.sort((a, b) => Number(a.elementface.slice(1, a.elementface.length)) - Number(b.elementface.slice(1, b.elementface.length)));
+  elementFaceList.sort(
+    (a, b) => Number(a.elementface.slice(1, a.elementface.length))
+      - Number(b.elementface.slice(1, b.elementface.length)),
+  );
   const treeData = {
     label: 'MBD产品模型',
     children: [
@@ -360,13 +417,11 @@ function loadPMI(xmlFile) {
 
   window.PMITreeData = treeData;
 
-  renderPMITree(treeData, ['#467', '#468']);
+  renderPMITree(treeData);
 }
 
-// 获取PMI路径
-// let fileName = window.location.href.split('?')[1];
-const fileName = 'my-threejs/pmi_output.xml';
+// 获取PMI文件路径
+const PMIFileName = `my-threejs/${window.location.href.split('?')[1].split('/')[1]}/output1.xml`;
 
 // 加载PMI数据
-
-loadPMI(fileName);
+loadPMI(PMIFileName);

@@ -151,13 +151,23 @@ function getFaceIDList(faceList) {
   return faceIDList;
 }
 
+/**
+ * @param  {} faceIndexList 高亮面的数组
+ * @param  {} shellName 高亮面所在零件的shellName
+ * @param  {} toleranceID 公差名
+ */
 function chooseTolerance(faceList, shellName, toleranceID) {
+  console.log('toleranceID: ', toleranceID);
+  console.log('faceList: ', faceList);
   const faceIDList = getFaceIDList(faceList);
 
   highLight(faceIDList, shellName);
   highLightTreeNode([...faceIDList, toleranceID], shellName);
 }
-
+/**
+ * @param  {} faceIndexList 高亮面的数组
+ * @param  {} shellName 高亮面所在零件的shellName
+ */
 function chooseFace(faceList, shellName) {
   const faceIDList = getFaceIDList(faceList);
   highLight(faceIDList, shellName);
@@ -167,8 +177,9 @@ function chooseFace(faceList, shellName) {
 /**
  * @param  {} faceIndexList 高亮面的数组
  * @param  {} shellName 高亮面所在零件的shellName
+ * @param  {} color='381154' 高亮的颜色，默认为"#381154"
  */
-function highLight(faceList, shellName) {
+function highLight(faceList, shellName, color = '381154') {
   const faceIndexList = getFaceIndexList(faceList);
 
   allFaceLineList.forEach((line) => {
@@ -184,7 +195,7 @@ function highLight(faceList, shellName) {
   allFaceLines.forEach((allFaceLine) => {
     allFaceLineList.push(allFaceLine);
   });
-  var highLightFace = drawface(faceIndexList, shellName, '381154'); // 高亮某些面
+  var highLightFace = drawface(faceIndexList, shellName, color); // 高亮某些面
   highLightFaceList.push(highLightFace);
 
   var dragControls = new THREE.DragControls(highLightFaceList, camera, renderer.domElement);

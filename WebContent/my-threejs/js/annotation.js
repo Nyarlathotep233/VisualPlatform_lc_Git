@@ -1,27 +1,27 @@
 function read_annotation(id) {
   var xmlDom = window.LoadXMLFile(
-    base[0] + "/" + base[1] + "/annotation_" + id + ".xml"
+    `${base[0]}/${base[1]}/annotation_${id}.xml`,
   );
   var root1 = xmlDom;
-  //var annotations=root1.getElementsByTagName("annotation");
-  var polyline = root1.getElementsByTagName("polyline");
+  // var annotations=root1.getElementsByTagName("annotation");
+  var polyline = root1.getElementsByTagName('polyline');
   var pp = [];
   for (var i = 0; i < polyline.length; i++) {
-    var p = polyline[i].getElementsByTagName("p");
+    var p = polyline[i].getElementsByTagName('p');
     var zuobiao = [];
     for (var j = 0; j < p.length; j++) {
-      var l = p[j].getAttribute("l");
-      l = l.split(" ");
+      var l = p[j].getAttribute('l');
+      l = l.split(' ');
       zuobiao.push(l);
     }
     pp.push(zuobiao);
   }
-  return pp; //以二维数组的形式返回所有点的坐标
+  return pp; // 以二维数组的形式返回所有点的坐标
 }
 
 function show_annotation(annotations) {
   for (var a = 0; a < annotations.length; a++) {
-    var id = annotations[a].getAttribute("id"); //annotation的id
+    var id = annotations[a].getAttribute('id'); // annotation的id
     var ref = [];
     for (var l = 0; l < map2.length; l++) {
       if (id == map2[l][3]) {
@@ -30,10 +30,11 @@ function show_annotation(annotations) {
       }
     }
     var xform = [];
+
     for (var k = 0; k < map1.length; k++) {
       if (map1[k][0] == ref) xform = map1[k][1];
     }
-    xform = xform.split(" ");
+    xform = xform.split(' ');
     annogroup[a] = new THREE.Group();
     var AnnoPos = read_annotation(id);
     for (var w = 0; w < AnnoPos.length; w++) {
@@ -65,6 +66,6 @@ function draw_line(a, b, xform) {
   geometry.vertices.push(p2);
   var line = new THREE.Line(geometry, line_material1, THREE.LinePieces);
   scene.add(line);
-  //line_material1.visible=false;
+  // line_material1.visible=false;
   return line;
 }
